@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-23 23:57:19
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-25 00:03:26
          compiled from "Tpl\admin\login.html" */ ?>
 <?php /*%%SmartyHeaderCode:1067155d9e1fd82aee5-78683776%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'be9611304f9c654976f04bf34f5623c81a9286f8' => 
     array (
       0 => 'Tpl\\admin\\login.html',
-      1 => 1440345437,
+      1 => 1440432204,
       2 => 'file',
     ),
   ),
@@ -25,12 +25,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>欢迎登录后台管理系统</title>
-    <link href="<?php echo @constant('ADMIN_PATH');?>
-css/style.css" rel="stylesheet" type="text/css"/>
-    <script language="JavaScript" src="<?php echo @constant('ADMIN_PATH');?>
-js/jquery.js"></script>
-    <script src="js/cloud.js" type="<?php echo @constant('ADMIN_PATH');?>
-text/javascript"></script>
+    <link href="Tpl/admin/css/style.css" rel="stylesheet" type="text/css"/>
+    <script language="JavaScript" src="Tpl/admin/js/jquery.js"></script>
+    <script src="Tpl/admin/js/cloud.js" type="text/javascript"></script>
 
     <script language="javascript">
         $(function () {
@@ -66,16 +63,15 @@ images/light.png); background-repeat:no-repeat; background-position:center top; 
     <span class="systemlogo"></span>
 
     <div class="loginbox">
-        <form action="<?php echo @constant('APP');?>
-c=Index&m=login" method="post">
+        <form action="admin.php?c=Index&m=login" method="post">
             <ul>
-                <li><input name="username" required type="text" class="loginuser" value="admin"
-                           onclick="JavaScript:this.value=''"/></li>
-                <li><input name="password" required type="password" class="loginpwd" value="密码"
-                           onclick="JavaScript:this.value=''"/></li>
-                <li><input name="" type="submit" class="loginbtn" value="登录"/><label><input name="" type="checkbox"
-                                                                                            value="" checked="checked"/>记住密码</label><label><a
-                        href="#">忘记密码？</a></label></li>
+                <li><input name="name"  type="text" class="loginuser" value=""/></li>
+                <li><input name="pass" type="password" class="loginpwd" value=""/></li>
+                <li>
+                    <input name="" type="submit" class="loginbtn" value="登录"/>
+                    <label><input name="" type="checkbox" value="" checked="checked"/>记住密码</label>
+                    <label><a href="#">忘记密码？</a></label>
+                </li>
             </ul>
         </form>
 

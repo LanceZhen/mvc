@@ -104,3 +104,7 @@
 2015/08/23 22:31:22		select id,name,pass from tb_user where  name=:name and pass=:pass and  1=1  order by id dc limit 2,4
 2015/08/23 22:31:39		select id,name,pass from tb_user where  name=:name and pass=:pass and  1=1  order by id desc limit 2,4
 2015/08/23 22:33:35		select id,name,pass from tb_user where  name=:name and pass=:pass and  1=1  order by id desc limit 2,4
+2015/08/24 17:10:32		insert into tb_user set user='admin',pass='0000'
+2015/08/24 17:10:48		insert into tb_user set name='admin',pass='0000'
+2015/08/25 00:07:53		select id,name from tb_user where  1=1 
+2015/08/25 00:12:03		select id,name from tb_user where  1=1 

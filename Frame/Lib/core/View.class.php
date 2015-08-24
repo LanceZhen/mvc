@@ -7,9 +7,17 @@ class View{
             self::$view->$k = $v;
         }
     }
+
+    /**分配数据
+     * @param $data
+     */
     public static function assign($data){
        self::$view->assign($data);
     }
+
+    /**显示模板
+     * @param $tpl
+     */
     public static function display($tpl){
         self::$view->display($tpl);
     }

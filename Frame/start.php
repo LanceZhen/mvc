@@ -11,10 +11,8 @@
     foreach($paths as $path){
         require_once(ROOT.'Frame/'.$path);
     }
-    define('ADMIN_PATH',dirname(curPageURL()).'/Tpl/admin/');
-    define('APP',dirname(curPageURL()).'/admin.php?');
 
-/**启动
+    /**启动
      * Class start
      */
     class start{
@@ -31,11 +29,11 @@
         }
         //初始化控制器
         private static function initController(){
-            self::$controller = isset($get['c']) ? $get['c'] : 'Index';
+            self::$controller = isset($_GET['c']) ? $_GET['c'] : 'Index';
         }
         //初始化方法
         private static function initMethod(){
-            self::$method = isset($get['m']) ? $get['m'] : 'index';
+            self::$method = isset($_GET['m']) ? $_GET['m'] : 'index';
         }
 
         //运行

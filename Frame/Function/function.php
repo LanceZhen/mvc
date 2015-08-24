@@ -283,7 +283,7 @@ function injCheck($sql_str)
 
 //echo injCheck('select');
 //页面提示跳转
-function message($msgTitle, $message, $jumpUrl,$time)
+function message($msgTitle, $message, $jumpUrl,$time=2000)
 {
     $str = '<!DOCTYPE HTML>';
     $str .= '<html>';

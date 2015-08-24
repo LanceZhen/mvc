@@ -149,6 +149,17 @@ class Mysql
      *
      * select 部分
      * */
+//    执行SQL
+     public function execute($sql)
+     {
+         try {
+             $stmt = $this->PDO->prepare($sql);
+             $stmt->execute();
+         } catch (PDOException  $e) {
+             exit('SQL语句：' . $sql . '<br />错误信息：' . $e->getMessage());
+         }
+         return $stmt;
+     }
     public function select($table, $fields = "", $where = "", $orderBy = "", $sort = "", $limit = "")
     {
         $fields = empty($fields) ? "*" : $fields;

@@ -2,31 +2,79 @@
 class Db{
     public static $db;
 
+    /**初始化数据库
+     * @param $dbType
+     * @param $config
+     */
     public static function init($dbType,$config){
         self::$db = $dbType::getInstance();
         self::$db->pdoConnect($config);
 
     }
+
+    /**插入
+     * @param $tbl
+     * @param $arr
+     * @return mixed
+     */
     public static function insert($tbl,$arr){
         return self::$db->insert($tbl,$arr);
     }
+
+    /**更新
+     * @param $tbl
+     * @param $arr
+     * @param $where
+     * @return mixed
+     */
     public static function update($tbl,$arr,$where){
         return self::$db->update($tbl,$arr,$where);
     }
+
+    /**删除
+     * @param $tbl
+     * @param $where
+     * @return mixed
+     */
     public static function delete($tbl,$where){
         return self::$db->delete($tbl,$where);
     }
+
+    /**查询
+     * @param $table
+     * @param $fields
+     * @param $where
+     * @param $orderBy
+     * @param $sort
+     * @param $limit
+     * @return mixed
+     */
     public static function select($table, $fields, $where, $orderBy, $sort, $limit){
         return self::$db->select($table, $fields, $where, $orderBy, $sort, $limit);
     }
+
+    /**获取一条记录
+     * @return mixed
+     */
     public static function fetchOne(){
         return self::$db->fetchOne();
     }
+
+    /**获取全部记录
+     * @return mixed
+     */
     public static function fetchAll(){
         return self::$db->fetchAll();
     }
+
+    /**获得记录条数
+     * @return mixed
+     */
     public static function getCount(){
         return self::$db->getCount();
+    }
+    public static function execute($sql){
+        return self::$db->execute($sql);
     }
 }
 

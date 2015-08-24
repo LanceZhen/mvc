@@ -10,7 +10,11 @@
  */
 class Log{
     const LOGFILE = 'log.txt';
-    const SIZE = 1;
+    const SIZE = 1;//超过备份文件
+
+    /**写入日志
+     * @param $cont
+     */
     public static function write($cont){
         $cont =date('Y/m/d H:i:s')."\t\t".$cont."\r\n";
         $log = self::isBackup();
@@ -18,6 +22,10 @@ class Log{
         fwrite($fh,$cont);
         fclose($fh);
     }
+
+    /**是否备份
+     * @return string
+     */
     public static function isBackup(){
         $logDir = ROOT.'data/log/';
         if(!is_dir($logDir)){
