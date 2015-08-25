@@ -11,8 +11,7 @@
     foreach($paths as $path){
         require_once(ROOT.'Frame/'.$path);
     }
-
-    /**启动
+/**启动
      * Class start
      */
     class start{

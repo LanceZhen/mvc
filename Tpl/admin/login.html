@@ -7,7 +7,7 @@
     <link href="Tpl/admin/css/style.css" rel="stylesheet" type="text/css"/>
     <script language="JavaScript" src="Tpl/admin/js/jquery.js"></script>
     <script src="Tpl/admin/js/cloud.js" type="text/javascript"></script>
-
+    {literal}
     <script language="javascript">
         $(function () {
             $('.loginbox').css({'position': 'absolute', 'left': ($(window).width() - 692) / 2});
@@ -16,10 +16,10 @@
             })
         });
     </script>
-
+    {/literal}
 </head>
 
-<body style="background-color:#1c77ac; background-image:url({=$smarty.const.ADMIN_PATH}images/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
+<body style="background-color:#1c77ac; background-image:url(Tpl/images/light.png); background-repeat:no-repeat; background-position:center top; overflow:hidden;">
 
 <div id="mainBody">
     <div id="cloud1" class="cloud"></div>
@@ -41,14 +41,18 @@
     <span class="systemlogo"></span>
 
     <div class="loginbox">
-        <form action="admin.php?c=Index&m=login" method="post">
+        <form action="admin.php?c=User&m=login" method="post">
             <ul>
                 <li><input name="name"  type="text" class="loginuser" value=""/></li>
                 <li><input name="pass" type="password" class="loginpwd" value=""/></li>
+
                 <li>
                     <input name="" type="submit" class="loginbtn" value="登录"/>
                     <label><input name="" type="checkbox" value="" checked="checked"/>记住密码</label>
                     <label><a href="#">忘记密码？</a></label>
+                    {if $msg neq  ''}
+                    <br><br><p style="color: red;">{$msg}</p>
+                    {/if}
                 </li>
             </ul>
         </form>

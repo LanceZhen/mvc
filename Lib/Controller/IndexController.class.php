@@ -5,24 +5,18 @@
         {
             $user = M('User');
 			if(UserModel::isLogin()){
-                
+                View::display('admin/index.html');
 			}else{
-               View::display('admin/login.html');
+                View::assign(array('msg'=>''));
+                View::display('admin/login.html');
             }
         }
-        function login(){
-            $user = M('User');
-            $data = $user->_auto($_POST);
-            if($data){
-                if($user->login($data)){
-                    View::display('admin/index.html');
-                }else{
-
-                }
-            }else{
-                var_dump($user->getError());exit;
-            }
-
+        function top(){
+            View::display('admin/top.html');
         }
+        function left(){
+            View::display('admin/left.html');
+        }
+
 	}
 ?>

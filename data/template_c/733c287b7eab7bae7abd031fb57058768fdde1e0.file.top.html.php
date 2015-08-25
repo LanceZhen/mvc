@@ -1,4 +1,25 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-25 16:37:43
+         compiled from "Tpl\admin\top.html" */ ?>
+<?php /*%%SmartyHeaderCode:1586455dc1783b21f06-68193473%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '733c287b7eab7bae7abd031fb57058768fdde1e0' => 
+    array (
+      0 => 'Tpl\\admin\\top.html',
+      1 => 1440491859,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '1586455dc1783b21f06-68193473',
+  'Function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_55dc1783b82a63_91362514',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_55dc1783b82a63_91362514')) {Function content_55dc1783b82a63_91362514($_smarty_tpl) {?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -41,7 +62,8 @@ $(function(){
     </ul>
      
     <div class="user">
-    <span>{$smarty.session.username}</span>
+    <span><?php echo $_SESSION['username'];?>
+</span>
     <i>消息</i>
     <b>5</b>
     </div>    
@@ -50,3 +72,4 @@ $(function(){
 
 </body>
 </html>
+<?php }} ?>

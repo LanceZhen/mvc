@@ -49,7 +49,7 @@ class Db{
      * @param $limit
      * @return mixed
      */
-    public static function select($table, $fields, $where, $orderBy, $sort, $limit){
+    public static function select($table, $fields = "*", $where = array(), $orderBy = "", $sort = "", $limit = ""){
         return self::$db->select($table, $fields, $where, $orderBy, $sort, $limit);
     }
 
@@ -73,8 +73,8 @@ class Db{
     public static function getCount(){
         return self::$db->getCount();
     }
-    public static function execute($sql){
-        return self::$db->execute($sql);
+    public static function execute($sql,$arr){
+        return self::$db->execute($sql,$arr);
     }
 }
 

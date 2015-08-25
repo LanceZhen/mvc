@@ -24,8 +24,16 @@ class UserModel extends Model{
             return 0;
     }
     function login($data){
-        $sql = "select id,name from $this->table where name = '".$data['name']."' and pass = '".md5($data['pass'])."'";
-        var_dump(Db::execute($sql));
+        Db::select($this->table,'id,name',array('name'=>$data['name'],'pass'=>md5($data['pass'])));
+        if($data = Db::fetchOne()){
+            $_SESSION['isLogin'] = true;
+            $_SESSION['uid'] = $data['id'];
+            $_SESSION['username'] = $data['name'];
+            return 1;
+        }else{
+            return 0;
+        }
+
     }
 
 }

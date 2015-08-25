@@ -73,7 +73,102 @@ function _addslashes($arr)
     }
     return $arr;
 }
+/* 函数 textFilter($text)
+** 功能 将文本中的特殊字符进行过滤,如HTML标记和换行符
+** 参数 要进行过滤的文本
+*/
+function textFilter($text)
+{
+    $text = htmlspecialchars($text);
+    $text = nl2br($text);
+    return $text;
+}
 
+//==========================================
+// 函数: alert
+// 功能: JavaScript提示
+// 参数: $title 要提示的内容
+// 参数: $action 提示后的动作
+//		back 返回 close 关闭窗口
+//		replace 替换页面 redirect 跳转
+// 参数: $href 当action为redirect时的URL
+//==========================================
+function alert($title,$action='back',$href=null)
+{
+    $htmlStr  = "<script language='javascript'>";
+    $htmlStr .= "alert('$title');";
+    switch ($action) {
+        case 'back':
+            $htmlStr .= "history.back();";
+            break;
+        case 'close':
+            $htmlStr .= "window.close();";
+            break;
+        case 'replace':
+            $htmlStr .= "location.replace(location.href);";
+            break;
+        case 'redirect':
+            if (!empty($href))
+            {
+                $htmlStr .= "location.href='$href'";
+            }
+            break;
+        default:
+            break;
+    }
+    $htmlStr .= "</script>";
+    echo $htmlStr;
+}
+
+/* 函数: showMessage()
+** 功能: 显示信息页面
+** 参数: 无
+*/
+function showMessage()
+{
+    global $errorList, $successList;
+    //处理转向操作
+    if(!empty($errorList))
+    {
+        $param['msgList'] = serialize($errorList);
+        $param["msgType"] = "error-msg";
+    }
+    else
+    {
+        $param['msgList'] = serialize($successList);
+        $param["msgType"] = "success-msg";
+    }
+    forward("message.php", $param);
+    exit();
+}
+/* 函数: forward($url,$param)
+** 功能: 跳转到其它页面
+** 参数: $url 页面地址
+** 参数: $param 关联数组,可选
+*/
+function forward($url, $param=null)
+{
+    $headerStr = "Location: $url";
+    $paramStr = "";
+    if($param != null && is_array($param))
+    {
+        $paramStr = "?";
+        $flag = 0;
+        foreach($param as $key=>$val)
+        {
+            if($flag == 0)
+            {
+                $paramStr .= "$key=$val";
+                $flag = 1;
+            }
+            else
+                $paramStr .= "&$key=$val";
+        }
+
+    }
+
+    header($headerStr . $paramStr);
+}
 //常用函数封装
 //加密解密
 header('Content-type:text/html; charset=utf-8');
@@ -180,7 +275,7 @@ function getFileList($directory) {
 /**获取当前页面的url
  * @return string
  */
-function curPageURL()
+    function curPageURL()
 {
     $pageURL = 'http';
     if (!empty($_SERVER['HTTPS'])) {

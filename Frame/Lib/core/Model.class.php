@@ -15,7 +15,7 @@ class Model{
     protected $field = array();//字段
 
     protected $_pad = array();//自动填充
-    protected $_valid = array();//自动验证
+    protected $_valid = array(array('name',1,'0','require'),array('pass',1,'00','require'));//自动验证
 
     protected $error = array();//错误数组
 

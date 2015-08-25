@@ -10,7 +10,7 @@ $config = array(
 //		$smarty->compile_dir=$config["compile_dir"];//模板编译生成的文件
 //		$smarty->cache_dir=$config["cache_dir"];//缓存*/
     'view' => array(
-        'left_delimiter' => '{=',
+        'left_delimiter' => '{',
         'right_delimiter' => '}',
         'template_dir' => 'Tpl',
         'compile_dir' => 'data/template_c'),

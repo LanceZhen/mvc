@@ -1,5 +1,30 @@
 <?php
-
+//$dbh = new PDO('mysql:host=localhost;dbname=access_control', 'root', '');
+//$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+//$dbh->exec('set names utf8');
+///*添加*/
+////$sql = "INSERT INTO `user` SET `login`=:login AND `password`=:password";
+//$sql = "INSERT INTO `user` (`login` ,`password`)VALUES (:login, :password)";  $stmt = $dbh->prepare($sql);  $stmt->execute(array(':login'=>'kevin2',':password'=>''));
+//echo $dbh->lastinsertid();
+///*修改*/
+//$sql = "UPDATE `user` SET `password`=:password WHERE `user_id`=:userId";
+//$stmt = $dbh->prepare($sql);
+//$stmt->execute(array(':userId'=>'7', ':password'=>'4607e782c4d86fd5364d7e4508bb10d9'));
+//echo $stmt->rowCount();
+///*删除*/
+//$sql = "DELETE FROM `user` WHERE `login` LIKE 'kevin_'"; //kevin%
+//$stmt = $dbh->prepare($sql);
+//$stmt->execute();
+//echo $stmt->rowCount();
+///*查询*/
+//$login = 'kevin%';
+//$sql = "SELECT * FROM `user` WHERE `login` LIKE :login";
+//$stmt = $dbh->prepare($sql);
+//$stmt->execute(array(':login'=>$login));
+//while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
+//    print_r($row);
+//}
+//print_r( $stmt->fetchAll(PDO::FETCH_ASSOC));
 /*//pdo连接信息
 $pdo=array("mysql:host=localhost;dbname=demo;charset=utf8","root","");
 //开始连接数据库
@@ -33,7 +58,7 @@ $updateRow = array(
 class Mysql
 {
     private static $object;
-    private $PDO;
+    private $PDO = null;
     private $prepare;
 
     //单例模式 start
@@ -59,13 +84,15 @@ class Mysql
     public function pdoConnect($config)
     {
         try {
-            $this->PDO = new PDO("mysql:host={$config['host']}; dbname={$config['name']}", $config['user'], $config['pass']);
+            $this->PDO = new PDO("mysql:host={$config['host']}; dbname={$config['name']}; charset={$config['charset']}", $config['user'], $config['pass']);
+//            $this->PDO->exec("set names '{$config['charset']}'");
+            //设置持久连接
             $this->PDO->setAttribute(PDO::ATTR_PERSISTENT, true);
             //设置抛出错误
             $this->PDO->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             //设置当字符串为空时转换为sql的null
             $this->PDO->setAttribute(PDO::ATTR_ORACLE_NULLS, true);
-            //由MySQL完成变量的转义处理
+            //由MySQL完成变量的转义处理  防止sql注入  关闭预处理模拟
             $this->PDO->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
         } catch (PDOException $e) {
             $this->Msg("PDO连接错误信息：" . $e->getMessage());
@@ -73,9 +100,9 @@ class Mysql
     }
 
     //错误提示
-    private function Msg($the_error = "")
+    private function Msg($error = "")
     {
-        echo $the_error;
+        echo $error;
         exit;
     }
 
@@ -150,17 +177,17 @@ class Mysql
      * select 部分
      * */
 //    执行SQL
-     public function execute($sql)
+    /* public function execute($sql,$arr)
      {
          try {
              $stmt = $this->PDO->prepare($sql);
-             $stmt->execute();
+             $stmt->execute($arr);
          } catch (PDOException  $e) {
              exit('SQL语句：' . $sql . '<br />错误信息：' . $e->getMessage());
          }
          return $stmt;
-     }
-    public function select($table, $fields = "", $where = "", $orderBy = "", $sort = "", $limit = "")
+     }*/
+    public function select($table, $fields, $where, $orderBy, $sort, $limit)
     {
         $fields = empty($fields) ? "*" : $fields;
         $sqlSelect = $this->sqlCreateSelect($table, $fields, $where, $orderBy, $sort, $limit);
@@ -168,7 +195,7 @@ class Mysql
     }
 
     //生成select sql
-    private function sqlCreateSelect($table, $fields = "*", $where = "", $orderBy = "", $sort = "", $limit = "")
+    private function sqlCreateSelect($table, $fields, $where, $orderBy, $sort, $limit)
     {
         $whereSql = empty($where) ? " 1=1 " : $this->whereCreate($where);
         $orderBySql = empty($orderBy) ? "" : " order by " . $orderBy . " " . $sort;
