@@ -7,9 +7,22 @@
  */
 class SetController{
     private $config = array();
+    private $data = array();
 
     final function __construct(){
         $this->config = Config::getInstance()->getConf();
+
+        $this->data = array(
+            'articlePageSize' => $this->config['PAGING']['ARTICLE'],
+            'picturePageSize' => $this->config['PAGING']['PICTURE'],
+            'pictureShowType' => $this->config['PICTURE_SHOW_TYPE'],
+            'waterText1' => $this->config['WATER_TEXT'][0],
+            'waterText2' => $this->config['WATER_TEXT'][1],
+            'width' => $this->config['THUMB_SIZE']['WIDTH'],
+            'height' => $this->config['THUMB_SIZE']['HEIGHT'],
+            'maxWidth' => $this->config['PICTURE_SIZE']['WIDTH'],
+            'maxHeight' => $this->config['PICTURE_SIZE']['HEIGHT'],
+        );
     }
 
     function sysInfo(){
@@ -33,20 +46,32 @@ class SetController{
         View::display('admin/sysInfo.html');
     }
     function getSet(){
-        View::assign(array(
-           'articlePageSize' => $this->config['PAGING']['ARTICLE'],
-            'picturePageSize' => $this->config['PAGING']['PICTURE'],
-            'pictureShowType' => $this->config['PICTURE_SHOW_TYPE'],
-            'waterText1' => $this->config['WATER_TEXT'][0],
-            'waterText2' => $this->config['WATER_TEXT'][1],
-            'width' => $this->config['THUMB_SIZE']['WIDTH'],
-            'height' => $this->config['THUMB_SIZE']['HEIGHT'],
-            'maxWidth' => $this->config['PICTURE_SIZE']['WIDTH'],
-            'maxHeight' => $this->config['PICTURE_SIZE']['HEIGHT'],
-        ));
+
+        View::assign($this->data);
         View::display('admin/baseSet.html');
     }
     function saveSet(){
+        //表单验证
+//        var_dump($_POST);
+//        var_dump($this->config);
+        $arr = $_POST;
+        $keys = array_keys($this->data);
+        var_dump($keys);exit;
+        $obj = Config::getInstance();
+        $data = array(
+            $obj->config['PAGING']['ARTICLE'] =>$arr[$keys[0]],
+            $obj->config['PAGING']['PICTURE'] =>$arr[$keys[1]],
+            $obj->config['PICTURE_SHOW_TYPE'] =>$arr[$keys[2]],
+            $obj->config['WATER_TEXT'][0] =>$arr[$keys[3]],
+            $obj->config['WATER_TEXT'][1] =>$arr[$keys[4]],
+            $obj->config['THUMB_SIZE']['WIDTH'] =>$arr[$keys[5]],
+            $obj->config['THUMB_SIZE']['HEIGHT'] =>$arr[$keys[6]],
+            $obj->config['PICTURE_SIZE']['WIDTH'] =>$arr[$keys[7]],
+            $obj->config['PICTURE_SIZE']['HEIGHT'] =>$arr[$keys[8]],
+        );
 
+        var_dump($data);
+
+//        Config::getInstance()->getConf();
     }
 }

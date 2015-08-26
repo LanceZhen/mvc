@@ -513,3 +513,35 @@
 2015/08/26 17:58:52		show table status from frame like 'cms%'
 2015/08/26 18:00:04		select version() as ver
 2015/08/26 18:00:04		show table status from frame like 'cms%'
+2015/08/26 19:17:46		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/26 19:18:24		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/26 19:18:28		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/26 19:18:31		select version() as ver
+2015/08/26 19:18:31		show table status from frame like 'cms%'
+2015/08/26 19:18:38		select version() as ver
+2015/08/26 19:18:38		show table status from frame like 'cms%'
+2015/08/26 19:48:23		select version() as ver
+2015/08/26 19:48:23		show table status from frame like 'cms%'
+2015/08/26 19:48:27		select version() as ver
+2015/08/26 19:48:27		show table status from frame like 'cms%'
+2015/08/26 20:34:33		select version() as ver
+2015/08/26 20:34:33		show table status from frame like 'cms%'
+2015/08/26 20:34:38		select version() as ver
+2015/08/26 20:34:38		show table status from frame like 'cms%'
+2015/08/26 22:07:34		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/26 22:07:37		select version() as ver
+2015/08/26 22:07:37		show table status from frame like 'cms%'
+2015/08/26 22:08:22		select version() as ver
+2015/08/26 22:08:22		show table status from frame like 'cms%'
+2015/08/26 22:08:24		select version() as ver
+2015/08/26 22:08:24		show table status from frame like 'cms%'
+2015/08/26 22:08:33		select version() as ver
+2015/08/26 22:08:33		show table status from frame like 'cms%'
+2015/08/26 22:08:52		select version() as ver
+2015/08/26 22:08:52		show table status from frame like 'cms%'
+2015/08/26 22:16:15		select version() as ver
+2015/08/26 22:16:15		show table status from frame like 'cms%'
+2015/08/26 22:16:20		select version() as ver
+2015/08/26 22:16:20		show table status from frame like 'cms%'
+2015/08/26 23:48:16		select version() as ver
+2015/08/26 23:48:16		show table status from frame like 'cms%'

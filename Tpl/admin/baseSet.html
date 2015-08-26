@@ -30,38 +30,38 @@
 </div>
 
 <div class="rightinfo" style="width: 500px; margin: 100px auto;">
-    <form action="admin.php?c=Set&m=saveSet">
+    <!--admin.php?c=Set&m=saveSet-->
+    <form action="admin.php?c=Set&m=saveSet" method="post">
     <table class="tablelist">
         <tbody>
             <tr>
                 <td>后台文章每页显示数目:</td>
-                <td><input type="number" value="{$articlePageSize}">条/页</td>
+                <td><input name="articlePageSize" type="number" value="{$articlePageSize}">条/页</td>
             </tr>
             <tr>
                 <td>后台图片每页显示数目</td>
-                <td><input type="number" value="{$picturePageSize}">条/页</td>
+                <td><input name="picturePageSize" type="number" value="{$picturePageSize}">条/页</td>
             </tr>
             <tr>
                 <td>后台图片显示方式</td>
-                <td><label><input type="radio" name="pictureShowType" value="list" {if $pictureShowType eq 'list'} checked {/if}>列表</label>
-                    <label><input type="radio" name="pictureShowType" value="thumb" {if $pictureShowType eq 'thumb'} checked {/if} />缩略图</label>
+                <td><label><input name="" type="radio" name="pictureShowType" value="list" {if $pictureShowType eq 'list'} checked {/if}>列表</label>
+                    <label><input name="" type="radio" name="pictureShowType" value="thumb" {if $pictureShowType eq 'thumb'} checked {/if} />缩略图</label>
                 </td>
             </tr>
             <tr class="tr1">
                 <td>水印文字</td>
-                <td><input type="text" value="{$waterText1}"><input type="text" value="{$waterText2}"></td>
+                <td><input name="waterText1" type="text" value="{$waterText1}"><input name="waterText2" type="text" value="{$waterText2}"></td>
             </tr>
             <tr>
                 <td>缩略图尺寸</td>
-                <td>宽 <input type="number" value="{$width}">px 　 高 <input type="number" value="{$height}">px</td>
+                <td>宽 <input name="width" type="number" value="{$width}">px 　 高 <input name="height" type="number" value="{$height}">px</td>
             </tr>
             <tr>
                 <td>图片上传后的最大尺寸</td>
-                <td>宽 <input type="number" value="{$maxWidth}">px 　 高 <input type="number" value="{$maxHeight}">px</td>
+                <td>宽 <input name="maxWidth" type="number" value="{$maxWidth}">px 　 高 <input name="maxHeight" type="number" value="{$maxHeight}">px</td>
             </tr>
             <tr>
-                <td>&nbsp;</td>
-                <td><input type="submit" value="提交"><input type="reset" value="重设"></td>
+                <td colspan="2" style="text-align: center;"><input type="submit" value="提交"><input type="reset" value="重设"></td>
             </tr>
         </tbody>
     </table>

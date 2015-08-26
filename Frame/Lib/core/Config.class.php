@@ -7,7 +7,7 @@
  */
 class Config{
     private static $obj;
-    protected $config = array();
+    public $config = array();
 
     final private function __construct(){
         $config = array();
