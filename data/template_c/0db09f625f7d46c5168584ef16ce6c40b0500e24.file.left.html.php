@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-25 17:47:41
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-26 17:58:46
          compiled from "Tpl\admin\left.html" */ ?>
 <?php /*%%SmartyHeaderCode:2532155dc29a91d09d5-96365269%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0db09f625f7d46c5168584ef16ce6c40b0500e24' => 
     array (
       0 => 'Tpl\\admin\\left.html',
-      1 => 1440496060,
+      1 => 1440583123,
       2 => 'file',
     ),
   ),
@@ -62,11 +62,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <span><img src="Tpl/admin/images/leftico01.png"/></span>常规设置
         </div>
         <ul class="menuson">
-            <li><cite></cite><a href="Tpl/admin/sysInfo.html" target="rightFrame">系统信息</a><i></i></li>
-            <li><cite></cite><a href="index.html" target="rightFrame">基本设置</a><i></i></li>
+            <li class="active"><cite></cite><a href="admin.php?c=Set&m=sysInfo" target="rightFrame">系统信息</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=Set&m=getSet" target="rightFrame">基本设置</a><i></i></li>
             <li><cite></cite><a href="index.html" target="rightFrame">密码修改</a><i></i></li>
 
-	        <li class="active"><cite></cite><a href="Tpl/admin/cateList.php" target="rightFrame">商品分类</a><i></i></li>
+	        <li><cite></cite><a href="Tpl/admin/cateList.php" target="rightFrame">商品分类</a><i></i></li>
 	        <li><cite></cite><a href="Tpl/admin/index.html" target="rightFrame">首页模版</a><i></i></li>
 	        <li><cite></cite><a href="Tpl/admin/right.html" target="rightFrame">数据列表</a><i></i></li>
 	        <li><cite></cite><a href="Tpl/admin/imgtable.html" target="rightFrame">图片数据表</a><i></i></li>

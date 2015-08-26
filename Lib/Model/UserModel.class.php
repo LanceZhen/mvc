@@ -7,7 +7,7 @@
  */
 class UserModel extends Model{
 
-    protected $table = 'tb_user';//表名
+    protected $table = 'cms_user';//表名
     protected $pk = 'id';//主键
     protected $field = array('name','pass');//字段
 
@@ -24,8 +24,8 @@ class UserModel extends Model{
             return 0;
     }
     function login($data){
-        Db::select($this->table,'id,name',array('name'=>$data['name'],'pass'=>md5($data['pass'])));
-        if($data = Db::fetchOne()){
+        DB::select($this->table,'id,name',array('name'=>$data['name'],'pass'=>md5($data['pass'])));
+        if($data = DB::fetchOne()){
             $_SESSION['isLogin'] = true;
             $_SESSION['uid'] = $data['id'];
             $_SESSION['username'] = $data['name'];

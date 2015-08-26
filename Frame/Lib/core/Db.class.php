@@ -1,5 +1,5 @@
 <?php
-class Db{
+class DB{
     public static $db;
 
     /**初始化数据库
@@ -73,9 +73,20 @@ class Db{
     public static function getCount(){
         return self::$db->getCount();
     }
-    public static function execute($sql,$arr){
-        return self::$db->execute($sql,$arr);
+
+    public static function getVersion(){
+        return self::$db->getVersion();
     }
+    public static function getDBSize($dbName,$tblPrefix){
+        return self::$db->getDBSize($dbName,$tblPrefix);
+    }
+//    public static function __callStatic($name, $arguments = null)
+//    {
+//        return self::$db->$name($arguments == null ?:implode(',',$arguments));
+//        // 注意: $name 的值区分大小写
+////        echo "Calling static method '$name' "
+////            . implode(', ', $arguments). "\n";
+//    }
 }
 
 

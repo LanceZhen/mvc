@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>无标题文档</title>
+    <link href="Tpl/admin/css/style.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        .tablelist input[type='text'],.tablelist input[type='number']{ width: 80px; height: 24px; line-height: 24px; border: 1px solid #D1D1D1; text-indent: 8px; margin-right: 8px;}
+        .tablelist input[type='radio']{ margin-right: 4px; vertical-align: middle;}
+        .tablelist label{ margin-right: 20px }
+        .tablelist .tr1 input{ width: 150px;}
+        .tablelist input[type='submit'],.tablelist input[type='reset']{ margin: 10px 20px 10px 0; height: 26px; padding: 0 10px; border: 1px solid #B6B3AF; background: #D6D6D6; color: #333333; }
+    </style>
+    <script type="text/javascript" src="Tpl/admin/js/jquery.js"></script>
+
+
+</head>
+
+
+<body>
+
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">商品分类</a></li>
+        <li><a href="#">分类列表</a></li>
+    </ul>
+</div>
+
+<div class="rightinfo" style="width: 500px; margin: 100px auto;">
+    <form action="admin.php?c=Set&m=saveSet">
+    <table class="tablelist">
+        <tbody>
+            <tr>
+                <td>后台文章每页显示数目:</td>
+                <td><input type="number" value="{$articlePageSize}">条/页</td>
+            </tr>
+            <tr>
+                <td>后台图片每页显示数目</td>
+                <td><input type="number" value="{$picturePageSize}">条/页</td>
+            </tr>
+            <tr>
+                <td>后台图片显示方式</td>
+                <td><label><input type="radio" name="pictureShowType" value="list" {if $pictureShowType eq 'list'} checked {/if}>列表</label>
+                    <label><input type="radio" name="pictureShowType" value="thumb" {if $pictureShowType eq 'thumb'} checked {/if} />缩略图</label>
+                </td>
+            </tr>
+            <tr class="tr1">
+                <td>水印文字</td>
+                <td><input type="text" value="{$waterText1}"><input type="text" value="{$waterText2}"></td>
+            </tr>
+            <tr>
+                <td>缩略图尺寸</td>
+                <td>宽 <input type="number" value="{$width}">px 　 高 <input type="number" value="{$height}">px</td>
+            </tr>
+            <tr>
+                <td>图片上传后的最大尺寸</td>
+                <td>宽 <input type="number" value="{$maxWidth}">px 　 高 <input type="number" value="{$maxHeight}">px</td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" value="提交"><input type="reset" value="重设"></td>
+            </tr>
+        </tbody>
+    </table>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $('.tablelist tbody tr:odd').addClass('odd');
+</script>
+
+</body>
+
+</html>

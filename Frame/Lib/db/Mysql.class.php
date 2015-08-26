@@ -84,7 +84,7 @@ class Mysql
     public function pdoConnect($config)
     {
         try {
-            $this->PDO = new PDO("mysql:host={$config['host']}; dbname={$config['name']}; charset={$config['charset']}", $config['user'], $config['pass']);
+            $this->PDO = new PDO("mysql:host={$config['HOST']}; dbname={$config['NAME']}; charset={$config['CHARSET']}", $config['USER'], $config['PASS']);
 //            $this->PDO->exec("set names '{$config['charset']}'");
             //设置持久连接
             $this->PDO->setAttribute(PDO::ATTR_PERSISTENT, true);
@@ -177,7 +177,7 @@ class Mysql
      * select 部分
      * */
 //    执行SQL
-    /* public function execute($sql,$arr)
+    /* public function execute($sql)
      {
          try {
              $stmt = $this->PDO->prepare($sql);
@@ -214,7 +214,7 @@ class Mysql
     }
 
     //执行select sql
-    private function query($sql, $where)
+    private function query($sql, $where = '')
     {
         try {
             log::write($sql);
@@ -249,11 +249,51 @@ class Mysql
         return $result;
     }
 
+    /**获得字段值
+     * @param $filed
+     * @return bool
+     */
+    public function getValueByFiled($filed){
+        $arr = $this->fetchOne();
+        foreach($arr as $k => $v){
+            if($filed == $k){
+                return $v;
+            }
+        }
+        return false;
+    }
+
     //获取查询记录数
     public function getCount()
     {
         $total = $this->prepare->rowCount();
         return $total;
+    }
+
+    /**获得mysql版本号
+     * @return bool
+     */
+    public function getVersion(){
+        $this->query('select version() as ver');
+        return $this->getValueByFiled('ver');
+    }
+
+    /**获得系统占用数据库空间大小
+     * @param $dbName
+     * @param $tblPrefix
+     * @return int
+     */
+    public function getDBSize($dbName,$tblPrefix){
+        $sql = "show table status from $dbName";
+        if($tblPrefix != null){
+            $sql .= " like '$tblPrefix%'";
+        }
+        $this->query($sql);
+        $size = 0;
+        while($rs = $this->fetchOne()){
+            $size += $rs['Data_length'] + $rs['Index_length'];
+        }
+        return $size;
     }
 
 }

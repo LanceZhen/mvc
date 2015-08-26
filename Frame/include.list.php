@@ -1,7 +1,8 @@
 <?php
 	$paths = array(
-		'Function/Function.php',
-		'Lib/core/Db.class.php',
+        'Lib/core/Config.class.php',
+        'Function/Function.php',
+		'Lib/core/DB.class.php',
         'Lib/core/Log.class.php',
         'Lib/core/Model.class.php',
 		'Lib/core/View.class.php',

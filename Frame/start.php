@@ -20,11 +20,11 @@
         public static $method;
         //初始化数据库
         private static function initDb(){
-            Db::init('Mysql',self::$config['db']);
+            Db::init('Mysql',self::$config['DB']);
         }
         //初始化视图引擎
         private static function initView(){
-            View::init('Smarty',self::$config['view']);
+            View::init('Smarty',self::$config['VIEW']);
         }
         //初始化控制器
         private static function initController(){
@@ -46,5 +46,5 @@
         }
     }
     //启动
-    require_once(ROOT.'config.php');
+    $config = Config::getInstance()->getConf();
     start::run($config);

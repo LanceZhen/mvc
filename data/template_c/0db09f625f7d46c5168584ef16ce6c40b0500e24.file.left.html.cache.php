@@ -1,4 +1,25 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-26 17:17:12
+         compiled from "Tpl\admin\left.html" */ ?>
+<?php /*%%SmartyHeaderCode:517155dd8418a934b8-54177501%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '0db09f625f7d46c5168584ef16ce6c40b0500e24' => 
+    array (
+      0 => 'Tpl\\admin\\left.html',
+      1 => 1440575981,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '517155dd8418a934b8-54177501',
+  'Function' => 
+  array (
+  ),
+  'has_nocache_code' => false,
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_55dd8418ac5893_96346506',
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_55dd8418ac5893_96346506')) {Function content_55dd8418ac5893_96346506($_smarty_tpl) {?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -41,11 +62,11 @@
             <span><img src="Tpl/admin/images/leftico01.png"/></span>常规设置
         </div>
         <ul class="menuson">
-            <li class="active"><cite></cite><a href="admin.php?c=Set&m=sysInfo" target="rightFrame">系统信息</a><i></i></li>
-            <li><cite></cite><a href="admin.php?c=Set&m=getSet" target="rightFrame">基本设置</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=Set&m=sysInfo" target="rightFrame">系统信息</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=Set&m=baseSet" target="rightFrame">基本设置</a><i></i></li>
             <li><cite></cite><a href="index.html" target="rightFrame">密码修改</a><i></i></li>
 
-	        <li><cite></cite><a href="Tpl/admin/cateList.php" target="rightFrame">商品分类</a><i></i></li>
+	        <li class="active"><cite></cite><a href="Tpl/admin/cateList.php" target="rightFrame">商品分类</a><i></i></li>
 	        <li><cite></cite><a href="Tpl/admin/index.html" target="rightFrame">首页模版</a><i></i></li>
 	        <li><cite></cite><a href="Tpl/admin/right.html" target="rightFrame">数据列表</a><i></i></li>
 	        <li><cite></cite><a href="Tpl/admin/imgtable.html" target="rightFrame">图片数据表</a><i></i></li>
@@ -98,3 +119,4 @@
 
 </body>
 </html>
+<?php }} ?>

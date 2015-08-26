@@ -224,12 +224,12 @@ function getExtension($filename)
  * @param $size
  * @return string
  */
-function formatSize($path)
+function formatSize($size)
 {
-    if(!file_exists($path)){
-        return '文件不存在';
-    }
-    $size = filesize($path);
+//    if(!file_exists($path)){
+//        return '文件不存在';
+//    }
+//    $size = filesize($path);
     $sizes = array(" Bytes", " KB", " MB", " GB", " TB", " PB", " EB", " ZB", " YB");
     if ($size == 0) {
         return ('n/a');
