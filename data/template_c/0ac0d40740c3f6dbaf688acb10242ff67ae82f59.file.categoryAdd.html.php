@@ -1,4 +1,25 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-27 23:00:23
+         compiled from "Tpl\admin\categoryAdd.html" */ ?>
+<?php /*%%SmartyHeaderCode:2695355df02eaba1615-70461775%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+$_valid = $_smarty_tpl->decodeProperties(array (
+  'file_dependency' => 
+  array (
+    '0ac0d40740c3f6dbaf688acb10242ff67ae82f59' => 
+    array (
+      0 => 'Tpl\\admin\\categoryAdd.html',
+      1 => 1440687619,
+      2 => 'file',
+    ),
+  ),
+  'nocache_hash' => '2695355df02eaba1615-70461775',
+  'Function' => 
+  array (
+  ),
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_55df02eabcfdd2_30809632',
+  'has_nocache_code' => false,
+),false); /*/%%SmartyHeaderCode%%*/?>
+<?php if ($_valid && !is_callable('content_55df02eabcfdd2_30809632')) {Function content_55df02eabcfdd2_30809632($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -42,3 +63,4 @@
 </body>
 
 </html>
+<?php }} ?>

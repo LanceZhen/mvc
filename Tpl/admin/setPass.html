@@ -29,7 +29,7 @@
         <li><a href="#">分类列表</a></li>
     </ul>
 </div>
-
+<a href="" id="a">12112</a>
 <div class="rightinfo" style="width: 500px; margin: 100px auto;">
     <form action="admin.php?c=User&m=setPass" method="post">
     <table class="tablelist">
@@ -47,7 +47,7 @@
                 <td><input name="cfmPass" type="password" value=""></td>
             </tr>
             <tr>
-                <td colspan="2" style="text-align: center;"><input type="submit" id="submit" value="提交"><input type="reset" value="重设"></td>
+                <td colspan="2" style="text-align: center;"><input type="submit" value="提交"><input type="reset" value="重设"></td>
             </tr>
         </tbody>
     </table>
@@ -57,22 +57,10 @@
 <script type="text/javascript">
     $('.tablelist tbody tr:odd').addClass('odd');
     $(function(){
-        $('#submit').click(function(){
-//            layer.alert('见到你真的很高兴');
-//            return false;
-            /*$.ajax({
-                type:'POST',
-                dataType:'json',
-                data:{
-                    oldPass:$('#oldPass').val(),
-                    newPass:$('#newPass').val(),
-                    cfmPass:$('#cfmPass').val()
-                },
-                url:'admin.php?c=User&m=setPass',
-                success:function(msg){
-                    alert(msg);
-                }
-            })*/
+        $('#a').click(function(){
+            layer.alert('见到你真的很高兴');
+            return false;
+
         })
     })
 </script>

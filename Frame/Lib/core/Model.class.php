@@ -15,13 +15,14 @@ class Model{
     protected $field = array();//字段
 
     protected $_pad = array();//自动填充
-    protected $_valid = array(array('name',1,'0','require'),array('pass',1,'00','require'));//自动验证
+    protected $_valid = array();//自动验证  array('验证的字段名',0/1/2(验证场景),'报错提示','require/in(某几种情况)/between(范围)/length(某个范围)','参数')
 
     protected $error = array();//错误数组
-
+    //过程自动化
     public function _auto($data){
-        $flag = $this->_autoValid($this->_autoPad($this->_autoFilter($data)));
-        return $flag ? $this->_autoPad($this->_autoFilter($data)) : false;
+        $data = $this->_autoPad($this->_autoFilter($data));
+        $flag = $this->_autoValid($data);
+        return $flag ? $data : false;
 
     }
     /**自动过滤
@@ -69,9 +70,11 @@ class Model{
         $this->error = array();
 
         foreach($this->_valid as $k => $v){
-            switch($v[1]){
+            switch(intval($v[1])){
                 case 0://可以没有值，但如果有值就要验证
                     if(isset($data[$v[0]])){
+                        if(!isset($v[4]))
+                            $v[4] = '';
                         if($this->valid($v[3],$data[$v[0]],$v[4],$v[2]) === false){
                             return false;
                         };

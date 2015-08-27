@@ -613,3 +613,45 @@
 2015/08/27 18:03:55		select id from cms_user where  id=:id and pass=:pass and  1=1 
 2015/08/27 18:04:05		select id from cms_user where  id=:id and pass=:pass and  1=1 
 2015/08/27 18:04:05		update cms_user set pass = '4a7d1ed414474e4033ac29ccb8653d9b' where id = 1
+2015/08/27 19:40:18		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/27 19:40:20		select version() as ver
+2015/08/27 19:40:20		show table status from frame like 'cms%'
+2015/08/27 19:40:22		select version() as ver
+2015/08/27 19:40:22		show table status from frame like 'cms%'
+2015/08/27 19:40:23		select version() as ver
+2015/08/27 19:40:23		show table status from frame like 'cms%'
+2015/08/27 19:40:58		select version() as ver
+2015/08/27 19:40:58		show table status from frame like 'cms%'
+2015/08/27 19:41:05		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:44:02		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/27 19:44:06		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:46:39		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:46:48		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:50:19		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:50:34		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/27 19:50:37		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:50:40		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:53:00		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:53:34		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/27 19:54:09		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:54:42		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:55:11		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:55:14		select id from cms_user where  id=:id and pass=:pass and  1=1 
+2015/08/27 19:58:24		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/27 20:13:17		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/27 21:31:10		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/27 21:31:29		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/27 21:31:31		select id,name from cms_user where  name=:name and pass=:pass and  1=1 
+2015/08/27 21:31:53		select version() as ver
+2015/08/27 21:31:53		show table status from frame like 'cms%'
+2015/08/27 21:31:55		select version() as ver
+2015/08/27 21:31:55		show table status from frame like 'cms%'
+2015/08/27 21:32:10		select version() as ver
+2015/08/27 21:32:10		show table status from frame like 'cms%'
+2015/08/27 21:32:12		select version() as ver
+2015/08/27 21:32:12		show table status from frame like 'cms%'
+2015/08/27 21:32:13		select version() as ver
+2015/08/27 21:32:13		show table status from frame like 'cms%'
+2015/08/27 21:32:14		select version() as ver
+2015/08/27 21:32:14		show table status from frame like 'cms%'
+2015/08/27 23:58:47		insert into cms_category set category_name='男士',parent_id='0',intro='这是男士栏目'

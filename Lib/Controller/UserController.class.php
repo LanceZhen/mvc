@@ -35,7 +35,7 @@ class UserController{
     function setPass(){
         if($_POST){
             if($_POST['newPass'] != $_POST['cfmPass']){
-                $error[] = '两次新密码的输入不一致!';
+                 exit('两次新密码的输入不一致!');
             }
             $user = M('User');
             $rs = $user->setPass($_SESSION['uid'],$_POST['oldPass'],$_POST['newPass']);
