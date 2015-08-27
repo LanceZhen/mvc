@@ -7,7 +7,7 @@
  */
 class Config{
     private static $obj;
-    public $config = array();
+    private $config = array();
 
     final private function __construct(){
         $config = array();
@@ -23,6 +23,12 @@ class Config{
         }
         return self::$obj;
     }
+    public function setConf($k,$v){
+        $this->config[$k] = $v;
+    }
+    public function getConf(){
+        return $this->config;
+    }
 
     public function __get($k){
         if(array_key_exists($k,$this->config)){
@@ -33,7 +39,5 @@ class Config{
     public function __set($k,$v){
         $this->config[$k] = $v;
     }
-    public function getConf(){
-        return $this->config;
-    }
+
 }

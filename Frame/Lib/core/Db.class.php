@@ -40,6 +40,9 @@ class DB{
         return self::$db->delete($tbl,$where);
     }
 
+    public static function sqlExec($sql){
+        return self::$db->sqlExec($sql);
+    }
     /**查询
      * @param $table
      * @param $fields
@@ -80,6 +83,7 @@ class DB{
     public static function getDBSize($dbName,$tblPrefix){
         return self::$db->getDBSize($dbName,$tblPrefix);
     }
+
 //    public static function __callStatic($name, $arguments = null)
 //    {
 //        return self::$db->$name($arguments == null ?:implode(',',$arguments));

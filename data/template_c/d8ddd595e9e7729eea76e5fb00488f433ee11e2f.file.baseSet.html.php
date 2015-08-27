@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-26 22:52:48
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-27 11:25:37
          compiled from "Tpl\admin\baseSet.html" */ ?>
 <?php /*%%SmartyHeaderCode:2647755dd6b2d1aa488-34009873%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd8ddd595e9e7729eea76e5fb00488f433ee11e2f' => 
     array (
       0 => 'Tpl\\admin\\baseSet.html',
-      1 => 1440600763,
+      1 => 1440645932,
       2 => 'file',
     ),
   ),
@@ -79,8 +79,8 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </tr>
             <tr>
                 <td>后台图片显示方式</td>
-                <td><label><input name="" type="radio" name="pictureShowType" value="list" <?php if ($_smarty_tpl->tpl_vars['pictureShowType']->value=='list') {?> checked <?php }?>>列表</label>
-                    <label><input name="" type="radio" name="pictureShowType" value="thumb" <?php if ($_smarty_tpl->tpl_vars['pictureShowType']->value=='thumb') {?> checked <?php }?> />缩略图</label>
+                <td><label><input type="radio" name="pictureShowType" value="list" <?php if ($_smarty_tpl->tpl_vars['pictureShowType']->value=='list') {?> checked <?php }?>>列表</label>
+                    <label><input type="radio" name="pictureShowType" value="thumb" <?php if ($_smarty_tpl->tpl_vars['pictureShowType']->value=='thumb') {?> checked <?php }?> />缩略图</label>
                 </td>
             </tr>
             <tr class="tr1">

@@ -73,6 +73,23 @@ function _addslashes($arr)
     }
     return $arr;
 }
+
+//function parseValue($arr){
+//    $str = 'array(';
+//    foreach($arr as $k => $v){
+//        if(is_string($v)){
+//            $v = "'".$v."'";
+//        }
+//
+//        $str .= "'".$k."'".' => '.$v.',';
+//        /*if(is_string($v)){
+//            $arr[$k] = $v;
+//        }else if(is_array($v)){
+//            $arr[$k] = parseValue($v);
+//        }*/
+//    }
+//    return $str.')';
+//}
 /* 函数 textFilter($text)
 ** 功能 将文本中的特殊字符进行过滤,如HTML标记和换行符
 ** 参数 要进行过滤的文本

@@ -23,6 +23,11 @@ class UserModel extends Model{
         else
             return 0;
     }
+
+    /**登录
+     * @param $data
+     * @return int
+     */
     function login($data){
         DB::select($this->table,'id,name',array('name'=>$data['name'],'pass'=>md5($data['pass'])));
         if($data = DB::fetchOne()){
@@ -36,4 +41,18 @@ class UserModel extends Model{
 
     }
 
+    function setPass($uid,$oldPass,$newPass){
+        DB::select($this->table,'id',array('id'=>$uid,'pass'=>md5($oldPass)));
+        if(DB::fetchOne()){
+            $newPass = md5($newPass);
+            $sql = "update {$this->table} set pass = '{$newPass}' where id = {$uid}";
+            if(DB::sqlExec($sql)){
+                return 1;
+            }else{
+                return 0;
+            }
+        }else{
+            return 2;
+        }
+    }
 }

@@ -155,7 +155,7 @@ class Mysql
 
 
     //执行sql，返还影响行数
-    private function sqlExec($sql)
+    public function sqlExec($sql)
     {
         Log::write($sql);
         try {
