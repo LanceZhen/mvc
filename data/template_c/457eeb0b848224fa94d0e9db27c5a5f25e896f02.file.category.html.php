@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-27 20:30:59
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-28 15:30:40
          compiled from "Tpl\admin\category.html" */ ?>
 <?php /*%%SmartyHeaderCode:1787855defee45c9af4-77766076%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '457eeb0b848224fa94d0e9db27c5a5f25e896f02' => 
     array (
       0 => 'Tpl\\admin\\category.html',
-      1 => 1440678658,
+      1 => 1440747038,
       2 => 'file',
     ),
   ),
@@ -17,6 +17,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'version' => 'Smarty-3.1.16',
   'unifunc' => 'content_55defee4604876_78709408',
+  'variables' => 
+  array (
+    'categoryList' => 0,
+  ),
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_55defee4604876_78709408')) {Function content_55defee4604876_78709408($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -47,7 +51,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     
     	<ul class="toolbar">
 	        <li class="click" onclick="location.href='admin.php?c=Category&m=add'"><span><img src="Tpl/admin/images/t01.png" /></span>添加</li>
-	        <li class="click"><span><img src="Tpl/admin/images/t02.png" /></span>修改</li>
+	        <!--<li class="click"><span><img src="Tpl/admin/images/t02.png" /></span>修改</li>-->
 	        <li><span><img src="Tpl/admin/images/t03.png" /></span>删除</li>
 	        <li><span><img src="Tpl/admin/images/t04.png" /></span>统计</li>
         </ul>
@@ -63,22 +67,50 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <table class="tablelist">
     	<thead>
 	    	<tr>
-		        <th width="5%"><input name="" type="checkbox" value="" checked="checked"/></th>
-		        <th width="5%">编号<i class="sort"><img src="Tpl/admin/images/px.gif" /></i></th>
+		        <th width="5%"><input name="" type="checkbox" value="" /></th>
+		        <!--<th width="5%">编号<i class="sort"><img src="Tpl/admin/images/px.gif" /></i></th>-->
 		        <th width="35%">分类名称</th>
 		        <th width="35%">栏目简介</th>
 	       		<th width="20%">操作</th>
 	        </tr>
         </thead>
-
         <tbody>
+            <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['category'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['category']);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['categoryList']->value) ? count($_loop) : max(0, (int) $_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['name'] = 'category';
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['show'] = true;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['loop'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['step'] = 1;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['start'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['step'] > 0 ? 0 : $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['loop']-1;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['show']) {
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['total'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['loop'];
+    if ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['total'] == 0)
+        $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['show'] = false;
+} else
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['total'] = 0;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['show']):
+
+            for ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['index'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['start'], $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration'] = 1;
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration'] <= $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['total'];
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['index'] += $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['step'], $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration']++):
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['rownum'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['index_prev'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['index'] - $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['index_next'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['index'] + $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration'] == 1);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['category']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['total']);
+?>
 	        <tr>
-		        <td><input name="" type="checkbox" value="" /></td>
-		        <td></td>
-		        <td></td>
-		        <td></td>
-		        <td><a class='tablelink' href="">编辑</a>&nbsp;&nbsp;<a class='tablelink del' href="" onclick="return confirm('确定要删除吗？')">删除</a></td>
-	        </tr> 
+		        <td><input type="checkbox"></td>
+		        <td style="padding-left: <?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['lev']*2;?>
+em;"><?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_name'];?>
+</td>
+		        <td><?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['intro'];?>
+</td>
+		        <td><a class='tablelink' href="admin.php?c=Category&m=edit&id=<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_id'];?>
+">编辑</a>&nbsp;&nbsp;<a class='tablelink del' href="admin.php?c=Category&m=del&id=<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_id'];?>
+" onclick="return confirm('确定要删除吗？')">删除</a></td>
+	        </tr>
+            <?php endfor; endif; ?>
         </tbody>
     </table>
     

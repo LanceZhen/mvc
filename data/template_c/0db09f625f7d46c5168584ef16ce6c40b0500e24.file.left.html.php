@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-27 20:19:54
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-28 17:05:33
          compiled from "Tpl\admin\left.html" */ ?>
 <?php /*%%SmartyHeaderCode:2532155dc29a91d09d5-96365269%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0db09f625f7d46c5168584ef16ce6c40b0500e24' => 
     array (
       0 => 'Tpl\\admin\\left.html',
-      1 => 1440677736,
+      1 => 1440752727,
       2 => 'file',
     ),
   ),
@@ -86,7 +86,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <span><img src="Tpl/admin/images/leftico02.png"/></span>文章管理
         </div>
         <ul class="menuson">
-            <li><cite></cite><a href="#" target="rightFrame">添加文章</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=Article&m=add" target="rightFrame">添加文章</a><i></i></li>
             <li><cite></cite><a href="#" target="rightFrame">管理文章</a><i></i></li>
             <li><cite></cite><a href="admin.php?c=Category&m=manage" target="rightFrame">管理分类</a><i></i></li>
             <li><cite></cite><a href="#" target="rightFrame"  target="rightFrame">批量更新</a><i></i></li>

@@ -173,7 +173,7 @@ class Model{
      * @return mixed
      */
     public function delete($id){
-        return Db::delete($this->table,"$this->pk = $id");
+        return Db::delete($this->table,"{$this->pk} = {$id}");
     }
 
     /**修改
@@ -182,7 +182,7 @@ class Model{
      * @return mixed
      */
     public function update($data,$id){
-        return Db::update($this->table,$data,"$this->pk = $id");
+        return Db::update($this->table,$data,"{$this->pk} = {$id}");
     }
 
     /**获取一条记录
@@ -194,7 +194,7 @@ class Model{
      * @return mixed
      */
     public function fetchOne($filed = '*',$id,$orderBy='',$sort='',$limit=''){
-        Db::select($this->table,$filed,$this->pk = $id,$orderBy,$sort,$limit);
+        Db::select($this->table,$filed,array($this->pk => $id),$orderBy,$sort,$limit);
         return Db::fetchOne();
     }
 
@@ -206,8 +206,8 @@ class Model{
      * @param string $limit
      * @return mixed
      */
-    public function fetchAll($filed = '*',$id,$orderBy='',$sort='',$limit=''){
-        Db::select($this->table,$filed,"$this->pk = $id",$orderBy,$sort,$limit);
+    public function fetchAll($filed = '*',$id='',$orderBy='',$sort='',$limit=''){
+        Db::select($this->table,$filed,$id,$orderBy,$sort,$limit);
         return Db::fetchAll();
     }
 

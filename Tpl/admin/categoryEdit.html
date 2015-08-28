@@ -15,26 +15,26 @@
         <li><a href="#">首页</a></li>
         <li><a href="#">文章管理</a></li>
         <li><a href="#">管理分类</a></li>
-        <li><a href="#">增加分类</a></li>
+        <li><a href="#">修改分类</a></li>
     </ul>
 </div>
 
 <div class="formbody">
     <div class="formtitle"><span>分类信息</span></div>
-    <form action="admin.php?c=Category&m=add" method="post">
+    <form action="admin.php?c=Category&m=edit&id={$data.category_id}" method="post">
         <ul class="forminfo">
-            <li><label>分类名称</label><input name="category_name" type="text" class="dfinput"/><i>名称不能超过15个字</i>
+            <li><label>分类名称</label><input name="category_name" type="text" value="{$data.category_name}" class="dfinput"/><i>名称不能超过15个字</i>
             </li>
             <li>
                 <label>上级分类</label>
                 <select name="parent_id" id="">
                     <option value="0">顶级分类</option>
                     {section loop = $categoryList  name = category}
-                    <option value="{$categoryList[category].category_id}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].category_name}</option>
+                    <option {if $data.parent_id eq {$categoryList[category].category_id} }selected{/if} value="{$categoryList[category].category_id}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].category_name}</option>
                     {/section}
                 </select>
             </li>
-            <li><label>栏目简介</label><textarea name="intro" cols="" rows="" class="textinput"></textarea></li>
+            <li><label>栏目简介</label><textarea name="intro" cols="" rows="" class="textinput">{$data.intro}</textarea></li>
             <li><label>&nbsp;</label><input type="submit" class="btn" value="确认保存"/></li>
         </ul>
     </form>

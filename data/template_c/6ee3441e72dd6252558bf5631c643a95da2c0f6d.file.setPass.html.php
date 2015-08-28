@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-27 19:57:21
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-28 10:18:03
          compiled from "Tpl\admin\setPass.html" */ ?>
 <?php /*%%SmartyHeaderCode:70955dec7d1a9a4b9-59513400%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '6ee3441e72dd6252558bf5631c643a95da2c0f6d' => 
     array (
       0 => 'Tpl\\admin\\setPass.html',
-      1 => 1440676640,
+      1 => 1440724976,
       2 => 'file',
     ),
   ),
@@ -50,7 +50,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         <li><a href="#">分类列表</a></li>
     </ul>
 </div>
-<a href="javascript:;" id="a">12112</a>
 <div class="rightinfo" style="width: 500px; margin: 100px auto;">
     <form action="admin.php?c=User&m=setPass" method="post">
     <table class="tablelist">
@@ -77,25 +76,6 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <script type="text/javascript">
     $('.tablelist tbody tr:odd').addClass('odd');
-    $(function(){
-        $('#a').click(function(){
-            layer.alert('见到你真的很高兴');
-            return false;
-//            /*$.ajax({
-//                type:'POST',
-//                dataType:'json',
-//                data:{
-//                    oldPass:$('#oldPass').val(),
-//                    newPass:$('#newPass').val(),
-//                    cfmPass:$('#cfmPass').val()
-//                },
-//                url:'admin.php?c=User&m=setPass',
-//                success:function(msg){
-//                    alert(msg);
-//                }
-//            })*/
-        })
-    })
 </script>
 
 </body>
