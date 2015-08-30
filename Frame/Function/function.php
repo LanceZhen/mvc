@@ -101,6 +101,44 @@ function textFilter($text)
     return $text;
 }
 
+/*function array2text($arr){
+    $str = '';
+    foreach($arr as $k => $v){
+        if(is_array($v)){
+//            var_dump($v);
+            array2text($v);
+        }else{
+            if(is_string($v)){
+                $v = "'".$v."'";
+            }
+            $str .= "'".$k."'".' => '.$v.',';
+
+        }
+    }
+    return $str;
+}*/
+
+/**
+ * 对多位数组进行排序
+ * @param $multi_array 数组
+ * @param $sort_key需要传入的键名
+ * @param $sort排序类型
+ */
+function multi_array_sort($multi_array, $sort_key, $sort = SORT_DESC) {
+    if (is_array($multi_array)) {
+        foreach ($multi_array as $row_array) {
+            if (is_array($row_array)) {
+                $key_array[] = $row_array[$sort_key];
+            } else {
+                return FALSE;
+            }
+        }
+    } else {
+        return FALSE;
+    }
+    array_multisort($key_array, $sort, $multi_array);
+    return $multi_array;
+}
 //==========================================
 // 函数: alert
 // 功能: JavaScript提示

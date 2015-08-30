@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-28 17:05:33
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-30 20:38:08
          compiled from "Tpl\admin\left.html" */ ?>
 <?php /*%%SmartyHeaderCode:2532155dc29a91d09d5-96365269%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0db09f625f7d46c5168584ef16ce6c40b0500e24' => 
     array (
       0 => 'Tpl\\admin\\left.html',
-      1 => 1440752727,
+      1 => 1440938259,
       2 => 'file',
     ),
   ),
@@ -26,28 +26,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <title>无标题文档</title>
     <link href="Tpl/admin/css/style.css" rel="stylesheet" type="text/css"/>
-    <script language="JavaScript" src="Tpl/admin/js/jquery.js"></script>
 
-    <script type="text/javascript">
-        $(function () {
-            //导航切换
-            $(".menuson li").click(function () {
-                $(".menuson li.active").removeClass("active")
-                $(this).addClass("active");
-            });
-
-
-            $('.title').click(function(){
-                var $ul = $(this).next('ul');
-                $('.leftmenu dd').find('ul').slideUp();
-                if($ul.is(':visible')){
-                    $ul.slideUp();
-                }else{
-                    $ul.slideDown();
-                }
-            })
-        })
-    </script>
 
 
 </head>
@@ -66,17 +45,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <li><cite></cite><a href="admin.php?c=Set&m=getSet" target="rightFrame">基本设置</a><i></i></li>
             <li><cite></cite><a href="admin.php?c=User&m=setPass" target="rightFrame">密码修改</a><i></i></li>
 
-	        <li><cite></cite><a href="Tpl/admin/cateList.php" target="rightFrame">商品分类</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/index.html" target="rightFrame">首页模版</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/right.html" target="rightFrame">数据列表</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/imgtable.html" target="rightFrame">图片数据表</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/form.html" target="rightFrame">添加编辑</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/imglist.html" target="rightFrame">图片列表</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/imglist1.html" target="rightFrame">自定义</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/tools.html" target="rightFrame">常用工具</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/filelist.html" target="rightFrame">信息管理</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/tab.html" target="rightFrame">Tab页</a><i></i></li>
-	        <li><cite></cite><a href="Tpl/admin/error.html" target="rightFrame">404页面</a><i></i></li>
+
         </ul>
     </dd>
 
@@ -87,7 +56,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </div>
         <ul class="menuson">
             <li><cite></cite><a href="admin.php?c=Article&m=add" target="rightFrame">添加文章</a><i></i></li>
-            <li><cite></cite><a href="#" target="rightFrame">管理文章</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=Article&m=manage" target="rightFrame">管理文章</a><i></i></li>
             <li><cite></cite><a href="admin.php?c=Category&m=manage" target="rightFrame">管理分类</a><i></i></li>
             <li><cite></cite><a href="#" target="rightFrame"  target="rightFrame">批量更新</a><i></i></li>
         </ul>
@@ -114,8 +83,45 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
     </dd>
 
-</dl>
+    <dd>
+        <div class="title"><span><img src="Tpl/admin/images/leftico04.png"/></span>其它模板</div>
+        <ul class="menuson">
+            <li><cite></cite><a href="Tpl/admin/right.html" target="rightFrame">数据列表</a><i></i></li>
+            <li><cite></cite><a href="Tpl/admin/imgtable.html" target="rightFrame">图片数据表</a><i></i></li>
+            <li><cite></cite><a href="Tpl/admin/form.html" target="rightFrame">添加编辑</a><i></i></li>
+            <li><cite></cite><a href="Tpl/admin/imglist.html" target="rightFrame">图片列表</a><i></i></li>
+            <li><cite></cite><a href="Tpl/admin/imglist1.html" target="rightFrame">自定义</a><i></i></li>
+            <li><cite></cite><a href="Tpl/admin/tools.html" target="rightFrame">常用工具</a><i></i></li>
+            <li><cite></cite><a href="Tpl/admin/filelist.html" target="rightFrame">信息管理</a><i></i></li>
+            <li><cite></cite><a href="Tpl/admin/tab.html" target="rightFrame">Tab页</a><i></i></li>
+            <li><cite></cite><a href="Tpl/admin/error.html" target="rightFrame">404页面</a><i></i></li>
+        </ul>
 
+    </dd>
+
+</dl>
+<script language="JavaScript" src="Tpl/admin/js/jquery.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        //导航切换
+        $(".menuson li").click(function () {
+            $(".menuson li.active").removeClass("active")
+            $(this).addClass("active");
+        });
+
+
+        $('.title').click(function(){
+            var $ul = $(this).next('ul');
+            $('.leftmenu dd').find('ul').slideUp();
+            if($ul.is(':visible')){
+                $ul.slideUp();
+            }else{
+                $ul.slideDown();
+            }
+        })
+    })
+</script>
 </body>
 </html>
 <?php }} ?>

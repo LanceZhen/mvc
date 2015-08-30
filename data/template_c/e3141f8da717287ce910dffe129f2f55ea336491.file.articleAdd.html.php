@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-28 18:00:32
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-28 23:18:27
          compiled from "Tpl\admin\articleAdd.html" */ ?>
 <?php /*%%SmartyHeaderCode:165555e024882c6a24-85342493%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e3141f8da717287ce910dffe129f2f55ea336491' => 
     array (
       0 => 'Tpl\\admin\\articleAdd.html',
-      1 => 1440756031,
+      1 => 1440775101,
       2 => 'file',
     ),
   ),
@@ -51,12 +51,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <div class="formbody">
 
     <div class="formtitle"><span>文章信息</span></div>
-
+    <form action="admin.php?c=Article&m=add" method="post">
     <ul class="forminfo">
-        <li><label>文章标题</label><input name="" type="text" class="dfinput"/><i>标题不能超过30个字符</i></li>
+        <li><label>文章标题</label><input name="title" type="text" class="dfinput"/><i>标题不能超过30个字符</i></li>
         <li><label>文章分类</label>
-            <select name="parent_id" id="">
-                <option value="0">顶级分类</option>
+            <select name="categoryId" id="">
                 <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['category'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['category']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['categoryList']->value) ? count($_loop) : max(0, (int) $_loop); unset($_loop);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['name'] = 'category';
@@ -88,21 +87,39 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['last']       = (
                 <?php endfor; endif; ?>
             </select>
         </li>
-        <li><label for="">发布时间</label><input  type="text" class="dfinput" onClick="WdatePicker()" style="width: 150px;"></li>
-        <li><label for="">文章摘要</label><textarea class="textinput" style="height: 60px;" rows="" cols=""></textarea><i>小于100个汉字</i></li>
-        <li><label for="">文章作者</label><input type="text" class="dfinput"></li>
-        <li><label for="">文章来源</label><input type="text" class="dfinput"></li>
-        <li><label>关键字</label><input name="" type="text" class="dfinput"/><i>多个关键字用,隔开</i></li>
-        <li><label>是否推荐</label><cite><label><input name="is_recommend" type="radio" value="" checked="checked"/>是</label><label><input name="is_recommend" type="radio" value=""/>否</label></cite></li>
-        <li><label>文章内容</label><textarea name="" cols="" rows="" class="textinput"></textarea></li>
-        <li><label>&nbsp;</label><input name="" type="button" class="btn" value="确认保存"/></li>
+        <li><label for="">发布时间</label><input name="postTime"  type="text" class="dfinput" onClick="WdatePicker()" style="width: 150px;"></li>
+        <li><label for="">文章摘要</label><textarea name="summary" class="textinput" style="height: 60px;" rows="" cols=""></textarea><i>小于100个汉字</i></li>
+        <li><label for="">文章作者</label><input name="author" type="text" class="dfinput"></li>
+        <li><label for="">文章来源</label><input name="source" type="text" class="dfinput"></li>
+        <li><label>关键字</label><input name="keyword" type="text" class="dfinput"/><i>多个关键字用,隔开</i></li>
+        <li><label>是否推荐</label><cite><label><input name="isRecommend" type="radio" value="1" checked="checked"/>是</label><label><input name="isRecommend" type="radio" value="0"/>否</label></cite></li>
+        <li><label>文章内容</label>
+            <!-- 加载编辑器的容器 -->
+            <script id="container"  name="content" style="display:inline-block;width:1000px;height:400px;" type="text/plain"></script>
+        </li>
+        <li><label>&nbsp;</label><input type="submit" class="btn" value="确认保存"/></li>
     </ul>
-
-
+    </form>
 </div>
+<!-- 配置文件 -->
+<script type="text/javascript" src="Tpl/admin/js/ueditor1_4_3-utf8-php/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="Tpl/admin/js/ueditor1_4_3-utf8-php/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
 
-
+//    var ue = UE.getContent();
+    //对编辑器的操作最好在编辑器ready之后再做
+    ue.ready(function() {
+        //设置编辑器的内容
+//        ue.setContent('hello');
+        //获取html内容，返回: <p>hello</p>
+        var html = ue.getContent();
+        //获取纯文本内容，返回: hello
+        var txt = ue.getContentTxt();
+    });
+</script>
 </body>
-
 </html>
 <?php }} ?>

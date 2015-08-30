@@ -53,48 +53,58 @@ class SetController{
     //保存基本设置
     function saveSet(){
         //表单验证
-        $arr = $_POST;
-        $keys = array_keys($this->data);
-        //设置基本设置
-        $confObj = Config::getInstance();
-        $confObj->setConf('PAGING',array('ARTICLE' => $arr[$keys[0]],'PICTURE' => $arr[$keys[1]]));
-        $confObj->setConf('PICTURE_SHOW_TYPE',$arr[$keys[2]]);
-        $confObj->setConf('WATER_TEXT',array(0 => $arr[$keys[3]],1 => $arr[$keys[4]]));
-        $confObj->setConf('THUMB_SIZE',array('WIDTH' => $arr[$keys[5]],'HEIGHT' => $arr[$keys[6]]));
-        $confObj->setConf('PICTURE_SIZE',array('WIDTH' => $arr[$keys[7]],'HEIGHT' => $arr[$keys[8]]));
-        //获得新配置数组
-        $newConfig = Config::getInstance()->getConf();
+        $set = M('Set');
+        $flag = $set->_autoValid($_POST);//自动验证
+        if($flag){
+            $arr = $_POST;
+            $keys = array_keys($this->data);
+            //设置基本设置
+            $confObj = Config::getInstance();
+            $confObj->setConf('PAGING',array('ARTICLE' => $arr[$keys[0]],'PICTURE' => $arr[$keys[1]]));
+            $confObj->setConf('PICTURE_SHOW_TYPE',$arr[$keys[2]]);
+            $confObj->setConf('WATER_TEXT',array(0 => $arr[$keys[3]],1 => $arr[$keys[4]]));
+            $confObj->setConf('THUMB_SIZE',array('WIDTH' => $arr[$keys[5]],'HEIGHT' => $arr[$keys[6]]));
+            $confObj->setConf('PICTURE_SIZE',array('WIDTH' => $arr[$keys[7]],'HEIGHT' => $arr[$keys[8]]));
+            //获得新配置数组
+            $newConfig = $confObj->getConf();
+            var_dump($newConfig);exit;
+//            var_dump(array2text($newConfig));
 
-        $configPath = ROOT.'config.php';
-        //获取配置文件的文本内容
-        if(function_exists('file_get_contents')){
-            $configText = file_get_contents($configPath);
-        }else{
-            $configText = implode('',file($configPath));
-        }
-        //遍历匹配替换
-//        foreach($newConfig as $k => $v){
-//            $reg = "|'\w+'\s*=>\s*array\([\s\w'=>\,]*\)|";	//正则 变量配置参数
-//            if(is_array($v)){
-//                $str = parseValue($v);
-//            }
-//            if(preg_match($reg, $configText))
-//            {
-//                $configText = preg_replace($reg, "'".$k."'".' => '.$str, $configText);
-//            }
-//            else
-//            {
-//
-//            }
-//        }
-        var_dump($configText);
-        //保存配置
-        /*if($fh = fopen($configPath,'w')){
-            $flag = fwrite($fh,$configText);
-            if($flag){
 
+            $configPath = ROOT.'config3.php';
+
+            //获取配置文件的文本内容
+            if(function_exists('file_get_contents')){
+                $configText = file_get_contents($configPath);
+            }else{
+                $configText = implode('',file($configPath));
             }
-            fclose($fh);
-        }*/
+            //遍历匹配替换
+            foreach($newConfig as $k => $v){
+                $reg = "|'\w+'\s*=>\s*array\([\s\w'=>\,]*\)|";	//正则 变量配置参数
+//                if(is_array($v)){
+//                    $str = parseValue($v);
+//                }
+                if(preg_match($reg, $configText))
+                {
+                    $configText = preg_replace($reg, "'".$k."'".' => '.$str, $configText);
+                }else{
+
+                }
+            }
+            var_dump($configText);
+            //保存配置
+            /*if($fh = fopen($configPath,'w')){
+                $flag = fwrite($fh,$configText);
+                if($flag){
+                    echo '保存成功';
+                }else{
+                    echo '保存失败';
+                }
+                fclose($fh);
+            }*/
+        }else{
+            var_dump($set->getError());
+        }
     }
 }

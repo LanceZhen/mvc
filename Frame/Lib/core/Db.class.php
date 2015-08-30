@@ -52,7 +52,7 @@ class DB{
      * @param $limit
      * @return mixed
      */
-    public static function select($table, $fields = "*", $where = array(), $orderBy = "", $sort = "", $limit = ""){
+    public static function select($table, $fields = "*", $where, $orderBy = "", $sort = "", $limit = ""){
         return self::$db->select($table, $fields, $where, $orderBy, $sort, $limit);
     }
 

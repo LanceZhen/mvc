@@ -15,7 +15,9 @@ class Model{
     protected $field = array();//字段
 
     protected $_pad = array();//自动填充
-    protected $_valid = array();//自动验证  array('验证的字段名',0/1/2(验证场景),'报错提示','require/in(某几种情况)/between(范围)/length(某个范围)','参数')
+    protected $_valid = array(//自动验证  array('验证的字段名',0/1/2(验证场景),'报错提示','require/in(某几种情况)/between(范围)/length(某个范围)','参数')
+        array()
+    );
 
     protected $error = array();//错误数组
     //过程自动化
@@ -72,7 +74,7 @@ class Model{
         foreach($this->_valid as $k => $v){
             switch(intval($v[1])){
                 case 0://可以没有值，但如果有值就要验证
-                    if(isset($data[$v[0]])){
+                    if(!empty($data[$v[0]])){
                         if(!isset($v[4]))
                             $v[4] = '';
                         if($this->valid($v[3],$data[$v[0]],$v[4],$v[2]) === false){
@@ -81,7 +83,7 @@ class Model{
                     }
                     break;
                 case 1://一定要有值，而且验证
-                    if(!isset($data[$v[0]])){
+                    if(empty($data[$v[0]])){
                         $this->error[] = $v[2];
                         return false;
                     }
@@ -131,6 +133,9 @@ class Model{
                 break;
             case 'number':
                 return is_numeric($value);
+                break;
+            case 'date':
+                return is_date($value);
                 break;
             case 'email':
                 return filter_var($value, FILTER_VALIDATE_EMAIL);
@@ -206,8 +211,8 @@ class Model{
      * @param string $limit
      * @return mixed
      */
-    public function fetchAll($filed = '*',$id='',$orderBy='',$sort='',$limit=''){
-        Db::select($this->table,$filed,$id,$orderBy,$sort,$limit);
+    public function fetchAll($filed = '*',$where = array(),$orderBy='',$sort='',$limit=''){
+        Db::select($this->table,$filed,$where,$orderBy,$sort,$limit);
         return Db::fetchAll();
     }
 

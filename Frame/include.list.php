@@ -2,6 +2,7 @@
 	$paths = array(
         'Lib/core/Config.class.php',
         'Function/Function.php',
+        'Function/validate.php',
 		'Lib/core/DB.class.php',
         'Lib/core/Log.class.php',
         'Lib/core/Model.class.php',

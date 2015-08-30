@@ -48,6 +48,6 @@ $config = array(
     //水印文字
     'WATER_TEXT' => array('Lance','all rights reserved'),
     //图片显示方式
-    'PICTURE_SHOW_TYPE' => 'thumb'
+    'PICTURE_SHOW_TYPE' => 'thumb',
 
 );

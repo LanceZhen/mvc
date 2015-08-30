@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-27 19:40:34
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-30 12:06:34
          compiled from "Tpl\admin\baseSet.html" */ ?>
 <?php /*%%SmartyHeaderCode:2647755dd6b2d1aa488-34009873%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'd8ddd595e9e7729eea76e5fb00488f433ee11e2f' => 
     array (
       0 => 'Tpl\\admin\\baseSet.html',
-      1 => 1440675522,
+      1 => 1440906978,
       2 => 'file',
     ),
   ),
@@ -57,13 +57,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <span>位置：</span>
     <ul class="placeul">
         <li><a href="#">首页</a></li>
-        <li><a href="#">商品分类</a></li>
-        <li><a href="#">分类列表</a></li>
+        <li><a href="#">常规设置</a></li>
+        <li><a href="#">基本设置</a></li>
     </ul>
 </div>
 
 <div class="rightinfo" style="width: 500px; margin: 100px auto;">
-    <!--admin.php?c=Set&m=saveSet-->
     <form action="admin.php?c=Set&m=saveSet" method="post">
     <table class="tablelist">
         <tbody>
