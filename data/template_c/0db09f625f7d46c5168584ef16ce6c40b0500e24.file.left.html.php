@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-30 20:38:08
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-31 16:51:23
          compiled from "Tpl\admin\left.html" */ ?>
 <?php /*%%SmartyHeaderCode:2532155dc29a91d09d5-96365269%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '0db09f625f7d46c5168584ef16ce6c40b0500e24' => 
     array (
       0 => 'Tpl\\admin\\left.html',
-      1 => 1440938259,
+      1 => 1441011080,
       2 => 'file',
     ),
   ),
@@ -62,14 +62,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         </ul>
     </dd>
 
-
     <dd>
         <div class="title"><span><img src="Tpl/admin/images/leftico03.png"/></span>相册管理</div>
         <ul class="menuson">
-            <li><cite></cite><a href="#"  target="rightFrame">添加相片</a><i></i></li>
+            <li><cite></cite><a href=""  target="rightFrame">添加相片</a><i></i></li>
             <li><cite></cite><a href="#"  target="rightFrame">管理相片</a><i></i></li>
             <li><cite></cite><a href="#"  target="rightFrame">添加相册</a><i></i></li>
-            <li><cite></cite><a href="#"  target="rightFrame">管理相册</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=Album&m=manage"  target="rightFrame">管理相册</a><i></i></li>
         </ul>
     </dd>
 

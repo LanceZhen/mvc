@@ -13,24 +13,24 @@
     <span>位置：</span>
     <ul class="placeul">
         <li><a href="#">首页</a></li>
-        <li><a href="#">文章管理</a></li>
-        <li><a href="#">管理分类</a></li>
-        <li><a href="#">修改分类</a></li>
+        <li><a href="#">相册管理</a></li>
+        <li><a href="#">管理相册</a></li>
+        <li><a href="#">编辑相册</a></li>
     </ul>
 </div>
 
 <div class="formbody">
     <div class="formtitle"><span>分类信息</span></div>
-    <form action="admin.php?c=Category&m=edit&id={$data.categoryId}" method="post">
+    <form action="admin.php?c=Album&m=edit&id={$data.Album}" method="post">
         <ul class="forminfo">
-            <li><label>分类名称</label><input name="categoryName" type="text" value="{$data.categoryName}" class="dfinput"/><i>名称不能超过15个字</i>
+            <li><label>分类名称</label><input name="albumName" type="text" value="{$data.albumName}" class="dfinput"/><i>名称不能超过15个字</i>
             </li>
             <li>
                 <label>上级分类</label>
-                <select name="parent_id" id="">
+                <select name="parentId" id="">
                     <option value="0">顶级分类</option>
-                    {section loop = $categoryList  name = category}
-                    <option {if $data.parentId eq {$categoryList[category].categoryId} }selected{/if} value="{$categoryList[category].categoryId}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].categoryName}</option>
+                    {section loop = $albumList  name = album}
+                    <option {if $data.parentId eq {$albumList[album].albumId} }selected{/if} value="{$albumList[album].albumId}">{'&emsp;'|str_repeat:$albumList[album].lev}{$albumList[album].albumName}</option>
                     {/section}
                 </select>
             </li>

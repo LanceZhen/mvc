@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>CMS</title>
+    <link href="Tpl/admin/css/style.css" rel="stylesheet" type="text/css"/>
+    <style type="text/css">
+        cite input{ vertical-align: middle; margin-right: 4px;}
+        cite label:nth-child(2) input{ margin-left: 20px;}
+    </style>
+    <script src="Tpl/admin/js/My97DatePicker/WdatePicker.js"></script>
+</head>
+
+<body>
+<div class="place">
+    <span>位置：</span>
+    <ul class="placeul">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">文章管理</a></li>
+        <li><a href="#">添加文章</a></li>
+    </ul>
+</div>
+
+<div class="formbody">
+
+    <div class="formtitle"><span>文章信息</span></div>
+    <form action="admin.php?c=Article&m=edit&id={$data.id}" method="post">
+    <ul class="forminfo">
+        <li><label>文章标题</label><input name="title" type="text" value="{$data.title}" class="dfinput"/><i>标题不能超过30个字符</i></li>
+        <li><label>文章分类</label>
+            <select name="categoryId" id="">
+                {section loop = $categoryList  name = category}
+                <option {if $data.categoryId eq {$categoryList[category].category_id}} selected {/if} value="{$categoryList[category].category_id}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].category_name}</option>
+                {/section}
+            </select>
+        </li>
+        <li><label for="">发布时间</label><input name="postTime" value="{$data.postTime}"  type="text" class="dfinput" onClick="WdatePicker()" style="width: 150px;"></li>
+        <li><label for="">文章摘要</label><textarea name="summary" class="textinput" style="height: 60px;" rows="" cols="">{$data.summary}</textarea><i>小于100个汉字</i></li>
+        <li><label for="">文章作者</label><input name="author" value="{$data.author}" type="text" class="dfinput"></li>
+        <li><label for="">文章来源</label><input name="source" value="{$data.source}" type="text" class="dfinput"></li>
+        <li><label>关键字</label><input name="keyword" value="{$data.keyword}" type="text" class="dfinput"/><i>多个关键字用,隔开</i></li>
+        <li><label>是否推荐</label><cite><label><input name="isRecommend" type="radio" value="1" {if $data.isRecommend eq 1} checked {/if}/>是</label><label><input name="isRecommend" type="radio" value="0" {if $data.isRecommend eq 0} checked {/if}/>否</label></cite></li>
+        <li><label>文章内容</label>
+            <!-- 加载编辑器的容器 -->
+            <script id="container"  name="content" style="display:inline-block;width:1000px;height:400px;" type="text/plain"></script>
+        </li>
+        <li><label>&nbsp;</label><input type="submit" class="btn" value="确认保存"/></li>
+    </ul>
+    </form>
+</div>
+<!-- 配置文件 -->
+<script type="text/javascript" src="Tpl/admin/js/ueditor1_4_3-utf8-php/ueditor.config.js"></script>
+<!-- 编辑器源码文件 -->
+<script type="text/javascript" src="Tpl/admin/js/ueditor1_4_3-utf8-php/ueditor.all.js"></script>
+<!-- 实例化编辑器 -->
+<script type="text/javascript">
+    var ue = UE.getEditor('container');
+
+//    var ue = UE.getContent();
+    //对编辑器的操作最好在编辑器ready之后再做
+    ue.ready(function() {
+        //设置编辑器的内容
+        ue.setContent('{$data.content}');
+        //获取html内容，返回: <p>hello</p>
+//        var html = ue.getContent();
+        //获取纯文本内容，返回: hello
+//        var txt = ue.getContentTxt();
+    });
+</script>
+</body>
+</html>

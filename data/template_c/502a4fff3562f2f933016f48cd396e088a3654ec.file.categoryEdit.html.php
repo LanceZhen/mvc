@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-28 19:17:34
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-31 17:23:15
          compiled from "Tpl\admin\categoryEdit.html" */ ?>
 <?php /*%%SmartyHeaderCode:1732255e00a5f3484e8-46184440%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '502a4fff3562f2f933016f48cd396e088a3654ec' => 
     array (
       0 => 'Tpl\\admin\\categoryEdit.html',
-      1 => 1440760249,
+      1 => 1441012988,
       2 => 'file',
     ),
   ),
@@ -47,10 +47,10 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <div class="formbody">
     <div class="formtitle"><span>分类信息</span></div>
-    <form action="admin.php?c=Category&m=edit&id=<?php echo $_smarty_tpl->tpl_vars['data']->value['category_id'];?>
+    <form action="admin.php?c=Category&m=edit&id=<?php echo $_smarty_tpl->tpl_vars['data']->value['categoryId'];?>
 " method="post">
         <ul class="forminfo">
-            <li><label>分类名称</label><input name="category_name" type="text" value="<?php echo $_smarty_tpl->tpl_vars['data']->value['category_name'];?>
+            <li><label>分类名称</label><input name="categoryName" type="text" value="<?php echo $_smarty_tpl->tpl_vars['data']->value['categoryName'];?>
 " class="dfinput"/><i>名称不能超过15个字</i>
             </li>
             <li>
@@ -81,10 +81,10 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['index_next'] = $
 $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration'] == 1);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['total']);
 ?>
-                    <option <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_id'];?>
-<?php $_tmp1=ob_get_clean();?><?php if ($_smarty_tpl->tpl_vars['data']->value['parent_id']==$_tmp1) {?>selected<?php }?> value="<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_id'];?>
+                    <option <?php ob_start();?><?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['categoryId'];?>
+<?php $_tmp1=ob_get_clean();?><?php if ($_smarty_tpl->tpl_vars['data']->value['parentId']==$_tmp1) {?>selected<?php }?> value="<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['categoryId'];?>
 "><?php echo str_repeat('&emsp;',$_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['lev']);?>
-<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_name'];?>
+<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['categoryName'];?>
 </option>
                     <?php endfor; endif; ?>
                 </select>

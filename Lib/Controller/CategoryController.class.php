@@ -53,7 +53,7 @@ class CategoryController{
         $id = $_GET['id']+0;
         if($_POST){
             $data = $this->category->_auto($_POST);
-            $trees = $this->category->getTree($data['parent_id']);
+            $trees = $this->category->getTree($data['parentId']);
             foreach($trees as $v){
                 if($id == $v['category_id']){
                     exit('父栏目选取错误');

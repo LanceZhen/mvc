@@ -15,8 +15,8 @@
     <span>位置：</span>
     <ul class="placeul">
     <li><a href="#">首页</a></li>
-    <li><a href="#">文章管理</a></li>
-    <li><a href="#">管理分类</a></li>
+    <li><a href="#">相册管理</a></li>
+    <li><a href="#">管理相册</a></li>
     </ul>
     </div>
     
@@ -25,7 +25,7 @@
     <div class="tools">
     
     	<ul class="toolbar">
-	        <li class="click" onclick="location.href='admin.php?c=Category&m=add'"><span><img src="Tpl/admin/images/t01.png" /></span>添加</li>
+	        <li class="click" onclick="location.href='admin.php?c=Album&m=add'"><span><img src="Tpl/admin/images/t01.png" /></span>添加</li>
 	        <!--<li class="click"><span><img src="Tpl/admin/images/t02.png" /></span>修改</li>-->
 	        <li><span><img src="Tpl/admin/images/t03.png" /></span>删除</li>
 	        <li><span><img src="Tpl/admin/images/t04.png" /></span>统计</li>
@@ -50,12 +50,12 @@
 	        </tr>
         </thead>
         <tbody>
-            {section loop = $categoryList   name = category  }
+            {section loop = $albumList   name = album  }
 	        <tr>
 		        <td><input type="checkbox"></td>
-		        <td style="padding-left: {$categoryList[category].lev*2}em;">{$categoryList[category].categoryName}</td>
-		        <td>{$categoryList[category].intro}</td>
-		        <td><a class='tablelink' href="admin.php?c=Category&m=edit&id={$categoryList[category].categoryId}">编辑</a>&nbsp;&nbsp;<a class='tablelink del' href="admin.php?c=Category&m=del&id={$categoryList[category].categoryId}" onclick="return confirm('确定要删除吗？')">删除</a></td>
+		        <td style="padding-left: {$albumList[album].lev*2}em;">{$albumList[album].albumName}</td>
+		        <td>{$albumList[album].intro}</td>
+		        <td><a class='tablelink' href="admin.php?c=Album&m=edit&id={$albumList[album].albumId}">编辑</a>&nbsp;&nbsp;<a class='tablelink del' href="admin.php?c=Album&m=del&id={$albumList[album].albumId}" onclick="return confirm('确定要删除吗？')">删除</a></td>
 	        </tr>
             {/section}
         </tbody>

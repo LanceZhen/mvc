@@ -83,7 +83,7 @@ class Model{
                     }
                     break;
                 case 1://一定要有值，而且验证
-                    if(empty($data[$v[0]])){
+                    if(!isset($data[$v[0]])){
                         $this->error[] = $v[2];
                         return false;
                     }
@@ -178,7 +178,12 @@ class Model{
      * @return mixed
      */
     public function delete($id){
-        return Db::delete($this->table,"{$this->pk} = {$id}");
+        if(is_array($id)){
+            $id = 'in('.implode(',',$id).')';
+        }else{
+            $id = " = $id";
+        }
+        return Db::delete($this->table,"{$this->pk} {$id}");
     }
 
     /**修改
@@ -187,7 +192,12 @@ class Model{
      * @return mixed
      */
     public function update($data,$id){
-        return Db::update($this->table,$data,"{$this->pk} = {$id}");
+        if(is_array($id)){
+            $id = 'in('.implode(',',$id).')';
+        }else{
+            $id = " = $id";
+        }
+        return Db::update($this->table,$data,"{$this->pk} {$id}");
     }
 
     /**获取一条记录

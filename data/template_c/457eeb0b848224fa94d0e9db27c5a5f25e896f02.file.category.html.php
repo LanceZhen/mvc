@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-28 19:14:22
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-31 17:23:13
          compiled from "Tpl\admin\category.html" */ ?>
 <?php /*%%SmartyHeaderCode:1787855defee45c9af4-77766076%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '457eeb0b848224fa94d0e9db27c5a5f25e896f02' => 
     array (
       0 => 'Tpl\\admin\\category.html',
-      1 => 1440760249,
+      1 => 1441012988,
       2 => 'file',
     ),
   ),
@@ -102,12 +102,12 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['last']       = (
 	        <tr>
 		        <td><input type="checkbox"></td>
 		        <td style="padding-left: <?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['lev']*2;?>
-em;"><?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_name'];?>
+em;"><?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['categoryName'];?>
 </td>
 		        <td><?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['intro'];?>
 </td>
-		        <td><a class='tablelink' href="admin.php?c=Category&m=edit&id=<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_id'];?>
-">编辑</a>&nbsp;&nbsp;<a class='tablelink del' href="admin.php?c=Category&m=del&id=<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_id'];?>
+		        <td><a class='tablelink' href="admin.php?c=Category&m=edit&id=<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['categoryId'];?>
+">编辑</a>&nbsp;&nbsp;<a class='tablelink del' href="admin.php?c=Category&m=del&id=<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['categoryId'];?>
 " onclick="return confirm('确定要删除吗？')">删除</a></td>
 	        </tr>
             <?php endfor; endif; ?>

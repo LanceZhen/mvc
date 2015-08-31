@@ -13,28 +13,28 @@
     <span>位置：</span>
     <ul class="placeul">
         <li><a href="#">首页</a></li>
-        <li><a href="#">文章管理</a></li>
-        <li><a href="#">管理分类</a></li>
-        <li><a href="#">增加分类</a></li>
+        <li><a href="#">相册管理</a></li>
+        <li><a href="#">管理相册</a></li>
+        <li><a href="#">增加相册</a></li>
     </ul>
 </div>
 
 <div class="formbody">
-    <div class="formtitle"><span>分类信息</span></div>
-    <form action="admin.php?c=Category&m=add" method="post">
+    <div class="formtitle"><span>相册信息</span></div>
+    <form action="admin.php?c=Album&m=add" method="post">
         <ul class="forminfo">
-            <li><label>分类名称</label><input name="categoryName" type="text" class="dfinput"/><i>名称不能超过15个字</i>
+            <li><label>相册名称</label><input name="albumName" type="text" class="dfinput"/><i>名称不能超过15个字</i>
             </li>
             <li>
-                <label>上级分类</label>
+                <label>上级相册</label>
                 <select name="parentId" id="">
                     <option value="0">顶级分类</option>
-                    {section loop = $categoryList  name = category}
-                    <option value="{$categoryList[category].categoryId}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].categoryName}</option>
+                    {section loop = $albumList  name = album}
+                    <option value="{$albumList[album].albumId}">{'&emsp;'|str_repeat:$albumList[album].lev}{$albumList[album].albumName}</option>
                     {/section}
                 </select>
             </li>
-            <li><label>栏目简介</label><textarea name="intro" cols="" rows="" class="textinput"></textarea></li>
+            <li><label>相册简介</label><textarea name="intro" cols="" rows="" class="textinput"></textarea></li>
             <li><label>&nbsp;</label><input type="submit" class="btn" value="确认保存"/></li>
         </ul>
     </form>

@@ -74,6 +74,22 @@ function _addslashes($arr)
     return $arr;
 }
 
+function _get($str){
+    $val = empty($_GET[$str])?null : $_GET[$str];
+    return $val;
+}
+function _post($str){
+    $val = empty($_POST[$str])?null : $_POST[$str];
+    return $val;
+}
+function _session($str){
+    $val = empty($_SESSION[$str])?null : $_SESSION[$str];
+    return $val;
+}
+function _cookie($str){
+    $val = empty($_COOKIE[$str])?null : $_COOKIE[$str];
+    return $val;
+}
 //function parseValue($arr){
 //    $str = 'array(';
 //    foreach($arr as $k => $v){
@@ -119,7 +135,7 @@ function textFilter($text)
 }*/
 
 /**
- * 对多位数组进行排序
+ * 对多维数组进行排序
  * @param $multi_array 数组
  * @param $sort_key需要传入的键名
  * @param $sort排序类型
@@ -201,7 +217,7 @@ function showMessage()
 ** 参数: $url 页面地址
 ** 参数: $param 关联数组,可选
 */
-function forward($url, $param=null)
+function forward($url, $param = null)
 {
     $headerStr = "Location: $url";
     $paramStr = "";
@@ -226,7 +242,6 @@ function forward($url, $param=null)
 }
 //常用函数封装
 //加密解密
-header('Content-type:text/html; charset=utf-8');
 /**
  * @param $key
  * @param $string
