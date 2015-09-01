@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 设置模型类
  * User: Administrator
  * Date: 2015/8/30 0030
  * Time: 上午 11:58

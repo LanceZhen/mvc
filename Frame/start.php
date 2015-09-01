@@ -1,4 +1,7 @@
 <?php
+/**
+ * 单一入口启动
+ */
     header('Content-type:text/html; charset=utf-8');
     //开启session
     session_start();

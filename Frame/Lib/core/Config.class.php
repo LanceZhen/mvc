@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 配置读写类
  * User: HX1501388
  * Date: 2015/8/26
  * Time: 12:23

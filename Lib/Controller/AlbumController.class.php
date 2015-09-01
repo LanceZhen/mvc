@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 相册控制器类
  * User: Administrator
  * Date: 2015/8/27 0027
  * Time: 下午 8:09

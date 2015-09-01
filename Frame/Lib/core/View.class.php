@@ -1,4 +1,8 @@
 <?php
+
+/**模板引擎类
+ * Class View
+ */
 class View{
     public static $view;
     public static function init($viewType,$config){

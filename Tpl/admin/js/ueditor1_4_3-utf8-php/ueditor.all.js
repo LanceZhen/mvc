@@ -29,7 +29,7 @@ UE.version = "1.4.3";
 
 var dom = UE.dom = {};
 
-// core/browser.js
+// Core/browser.js
 /**
  * 浏览器判断模块
  * @file
@@ -289,7 +289,7 @@ var ie = browser.ie,
     gecko = browser.gecko,
     opera = browser.opera;
 
-// core/utils.js
+// Core/utils.js
 /**
  * 工具函数包
  * @file
@@ -1483,7 +1483,7 @@ utils.each(['String', 'Function', 'Array', 'Number', 'RegExp', 'Object', 'Date']
     }
 });
 
-// core/EventBase.js
+// Core/EventBase.js
 /**
  * UE采用的事件基类
  * @file
@@ -1653,10 +1653,10 @@ function getListener(obj, type, force) {
 
 
 
-// core/dtd.js
+// Core/dtd.js
 ///import editor.js
-///import core/dom/dom.js
-///import core/utils.js
+///import Core/dom/dom.js
+///import Core/utils.js
 /**
  * dtd html语义化的体现类
  * @constructor
@@ -1835,7 +1835,7 @@ var dtd = dom.dtd = (function() {
 })();
 
 
-// core/domUtils.js
+// Core/domUtils.js
 /**
  * Dom操作工具包
  * @file
@@ -4250,7 +4250,7 @@ var domUtils = dom.domUtils = {
 };
 var fillCharReg = new RegExp(domUtils.fillChar, 'g');
 
-// core/Range.js
+// Core/Range.js
 /**
  * Range封装
  * @file
@@ -6097,7 +6097,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
     };
 })();
 
-// core/Selection.js
+// Core/Selection.js
 /**
  * 选集
  * @file
@@ -6488,7 +6488,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
     };
 })();
 
-// core/Editor.js
+// Core/Editor.js
 /**
  * 编辑器主类，包含编辑器提供的大部分公用接口
  * @file
@@ -6895,10 +6895,10 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
                 container.style.zIndex = options.zIndex;
 
                 var html = ( ie && browser.version < 9  ? '' : '<!DOCTYPE html>') +
-                    '<html xmlns=\'http://www.w3.org/1999/xhtml\' class=\'view\' ><head>' +
+                    '<html xmlns=\'http://www.w3.org/1999/xhtml\' class=\'View\' ><head>' +
                     '<style type=\'text/css\'>' +
                     //设置四周的留边
-                    '.view{padding:0;word-wrap:break-word;cursor:text;height:90%;}\n' +
+                    '.View{padding:0;word-wrap:break-word;cursor:text;height:90%;}\n' +
                     //设置默认字体和字号
                     //font-family不能呢随便改，在safari下fillchar会有解析问题
                     'body{margin:8px;font-family:sans-serif;font-size:16px;}' +
@@ -6906,7 +6906,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
                     'p{margin:5px 0;}</style>' +
                     ( options.iframeCssUrl ? '<link rel=\'stylesheet\' type=\'text/css\' href=\'' + utils.unhtml(options.iframeCssUrl) + '\'/>' : '' ) +
                     (options.initialStyle ? '<style>' + options.initialStyle + '</style>' : '') +
-                    '</head><body class=\'view\' ></body>' +
+                    '</head><body class=\'View\' ></body>' +
                     '<script type=\'text/javascript\' ' + (ie ? 'defer=\'defer\'' : '' ) +' id=\'_initialScript\'>' +
                     'setTimeout(function(){editor = window.parent.UE.instants[\'ueditorInstant' + me.uid + '\'];editor._setup(document);},0);' +
                     'var _tmpScript = document.getElementById(\'_initialScript\');_tmpScript.parentNode.removeChild(_tmpScript);</script></html>';
@@ -7250,7 +7250,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
             }
             return '<html><head>' + (me.options.charset ? '<meta http-equiv="Content-Type" content="text/html; charset=' + me.options.charset + '"/>' : '')
                 + (headHtmlForIE9 || me.document.getElementsByTagName('head')[0].innerHTML) + headHtml.join('\n') + '</head>'
-                + '<body ' + (ie && browser.version < 9 ? 'class="view"' : '') + '>' + me.getContent(null, null, true) + '</body></html>';
+                + '<body ' + (ie && browser.version < 9 ? 'class="View"' : '') + '>' + me.getContent(null, null, true) + '</body></html>';
         },
 
         /**
@@ -8018,7 +8018,7 @@ var fillCharReg = new RegExp(domUtils.fillChar, 'g');
 })();
 
 
-// core/Editor.defaultoptions.js
+// Core/Editor.defaultoptions.js
 //维护编辑器一下默认的不在插件中的配置项
 UE.Editor.defaultOptions = function(editor){
 
@@ -8051,7 +8051,7 @@ UE.Editor.defaultOptions = function(editor){
     }
 };
 
-// core/loadconfig.js
+// Core/loadconfig.js
 (function(){
 
     UE.Editor.prototype.loadServerConfig = function(){
@@ -8120,7 +8120,7 @@ UE.Editor.defaultOptions = function(editor){
 })();
 
 
-// core/ajax.js
+// Core/ajax.js
 /**
  * @file
  * @module UE.ajax
@@ -8385,7 +8385,7 @@ UE.ajax = function() {
 }();
 
 
-// core/filterword.js
+// Core/filterword.js
 /**
  * UE过滤word的静态方法
  * @file
@@ -8576,7 +8576,7 @@ var filterWord = UE.filterWord = function () {
     };
 }();
 
-// core/node.js
+// Core/node.js
 /**
  * 编辑器模拟的节点类
  * @file
@@ -9333,7 +9333,7 @@ var filterWord = UE.filterWord = function () {
 })();
 
 
-// core/htmlparser.js
+// Core/htmlparser.js
 /**
  * html字符串转换成uNode节点
  * @file
@@ -9532,7 +9532,7 @@ var htmlparser = UE.htmlparser = function (htmlstr,ignoreBlank) {
     return root;
 };
 
-// core/filternode.js
+// Core/filternode.js
 /**
  * UE过滤节点的静态方法
  * @file
@@ -9664,7 +9664,7 @@ var filterNode = UE.filterNode = function () {
     }
 }();
 
-// core/plugin.js
+// Core/plugin.js
 /**
  * Created with JetBrains PhpStorm.
  * User: campaign
@@ -9747,7 +9747,7 @@ UE.plugin = function(){
     }
 }();
 
-// core/keymap.js
+// Core/keymap.js
 var keymap = UE.keymap  = {
     'Backspace' : 8,
     'Tab' : 9,
@@ -9797,7 +9797,7 @@ var keymap = UE.keymap  = {
     'n' : 78
 };
 
-// core/localstorage.js
+// Core/localstorage.js
 //存储媒介封装
 var LocalStorage = UE.LocalStorage = (function () {
 
@@ -9941,7 +9941,7 @@ var LocalStorage = UE.LocalStorage = (function () {
 
 
 // plugins/defaultfilter.js
-///import core
+///import Core
 ///plugin 编辑器默认的过滤转换机制
 
 UE.plugins['defaultfilter'] = function () {
@@ -11972,7 +11972,7 @@ UE.plugins['link'] = function(){
 };
 
 // plugins/iframe.js
-///import core
+///import Core
 ///import plugins\inserthtml.js
 ///commands 插入框架
 ///commandsName  InsertFrame
@@ -11994,7 +11994,7 @@ UE.plugins['insertframe'] = function() {
 
 
 // plugins/scrawl.js
-///import core
+///import Core
 ///commands 涂鸦
 ///commandsName  Scrawl
 ///commandsTitle  涂鸦
@@ -13786,7 +13786,7 @@ UE.plugin.register('anchor', function (){
 
 
 // plugins/wordcount.js
-///import core
+///import Core
 ///commands 字数统计
 ///commandsName  WordCount,wordCount
 ///commandsTitle  字数统计
@@ -13984,7 +13984,7 @@ UE.plugins['pagebreak'] = function () {
 };
 
 // plugins/wordimage.js
-///import core
+///import Core
 ///commands 本地图片引导上传
 ///commandsName  WordImage
 ///commandsTitle  本地图片引导上传
@@ -14471,7 +14471,7 @@ UE.plugin.register('copy', function () {
 
 
 // plugins/paste.js
-///import core
+///import Core
 ///import plugins/inserthtml.js
 ///import plugins/undo.js
 ///import plugins/serialize.js
@@ -16430,7 +16430,7 @@ UE.plugins['list'] = function () {
 })();
 
 // plugins/enterkey.js
-///import core
+///import Core
 ///import plugins/undo.js
 ///commands 设置回车标签p或br
 ///commandsName  EnterKey
@@ -16824,7 +16824,7 @@ UE.plugins['keystrokes'] = function() {
 };
 
 // plugins/fiximgclick.js
-///import core
+///import Core
 ///commands 修复chrome下图片不能点击的问题，出现八个角可改变大小
 ///commandsName  FixImgClick
 ///commandsTitle  修复chrome下图片不能点击的问题，出现八个角可改变大小
@@ -17141,7 +17141,7 @@ UE.plugins['fiximgclick'] = (function () {
 })();
 
 // plugins/autolink.js
-///import core
+///import Core
 ///commands 为非ie浏览器自动添加a标签
 ///commandsName  AutoLink
 ///commandsTitle  自动增加链接
@@ -17320,7 +17320,7 @@ UE.plugin.register('autolink',function(){
 );
 
 // plugins/autoheight.js
-///import core
+///import Core
 ///commands 当输入内容超过编辑器高度时，编辑器自动增高
 ///commandsName  AutoHeight,autoHeightEnabled
 ///commandsTitle  自动增高
@@ -17438,7 +17438,7 @@ UE.plugins['autoheight'] = function () {
 
 
 // plugins/autofloat.js
-///import core
+///import Core
 ///commands 悬浮工具栏
 ///commandsName  AutoFloat,autoFloatEnabled
 ///commandsTitle  悬浮工具栏
@@ -17730,7 +17730,7 @@ UE.plugins['video'] = function (){
     };
 };
 
-// plugins/table.core.js
+// plugins/table.Core.js
 /**
  * Created with JetBrains WebStorm.
  * User: taoqili
@@ -21857,7 +21857,7 @@ UE.plugins['tablesort'] = function () {
 
 
 // plugins/contextmenu.js
-///import core
+///import Core
 ///commands 右键菜单
 ///commandsName  ContextMenu
 ///commandsTitle  右键菜单
@@ -22356,7 +22356,7 @@ UE.plugins['contextmenu'] = function () {
 
 
 // plugins/shortcutmenu.js
-///import core
+///import Core
 ///commands       弹出菜单
 // commandsName  popupmenu
 ///commandsTitle  弹出菜单
@@ -22775,7 +22775,7 @@ UE.plugins['formatmatch'] = function(){
 
 
 // plugins/searchreplace.js
-///import core
+///import Core
 ///commands 查找替换
 ///commandsName  SearchReplace
 ///commandsTitle  查询替换
@@ -23118,7 +23118,7 @@ UE.plugins['customstyle'] = function() {
 };
 
 // plugins/catchremoteimage.js
-///import core
+///import Core
 ///commands 远程图片抓取
 ///commandsName  catchRemoteImage,catchremoteimageenable
 ///commandsTitle  远程图片抓取
@@ -23546,7 +23546,7 @@ UE.plugin.register('webapp', function (){
 });
 
 // plugins/template.js
-///import core
+///import Core
 ///import plugins\inserthtml.js
 ///import plugins\cleardoc.js
 ///commands 模板
@@ -25125,7 +25125,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/mask.js
-///import core
+///import Core
 ///import uicore
 (function (){
     var utils = baidu.editor.utils,
@@ -25181,7 +25181,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/popup.js
-///import core
+///import Core
 ///import uicore
 (function () {
     var utils = baidu.editor.utils,
@@ -25441,7 +25441,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/colorpicker.js
-///import core
+///import Core
 ///import uicore
 (function (){
     var utils = baidu.editor.utils,
@@ -25518,7 +25518,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/tablepicker.js
-///import core
+///import Core
 ///import uicore
 (function (){
     var utils = baidu.editor.utils,
@@ -25715,7 +25715,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/button.js
-///import core
+///import Core
 ///import uicore
 ///import ui/stateful.js
 (function (){
@@ -25787,7 +25787,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/splitbutton.js
-///import core
+///import Core
 ///import uicore
 ///import ui/stateful.js
 (function (){
@@ -25877,7 +25877,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/colorbutton.js
-///import core
+///import Core
 ///import uicore
 ///import ui/colorpicker.js
 ///import ui/popup.js
@@ -25940,7 +25940,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/tablebutton.js
-///import core
+///import Core
 ///import uicore
 ///import ui/popup.js
 ///import ui/tablepicker.js
@@ -25980,7 +25980,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/autotypesetpicker.js
-///import core
+///import Core
 ///import uicore
 (function () {
     var utils = baidu.editor.utils,
@@ -26049,7 +26049,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/autotypesetbutton.js
-///import core
+///import Core
 ///import uicore
 ///import ui/popup.js
 ///import ui/autotypesetpicker.js
@@ -26190,7 +26190,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/cellalignpicker.js
-///import core
+///import Core
 ///import uicore
 (function () {
     var utils = baidu.editor.utils,
@@ -26289,7 +26289,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/pastepicker.js
-///import core
+///import Core
 ///import uicore
 (function () {
     var utils = baidu.editor.utils,
@@ -26410,7 +26410,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/menu.js
-///import core
+///import Core
 ///import uicore
 ///import ui\popup.js
 ///import ui\stateful.js
@@ -26689,7 +26689,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/combox.js
-///import core
+///import Core
 ///import uicore
 ///import ui/menu.js
 ///import ui/splitbutton.js
@@ -26788,7 +26788,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/dialog.js
-///import core
+///import Core
 ///import uicore
 ///import ui/mask.js
 ///import ui/button.js
@@ -27206,7 +27206,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/menubutton.js
-///import core
+///import Core
 ///import uicore
 ///import ui/menu.js
 ///import ui/splitbutton.js
@@ -27248,7 +27248,7 @@ UE.ui = baidu.editor.ui = {};
 })();
 
 // ui/multiMenu.js
-///import core
+///import Core
 ///import uicore
  ///commands 表情
 (function(){
@@ -27547,7 +27547,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // ui/message.js
-///import core
+///import Core
 ///import uicore
 (function () {
     var utils = baidu.editor.utils,
@@ -28484,7 +28484,7 @@ UE.ui = baidu.editor.ui = {};
 
 
 // adapter/editor.js
-///import core
+///import Core
 ///commands 全屏
 ///commandsName FullScreen
 ///commandsTitle  全屏

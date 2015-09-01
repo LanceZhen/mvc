@@ -1,12 +1,16 @@
 <?php
+/**
+ * 框架核心文件加载列表
+ */
 	$paths = array(
-        'Lib/core/Config.class.php',
+        'Lib/Core/Config.class.php',
         'Function/Function.php',
         'Function/validate.php',
-		'Lib/core/DB.class.php',
-        'Lib/core/Log.class.php',
-        'Lib/core/Model.class.php',
-		'Lib/core/View.class.php',
-		'Lib/db/Mysql.class.php',
-		'Lib/view/Smarty/Smarty.class.php'
+		'Lib/Core/DB.class.php',
+        'Lib/Core/Log.class.php',
+        'Lib/Core/Model.class.php',
+		'Lib/Core/View.class.php',
+		'Lib/Db/Mysql.class.php',
+		'Lib/Tool/Upload.class.php',
+		'Lib/View/Smarty/Smarty.class.php'
 	);

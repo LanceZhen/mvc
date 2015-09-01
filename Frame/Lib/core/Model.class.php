@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 模型类.
  * User: HX1501388
  * Date: 2015/8/24
  * Time: 10:14
@@ -14,7 +14,7 @@ class Model{
     protected $pk = '';//主键
     protected $field = array();//字段
 
-    protected $_pad = array();//自动填充
+    protected $_pad = array(array());//自动填充
     protected $_valid = array(//自动验证  array('验证的字段名',0/1/2(验证场景),'报错提示','require/in(某几种情况)/between(范围)/length(某个范围)','参数')
         array()
     );

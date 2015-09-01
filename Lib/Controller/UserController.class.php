@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 用户控制器类
  * User: HX1501388
  * Date: 2015/8/25
  * Time: 14:09

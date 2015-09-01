@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 数据验证
  * User: Administrator
  * Date: 2015/8/28 0028
  * Time: 下午 9:29

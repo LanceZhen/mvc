@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 用户模型类
  * User: Administrator
  * Date: 2015/8/23 0023
  * Time: 下午 10:42

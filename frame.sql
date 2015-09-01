@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- 主机: localhost
--- 生成日期: 2015 年 08 月 31 日 10:05
+-- 生成日期: 2015 年 09 月 01 日 10:09
 -- 服务器版本: 5.5.20
 -- PHP 版本: 5.3.10
 
@@ -33,7 +33,7 @@ CREATE TABLE IF NOT EXISTS `cms_album` (
   `intro` varchar(100) NOT NULL,
   PRIMARY KEY (`albumId`),
   KEY `parentId` (`parentId`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=6 ;
 
 --
 -- 转存表中的数据 `cms_album`
@@ -42,7 +42,8 @@ CREATE TABLE IF NOT EXISTS `cms_album` (
 INSERT INTO `cms_album` (`albumId`, `albumName`, `parentId`, `intro`) VALUES
 (1, '相册1', 0, '这是相册1的简介'),
 (2, '相册2', 0, ''),
-(3, '相册1-1', 1, '这是相册1-1');
+(3, '相册1-1', 1, '这是相册1-1'),
+(4, '相册1-1-1', 3, '1-1-1');
 
 -- --------------------------------------------------------
 
@@ -67,7 +68,7 @@ CREATE TABLE IF NOT EXISTS `cms_article` (
   KEY `keyword` (`keyword`),
   KEY `is_recommend` (`isRecommend`),
   KEY `audit` (`audit`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=21 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=22 ;
 
 --
 -- 转存表中的数据 `cms_article`
@@ -78,9 +79,10 @@ INSERT INTO `cms_article` (`id`, `title`, `categoryId`, `postTime`, `summary`, `
 (4, '顶替顶戴', 8, '2015-07-28', 'dfd', 'fdfd', 'fda', 'dfsf', 1, '<p>fddfdfdfdf</p>', 1),
 (5, 'sdff', 5, '2015-08-04', 'dfsfds', 'sfsfdsfs', 'dsf', 'dfdsfsff', 1, '<p>sdfsfsfsfsf</p>', 1),
 (7, 'dfdfdf', 7, '2015-08-05', '', '', '', '', 1, '<p>dd</p>', 0),
-(8, 'sd', 2, '2015-08-30', '', '', '', '', 1, '<p>dd</p>', 1),
+(8, 'sd', 2, '2015-08-30', '', '', '', '', 1, '<p>dd</p>', 0),
 (10, 'sfdsf', 3, '2015-08-11', '', '', '', '', 1, '<p>fd</p>', 0),
-(14, 'dfdfddf', 10, '2015-08-18', '', '', '', '', 1, '<p>fdfdf</p>', 1);
+(14, 'dfdfddf', 10, '2015-08-18', '', '', '', '', 1, '<p>fdfdf</p>', 1),
+(21, 'dfdf', 1, '2015-09-09', 'dfdf', '', '', '', 1, '<p><img src="/ueditor/php/upload/image/20150901/1441075330135369.jpg" title="1441075330135369.jpg" alt="001.jpg"/></p>', 0);
 
 -- --------------------------------------------------------
 
@@ -112,6 +114,26 @@ INSERT INTO `cms_category` (`categoryId`, `categoryName`, `parentId`, `intro`) V
 (12, '大压力', 10, ''),
 (13, 'dfdf', 0, ''),
 (15, 'ddff', 0, 'dfdf');
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `cms_picture`
+--
+
+CREATE TABLE IF NOT EXISTS `cms_picture` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(40) NOT NULL,
+  `albumId` int(11) NOT NULL,
+  `intro` varchar(300) NOT NULL,
+  `path` varchar(200) NOT NULL,
+  `hasThumb` int(1) NOT NULL,
+  `hasMark` int(1) NOT NULL,
+  PRIMARY KEY (`id`),
+  KEY `albumId` (`albumId`),
+  KEY `hasThumb` (`hasThumb`),
+  KEY `hasMark` (`hasMark`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 

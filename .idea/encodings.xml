@@ -3,9 +3,10 @@
   <component name="Encoding" defaultCharsetForPropertiesFiles="UTF-8">
     <file url="file://$PROJECT_DIR$/../cms/admin/sysInfo.php" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Frame/Function/function.php" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/Frame/Lib/core/View.class.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Frame/Lib/Core/View.class.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Frame/start.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/data/test/使用方法及说明.txt" charset="GBK" />
     <file url="PROJECT" charset="UTF-8" />
   </component>
 </project>

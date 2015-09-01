@@ -1,4 +1,8 @@
 <?php
+/**数据库操作类
+ * Class Mysql
+ */
+
 //$dbh = new PDO('mysql:host=localhost;dbname=access_control', 'root', '');
 //$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 //$dbh->exec('set names utf8');
@@ -28,8 +32,8 @@
 /*//pdo连接信息
 $pdo=array("mysql:host=localhost;dbname=demo;charset=utf8","root","");
 //开始连接数据库
-$db = Mysql::newClass();
-$db->pdoConnect($pdo);
+$Db = Mysql::newClass();
+$Db->pdoConnect($pdo);
 
 
 $updateRow = array(
@@ -37,14 +41,14 @@ $updateRow = array(
   "meta_key" => "username"
 );
 
-//$db->select("wp_usermeta"); //发送sql
-//$result=$db->selectOne(); //获取一条数据
-//$db->selectCount(); //获取全部
+//$Db->select("wp_usermeta"); //发送sql
+//$result=$Db->selectOne(); //获取一条数据
+//$Db->selectCount(); //获取全部
 
-//$db->update("wp_usermeta",$updateRow,"umeta_id=1"); //更新信息
-//$db->insert("wp_usermeta",$updateRow); //插入数据
-//echo $db->lastinsertid(); //获取插入后的id
-//$db->delete("wp_usermeta","umeta_id>18"); //删除数据*/
+//$Db->update("wp_usermeta",$updateRow,"umeta_id=1"); //更新信息
+//$Db->insert("wp_usermeta",$updateRow); //插入数据
+//echo $Db->lastinsertid(); //获取插入后的id
+//$Db->delete("wp_usermeta","umeta_id>18"); //删除数据*/
 //            $test = M('Test');
 //            echo $test->add('tb_user',array('name'=>'lance','pass'=>'0000'));
 //             echo $test->update('tb_user',array('name'=>'lance','pass'=>'000'),'id = 1');
@@ -529,7 +533,7 @@ class Mysql
 //    }
 //    /**
 //     * 更新
-//     * @see db::update()
+//     * @see Db::update()
 //     * @return int/bool
 //     */
 //    public function update($table,$array,$where = null){
@@ -553,7 +557,7 @@ class Mysql
 //
 //    /**
 //     * 获得全部
-//     * @see db::getAll()
+//     * @see Db::getAll()
 //     * @return array
 //     */
 //    public function getAll($sql){
@@ -567,7 +571,7 @@ class Mysql
 //    }
 //    /**
 //     * 获得一条
-//     * @see db::getRow()
+//     * @see Db::getRow()
 //     * @return array
 //     */
 //    public function getRow($sql){
@@ -576,7 +580,7 @@ class Mysql
 //    }
 //    /**
 //     * 获得一个
-//     * @see db::getOne()
+//     * @see Db::getOne()
 //     * @return string
 //     */
 //    public function getOne($sql){

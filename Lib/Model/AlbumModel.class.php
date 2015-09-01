@@ -1,6 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
+ * 相册模型类
  * User: HX1501388
  * Date: 2015/8/31
  * Time: 17:05

@@ -22,7 +22,7 @@ abstract class Smarty_CacheResource
     public static $resources = array();
 
     /**
-    * resource types provided by the core
+    * resource types provided by the Core
     * @var array
     */
     protected static $sysplugins = array(

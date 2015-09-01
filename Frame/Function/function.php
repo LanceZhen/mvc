@@ -1,4 +1,8 @@
 <?php
+/**
+ * 常用函数封装
+ */
+
 /**实例化模型
  * @param $name
  * @return mixed
@@ -90,22 +94,6 @@ function _cookie($str){
     $val = empty($_COOKIE[$str])?null : $_COOKIE[$str];
     return $val;
 }
-//function parseValue($arr){
-//    $str = 'array(';
-//    foreach($arr as $k => $v){
-//        if(is_string($v)){
-//            $v = "'".$v."'";
-//        }
-//
-//        $str .= "'".$k."'".' => '.$v.',';
-//        /*if(is_string($v)){
-//            $arr[$k] = $v;
-//        }else if(is_array($v)){
-//            $arr[$k] = parseValue($v);
-//        }*/
-//    }
-//    return $str.')';
-//}
 /* 函数 textFilter($text)
 ** 功能 将文本中的特殊字符进行过滤,如HTML标记和换行符
 ** 参数 要进行过滤的文本
@@ -116,24 +104,6 @@ function textFilter($text)
     $text = nl2br($text);
     return $text;
 }
-
-/*function array2text($arr){
-    $str = '';
-    foreach($arr as $k => $v){
-        if(is_array($v)){
-//            var_dump($v);
-            array2text($v);
-        }else{
-            if(is_string($v)){
-                $v = "'".$v."'";
-            }
-            $str .= "'".$k."'".' => '.$v.',';
-
-        }
-    }
-    return $str;
-}*/
-
 /**
  * 对多维数组进行排序
  * @param $multi_array 数组
@@ -146,11 +116,11 @@ function multi_array_sort($multi_array, $sort_key, $sort = SORT_DESC) {
             if (is_array($row_array)) {
                 $key_array[] = $row_array[$sort_key];
             } else {
-                return FALSE;
+                return false;
             }
         }
     } else {
-        return FALSE;
+        return false;
     }
     array_multisort($key_array, $sort, $multi_array);
     return $multi_array;
@@ -277,16 +247,25 @@ function generateRandomString($length = 10)
     }
     return $randomString;
 }
+/**生成唯一字符串
+ * @param int $length
+ * @return string
+ */
+function generateUniqueString()
+{
+    return md5(uniqid(microtime(true),true));
+}
 //echo generateRandomString(5);
 
 /**获取文件扩展名
  * @param $filename
  * @return mixed
  */
-function getExtension($filename)
+function getExt($filename)
 {
-    $myext = substr($filename, strrpos($filename, '.'));
-    return str_replace('.', '', $myext);
+    return end(explode('.',$filename));
+    /*$ext = substr($filename, strrpos($filename, '.'));
+    return str_replace('.', '', $ext);*/
 }
 //echo getExtension('adminModel.class.php');
 
