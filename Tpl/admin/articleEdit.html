@@ -31,7 +31,7 @@
         <li><label>文章分类</label>
             <select name="categoryId" id="">
                 {section loop = $categoryList  name = category}
-                <option {if $data.categoryId eq {$categoryList[category].category_id}} selected {/if} value="{$categoryList[category].category_id}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].category_name}</option>
+                <option {if $data.categoryId eq {$categoryList[category].categoryId}} selected {/if} value="{$categoryList[category].categoryId}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].category_name}</option>
                 {/section}
             </select>
         </li>

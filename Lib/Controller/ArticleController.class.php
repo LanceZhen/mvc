@@ -47,10 +47,10 @@ class ArticleController{
         if($articleList){
             //分类的缩进
             foreach($articleList as $k => $v){
-                $row = $category->fetchOne('category_name',$v['categoryId']);
-                $articleList[$k]['categoryName'] = $row['category_name'];//分类名字
+                $row = $category->fetchOne('categoryName',$v['categoryId']);
+                $articleList[$k]['categoryName'] = $row['categoryName'];//分类名字
                 foreach($tree as $k1 => $v1){
-                    if($v['categoryId'] == $v1['category_id']){
+                    if($v['categoryId'] == $v1['categoryId']){
                         $lev = $tree[$k1]['lev'];
                         break;
                     }

@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-31 18:03:34
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-31 20:03:01
          compiled from "Tpl\admin\albumEdit.html" */ ?>
 <?php /*%%SmartyHeaderCode:806855e4262e6f9bd0-41008108%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '053569c89de3ecbabf3499165a5c7881d8f2fe78' => 
     array (
       0 => 'Tpl\\admin\\albumEdit.html',
-      1 => 1441015412,
+      1 => 1441022578,
       2 => 'file',
     ),
   ),
@@ -47,7 +47,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <div class="formbody">
     <div class="formtitle"><span>分类信息</span></div>
-    <form action="admin.php?c=Album&m=edit&id=<?php echo $_smarty_tpl->tpl_vars['data']->value['Album'];?>
+    <form action="admin.php?c=Album&m=edit&id=<?php echo $_smarty_tpl->tpl_vars['data']->value['albumId'];?>
 " method="post">
         <ul class="forminfo">
             <li><label>分类名称</label><input name="albumName" type="text" value="<?php echo $_smarty_tpl->tpl_vars['data']->value['albumName'];?>

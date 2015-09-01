@@ -32,7 +32,7 @@
         <li><label>文章分类</label>
             <select name="categoryId" id="">
                 {section loop = $categoryList  name = category}
-                <option value="{$categoryList[category].category_id}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].category_name}</option>
+                <option value="{$categoryList[category].categoryId}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].categoryName}</option>
                 {/section}
             </select>
         </li>

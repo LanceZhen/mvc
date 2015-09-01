@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-31 17:23:15
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-31 19:54:42
          compiled from "Tpl\admin\categoryEdit.html" */ ?>
 <?php /*%%SmartyHeaderCode:1732255e00a5f3484e8-46184440%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '502a4fff3562f2f933016f48cd396e088a3654ec' => 
     array (
       0 => 'Tpl\\admin\\categoryEdit.html',
-      1 => 1441012988,
+      1 => 1441022078,
       2 => 'file',
     ),
   ),
@@ -55,7 +55,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             </li>
             <li>
                 <label>上级分类</label>
-                <select name="parent_id" id="">
+                <select name="parentId" id="">
                     <option value="0">顶级分类</option>
                     <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['category'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['category']);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['categoryList']->value) ? count($_loop) : max(0, (int) $_loop); unset($_loop);

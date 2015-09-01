@@ -27,7 +27,7 @@
             </li>
             <li>
                 <label>上级分类</label>
-                <select name="parent_id" id="">
+                <select name="parentId" id="">
                     <option value="0">顶级分类</option>
                     {section loop = $categoryList  name = category}
                     <option {if $data.parentId eq {$categoryList[category].categoryId} }selected{/if} value="{$categoryList[category].categoryId}">{'&emsp;'|str_repeat:$categoryList[category].lev}{$categoryList[category].categoryName}</option>

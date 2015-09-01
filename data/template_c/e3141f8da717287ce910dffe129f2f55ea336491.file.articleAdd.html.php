@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-08-28 23:18:27
+<?php /* Smarty version Smarty-3.1.16, created on 2015-08-31 19:55:21
          compiled from "Tpl\admin\articleAdd.html" */ ?>
 <?php /*%%SmartyHeaderCode:165555e024882c6a24-85342493%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e3141f8da717287ce910dffe129f2f55ea336491' => 
     array (
       0 => 'Tpl\\admin\\articleAdd.html',
-      1 => 1440775101,
+      1 => 1441022120,
       2 => 'file',
     ),
   ),
@@ -80,9 +80,9 @@ $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['index_next'] = $
 $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration'] == 1);
 $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['category']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['category']['total']);
 ?>
-                <option value="<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_id'];?>
+                <option value="<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['categoryId'];?>
 "><?php echo str_repeat('&emsp;',$_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['lev']);?>
-<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['category_name'];?>
+<?php echo $_smarty_tpl->tpl_vars['categoryList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['category']['index']]['categoryName'];?>
 </option>
                 <?php endfor; endif; ?>
             </select>
