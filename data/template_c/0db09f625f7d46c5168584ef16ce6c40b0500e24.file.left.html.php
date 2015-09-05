@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-01 14:11:17
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-05 23:30:51
          compiled from "Tpl\admin\left.html" */ ?>
-<?php /*%%SmartyHeaderCode:2013055e5418546b108-29192188%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:357655ea78e7b98486-27265441%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '0db09f625f7d46c5168584ef16ce6c40b0500e24' => 
     array (
       0 => 'Tpl\\admin\\left.html',
-      1 => 1441069462,
+      1 => 1441466982,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '2013055e5418546b108-29192188',
+  'nocache_hash' => '357655ea78e7b98486-27265441',
   'Function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_55e541854df972_89800521',
+  'unifunc' => 'content_55ea78e7be73a5_12387672',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55e541854df972_89800521')) {Function content_55e541854df972_89800521($_smarty_tpl) {?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<?php if ($_valid && !is_callable('content_55ea78e7be73a5_12387672')) {Function content_55ea78e7be73a5_12387672($_smarty_tpl) {?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -32,7 +32,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 </head>
 
 <body style="background:#f0f9fd;">
-<div class="lefttop"><span></span>通讯录</div>
+<div class="lefttop"><span></span>模块</div>
 
 <dl class="leftmenu">
 
@@ -58,7 +58,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
             <li><cite></cite><a href="admin.php?c=Article&m=add" target="rightFrame">添加文章</a><i></i></li>
             <li><cite></cite><a href="admin.php?c=Article&m=manage" target="rightFrame">管理文章</a><i></i></li>
             <li><cite></cite><a href="admin.php?c=Category&m=manage" target="rightFrame">管理分类</a><i></i></li>
-            <li><cite></cite><a href="#" target="rightFrame"  target="rightFrame">批量更新</a><i></i></li>
+            <!--<li><cite></cite><a href="#" target="rightFrame"  target="rightFrame">批量更新</a><i></i></li>-->
         </ul>
     </dd>
 
@@ -75,8 +75,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <dd>
         <div class="title"><span><img src="Tpl/admin/images/leftico04.png"/></span>帐户管理</div>
         <ul class="menuson">
-            <li><cite></cite><a href="#" target="rightFrame">添加帐号</a><i></i></li>
-            <li><cite></cite><a href="#" target="rightFrame">管理帐号</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=User&m=add" target="rightFrame">添加帐号</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=User&m=manage" target="rightFrame">管理帐号</a><i></i></li>
+        </ul>
+
+    </dd>
+    <dd>
+        <div class="title"><span><img src="Tpl/admin/images/leftico04.png"/></span>留言管理</div>
+        <ul class="menuson">
+            <li><cite></cite><a href="admin.php?c=Home&m=contactManage" target="rightFrame">管理留言</a><i></i></li>
         </ul>
 
     </dd>

@@ -84,7 +84,7 @@ class Upload{
      * @return bool|string
      */
     public function mkDir(){
-        $dir = ROOT.'data/img/'.date('Ym/d');
+        $dir = ROOT.'data/picture/'.date('Ym/d');
         if(is_dir($dir) || mkdir($dir,0777,true)){
             return $dir;
         }else{

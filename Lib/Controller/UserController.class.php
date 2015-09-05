@@ -6,19 +6,23 @@
  * Time: 14:09
  */
 class UserController{
+    private $user = null;
+
+    function __construct(){
+        $this->user = M('User');
+    }
     //登录
     function login(){
-        $user = M('User');
-        $data = $user->_auto($_POST);
+        $data = $this->user->_auto($_POST);
         if($data){
-            if($user->login($data)){
+            if($this->user->login($data)){
                 View::display('admin/index.html');
             }else{
                 View::assign(array('msg'=>'用户名或密码错误！'));
                 View::display('admin/login.html');
             }
         }else{
-            $msg = $user->getError();
+            $msg = $this->user->getError();
             View::assign(array('msg'=>$msg[0]));
             View::display('admin/login.html');exit;
         }
@@ -37,8 +41,7 @@ class UserController{
             if($_POST['newPass'] != $_POST['cfmPass']){
                  exit('两次新密码的输入不一致!');
             }
-            $user = M('User');
-            $rs = $user->setPass($_SESSION['uid'],$_POST['oldPass'],$_POST['newPass']);
+            $rs = $this->user->setPass($_SESSION['uid'],$_POST['oldPass'],$_POST['newPass']);
             switch($rs){
                 case 0:
                     echo '修改失败，请重试!';
@@ -52,6 +55,73 @@ class UserController{
 
         }else{
             View::display('admin/setPass.html');
+        }
+    }
+
+    /**
+     * 添加用户
+     */
+    function add(){
+        if($_POST){
+            if($_POST['pass'] != $_POST['cfmPass']){
+                exit('两次新密码的输入不一致!');
+            }
+            $data = $this->user->_auto($_POST);
+            if($data){
+                $data['pass'] = md5($data['pass']);
+                if($this->user->insert($data)){
+                    echo '添加成功';
+                }else{
+                    echo '添加失败';
+                }
+            }else{
+                var_dump($this->user->getError());
+            }
+        }else{
+            View::display('admin/userAdd.html');
+        }
+    }
+
+    /**
+     * 管理用户
+     */
+    function manage(){
+        $userList = $this->user->fetchAll();
+        View::assign(array('userList' => $userList));
+        View::display('admin/user.html');
+    }
+    /**
+     * 编辑用户
+     */
+    function edit(){
+        $id = $_GET['id'] + 0;
+        if($_POST){
+            if($_POST['pass'] != $_POST['cfmPass']){
+                exit('两次新密码的输入不一致!');
+            }
+            $data = $this->user->_auto($_POST);
+            if($data){
+                $data['pass'] = md5($data['pass']);
+                if($this->user->update($data,$id)){
+                    echo '修改成功';
+                }else{
+                    echo '修改失败';
+                }
+            }else{
+                var_dump($this->user->getError());
+            }
+        }else{
+            $data = $this->user->fetchOne('id,name',$id);
+            View::assign(array('data' => $data));
+            View::display('admin/userEdit.html');
+        }
+    }
+    function del(){
+        $id = $_GET['id'];
+        if($this->user->delete($id)){
+            echo '删除成功';
+        }else{
+            echo '删除失败';
         }
     }
 }

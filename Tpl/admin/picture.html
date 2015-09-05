@@ -34,7 +34,7 @@
     <div class="tools">
 
         <ul class="toolbar">
-            <li class="click" onclick="location.href='admin.php?picture&m=add'"><span><img src="Tpl/admin/images/t01.png"/></span>添加</li>
+            <li class="click" onclick="location.href='admin.php?c=Picture&m=add'"><span><img src="Tpl/admin/images/t01.png"/></span>添加</li>
             <li class="click"><span><img src="Tpl/admin/images/t02.png"/></span>修改</li>
             <li><span><img src="Tpl/admin/images/t03.png"/></span>删除</li>
             <li><span><img src="Tpl/admin/images/t04.png"/></span>统计</li>
@@ -49,87 +49,13 @@
 
 
     <ul class="imglist">
-
+        {section loop=$picList name=pic}
         <li class="selected">
-            <span><img src="Tpl/admin/images/img01.png"/></span>
-
-            <h2><a href="#">软件界面设计下载</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
+            <span><img src="{$picList[pic].thumbPath}"/></span>
+            <h2><a href="#">{$picList[pic].title}</a></h2>
+            <p><a href="admin.php?c=Picture&m=edit&id={$picList[pic].id}">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="admin.php?c=Picture&m=del&id={$picList[pic].id}" onclick="if(!window.confirm('确定删除？')) return false;">删除</a></p>
         </li>
-
-        <li>
-            <span><img src="Tpl/admin/images/img02.png"/></span>
-
-            <h2><a href="#">界面样式素材下载</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="Tpl/admin/images/img03.png"/></span>
-
-            <h2><a href="#">弹出小窗口界面设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img04.png"/></span>
-
-            <h2><a href="#">羽毛图标设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img05.png"/></span>
-
-            <h2><a href="#">日历组件样式设计</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img06.png"/></span>
-
-            <h2><a href="#">羽毛图标设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img07.png"/></span>
-
-            <h2><a href="#">弹出小窗口界面设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img08.png"/></span>
-
-            <h2><a href="#">弹出小窗口界面设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img09.png"/></span>
-
-            <h2><a href="#">弹出小窗口界面设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img10.png"/></span>
-
-            <h2><a href="#">软件界面设计下载</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
+        {/section}
     </ul>
 
 

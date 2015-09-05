@@ -2,106 +2,125 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/Lib/Controller/SetController.class.php" line="109" />
-    <bookmark url="file://$PROJECT_DIR$/Frame/Lib/Core/Model.class.php" line="233" />
+    <bookmark url="file://$PROJECT_DIR$/Frame/Lib/core/Model.class.php" line="234" />
+    <bookmark url="file://$PROJECT_DIR$/Lib/Controller/PictureController.class.php" line="100" />
+    <bookmark url="file://$PROJECT_DIR$/Lib/Controller/UserController.class.php" line="59" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="24dc0da6-22c2-4aeb-8d51-d581b44bddcd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/font/SIMYOU.TTF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/php/avatar.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/php/default.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/up/uploadify-cancel.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/up/uploadify.swf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/ImageMin.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/ImagePreview.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/Model/PictureModel.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Frame/Lib/Tool/Upload.class.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/php/crossdomain.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/php/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/up/demo.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/php/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/up/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/up/jquery.uploadify-3.1.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/up/jquery.uploadify-3.1.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/php/upfile.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/upload.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/upload.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/up/uploadify.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/up/uploadify.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/使用方法及说明.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/php/安装及使用说明.txt" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\config1.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\config3.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\053569c89de3ecbabf3499165a5c7881d8f2fe78.file.albumEdit.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\0ac0d40740c3f6dbaf688acb10242ff67ae82f59.file.categoryAdd.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\0db09f625f7d46c5168584ef16ce6c40b0500e24.file.left.html.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\0db09f625f7d46c5168584ef16ce6c40b0500e24.file.left.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\1469c2c202d52e37a729c6a4b08d3607812ca830.file.login1.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\28727311c7ea59075c613eba4e6f8eae4d197591.file.picture.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\3895a9662b58cfd5a5c3260dd2244480d286391b.file.album.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\39e14a6f478a4fbf81932f82d17f6ca92406e441.file.article.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\457eeb0b848224fa94d0e9db27c5a5f25e896f02.file.category.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\4b0d6821be859b8e49373a54e58b91ec5fabcee2.file.index.html.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\4b0d6821be859b8e49373a54e58b91ec5fabcee2.file.index.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\502a4fff3562f2f933016f48cd396e088a3654ec.file.categoryEdit.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\6ee3441e72dd6252558bf5631c643a95da2c0f6d.file.setPass.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\733c287b7eab7bae7abd031fb57058768fdde1e0.file.top.html.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\733c287b7eab7bae7abd031fb57058768fdde1e0.file.top.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\87116b6af870c8f7d2ed16ed6bf8a4b64034c37d.file.albumAdd.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\b20459aedfe0aeda297e320255f7fbbb9b53e483.file.sysInfo.html.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\b20459aedfe0aeda297e320255f7fbbb9b53e483.file.sysInfo.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\be1e32fc4ccb26ffefb09ab27017f603fe4f2026.file.articleEdit.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\be9611304f9c654976f04bf34f5623c81a9286f8.file.login.html.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\be9611304f9c654976f04bf34f5623c81a9286f8.file.login.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\d8ddd595e9e7729eea76e5fb00488f433ee11e2f.file.baseSet.html.cache.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\d8ddd595e9e7729eea76e5fb00488f433ee11e2f.file.baseSet.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\e3141f8da717287ce910dffe129f2f55ea336491.file.articleAdd.html.php" afterPath="" />
-      <change type="DELETED" beforePath="E:\wamp\www\mvc\data\template_c\f22f0e0524756c1b8efe269f3c23b9dfdd68b828.file.test.html.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Controller/AlbumController.class.php" afterPath="$PROJECT_DIR$/Lib/Controller/AlbumController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Model/AlbumModel.class.php" afterPath="$PROJECT_DIR$/Lib/Model/AlbumModel.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/Model/ContactModel.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Lib/Controller/HomeController.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Frame/Lib/Tool/Paging.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/PHP简单漂亮的分页类/config.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tpl/admin/contact.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tpl/front/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tpl/front/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/PHP简单漂亮的分页类/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data/test/PHP简单漂亮的分页类/page.class.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tpl/admin/pictureEdit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tpl/admin/user.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Tpl/admin/userEdit.html" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\Tpl\admin\images\i07.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\0db09f625f7d46c5168584ef16ce6c40b0500e24.file.left.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\28727311c7ea59075c613eba4e6f8eae4d197591.file.picture.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\3895a9662b58cfd5a5c3260dd2244480d286391b.file.album.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\39e14a6f478a4fbf81932f82d17f6ca92406e441.file.article.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\457eeb0b848224fa94d0e9db27c5a5f25e896f02.file.category.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\4b0d6821be859b8e49373a54e58b91ec5fabcee2.file.index.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\6ccd99c012201123d281249ff20cc7f58aa21d76.file.pictureAdd.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\733c287b7eab7bae7abd031fb57058768fdde1e0.file.top.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\b20459aedfe0aeda297e320255f7fbbb9b53e483.file.sysInfo.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\d8ddd595e9e7729eea76e5fb00488f433ee11e2f.file.baseSet.html.php" afterPath="" />
+      <change type="DELETED" beforePath="D:\wamp\www\mvc\data\template_c\e3141f8da717287ce910dffe129f2f55ea336491.file.articleAdd.html.php" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Controller/ArticleController.class.php" afterPath="$PROJECT_DIR$/Lib/Controller/ArticleController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Model/ArticleModel.class.php" afterPath="$PROJECT_DIR$/Lib/Model/ArticleModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Controller/CategoryController.class.php" afterPath="$PROJECT_DIR$/Lib/Controller/CategoryController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Model/CategoryModel.class.php" afterPath="$PROJECT_DIR$/Lib/Model/CategoryModel.class.php" />
-      <change type="MODIFICATION" beforePath="E:\wamp\www\mvc\Frame\Lib\Core\Config.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/Core/Config.class.php" />
-      <change type="MODIFICATION" beforePath="E:\wamp\www\mvc\Frame\Lib\Core\Db.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/Core/Db.class.php" />
-      <change type="MODIFICATION" beforePath="E:\wamp\www\mvc\Frame\Lib\Core\Log.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/Core/Log.class.php" />
-      <change type="MODIFICATION" beforePath="E:\wamp\www\mvc\Frame\Lib\Core\Model.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/Core/Model.class.php" />
-      <change type="MODIFICATION" beforePath="E:\wamp\www\mvc\Frame\Lib\Db\Mysql.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/Db/Mysql.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frame/Lib/core/Db.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/core/Db.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frame/Lib/Tool/Image.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/Tool/Image.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frame/Lib/core/Model.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/core/Model.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frame/Lib/db/Mysql.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/db/Mysql.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Controller/PictureController.class.php" afterPath="$PROJECT_DIR$/Lib/Controller/PictureController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Controller/SetController.class.php" afterPath="$PROJECT_DIR$/Lib/Controller/SetController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Model/SetModel.class.php" afterPath="$PROJECT_DIR$/Lib/Model/SetModel.class.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frame/Lib/Tool/Upload.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/Tool/Upload.class.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Controller/UserController.class.php" afterPath="$PROJECT_DIR$/Lib/Controller/UserController.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/Model/UserModel.class.php" afterPath="$PROJECT_DIR$/Lib/Model/UserModel.class.php" />
-      <change type="MODIFICATION" beforePath="E:\wamp\www\mvc\Frame\Lib\Core\View.class.php" afterPath="$PROJECT_DIR$/Frame/Lib/Core/View.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/highcharts/modules/canvas-tools.src.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/highcharts/modules/canvas-tools.src.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/dialogs/charts/charts.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/dialogs/charts/charts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/codemirror/codemirror.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/codemirror/codemirror.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/highcharts/modules/data.src.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/highcharts/modules/data.src.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/article.html" afterPath="$PROJECT_DIR$/Tpl/admin/article.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/articleEdit.html" afterPath="$PROJECT_DIR$/Tpl/admin/articleEdit.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/php/config.json" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/php/config.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/format+zh_CN,default,corechart.I.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/format+zh_CN,default,corechart.I.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frame/Function/function.php" afterPath="$PROJECT_DIR$/Frame/Function/function.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/highcharts/highcharts.src.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/highcharts/highcharts.src.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frame/include.list.php" afterPath="$PROJECT_DIR$/Frame/include.list.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/jquery-1.10.2.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/jquery-1.10.2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/jquery-1.10.2.min.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/jquery-1.10.2.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/jquery.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/html/js/jquery.min.js" afterPath="$PROJECT_DIR$/Tpl/html/js/jquery.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/jsapi.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/jsapi.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/left.html" afterPath="$PROJECT_DIR$/Tpl/admin/left.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/log/log.txt" afterPath="$PROJECT_DIR$/data/log/log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/pictureAdd.html" afterPath="$PROJECT_DIR$/Tpl/admin/pictureAdd.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/SyntaxHighlighter/shCore.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/SyntaxHighlighter/shCore.js" />
-      <change type="MODIFICATION" beforePath="E:\wamp\www\mvc\Frame\Lib\View\Smarty\sysplugins\smarty_cacheresource.php" afterPath="$PROJECT_DIR$/Frame/Lib/View/Smarty/sysplugins/smarty_cacheresource.php" />
-      <change type="MODIFICATION" beforePath="E:\wamp\www\mvc\Frame\Lib\View\Smarty\sysplugins\smarty_internal_utility.php" afterPath="$PROJECT_DIR$/Frame/Lib/View/Smarty/sysplugins/smarty_internal_utility.php" />
-      <change type="MODIFICATION" beforePath="E:\wamp\www\mvc\Frame\Lib\View\Smarty\sysplugins\smarty_resource.php" afterPath="$PROJECT_DIR$/Frame/Lib/View/Smarty/sysplugins/smarty_resource.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frame/start.php" afterPath="$PROJECT_DIR$/Frame/start.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/picture.html" afterPath="$PROJECT_DIR$/Tpl/admin/picture.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/css/style.css" afterPath="$PROJECT_DIR$/Tpl/admin/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Lib/View/testView.class.php" afterPath="$PROJECT_DIR$/Lib/View/testView.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/ueditor.all.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/ueditor.all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/ueditor.all.min.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/ueditor.all.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Frame/Function/validate.php" afterPath="$PROJECT_DIR$/Frame/Function/validate.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/webuploader/webuploader.custom.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/webuploader/webuploader.custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/webuploader/webuploader.js" afterPath="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/third-party/webuploader/webuploader.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Tpl/admin/tools.html" afterPath="$PROJECT_DIR$/Tpl/admin/tools.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\about.html" afterPath="$PROJECT_DIR$/Tpl/front/about.html" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\blog.html" afterPath="$PROJECT_DIR$/Tpl/front/blog.html" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\contact.html" afterPath="$PROJECT_DIR$/Tpl/front/contact.html" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\css\bootstrap.css" afterPath="$PROJECT_DIR$/Tpl/front/css/bootstrap.css" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\css\style.css" afterPath="$PROJECT_DIR$/Tpl/front/css/style.css" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\css\touchTouch.css" afterPath="$PROJECT_DIR$/Tpl/front/css/touchTouch.css" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\event.html" afterPath="$PROJECT_DIR$/Tpl/front/event.html" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/Tpl/front/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/Tpl/front/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/Tpl/front/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/Tpl/front/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\fonts\glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/Tpl/front/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\1.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/1.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\1.png" afterPath="$PROJECT_DIR$/Tpl/front/images/1.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\10.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/10.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\1010.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/1010.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\11.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/11.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\13.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/13.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\1313.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/1313.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\14.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/14.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\15.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/15.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\1hr.png" afterPath="$PROJECT_DIR$/Tpl/front/images/1hr.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\2.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/2.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\22.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/22.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\3.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/3.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\33.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/33.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\4.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/4.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\5.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/5.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\55.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/55.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\6.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/6.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\66.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/66.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\7.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/7.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\77.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/77.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\8.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/8.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\88.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/88.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\9.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/9.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\abt.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/abt.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\avatar.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/avatar.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blg-s2.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/blg-s2.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blg-s3.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/blg-s3.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blg.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/blg.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blg2.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/blg2.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blgg.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/blgg.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blog-icon1.png" afterPath="$PROJECT_DIR$/Tpl/front/images/blog-icon1.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blog-icon2.png" afterPath="$PROJECT_DIR$/Tpl/front/images/blog-icon2.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blog-icon3.png" afterPath="$PROJECT_DIR$/Tpl/front/images/blog-icon3.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blog-icon4.png" afterPath="$PROJECT_DIR$/Tpl/front/images/blog-icon4.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\blog-icon5.png" afterPath="$PROJECT_DIR$/Tpl/front/images/blog-icon5.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\comment.png" afterPath="$PROJECT_DIR$/Tpl/front/images/comment.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\fancybox_sprite.png" afterPath="$PROJECT_DIR$/Tpl/front/images/fancybox_sprite.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\ftr.png" afterPath="$PROJECT_DIR$/Tpl/front/images/ftr.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\hdr.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/hdr.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\icons.png" afterPath="$PROJECT_DIR$/Tpl/front/images/icons.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\main.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/main.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\marker.png" afterPath="$PROJECT_DIR$/Tpl/front/images/marker.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\p1.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/p1.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\p2.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/p2.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\p3.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/p3.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\themes.png" afterPath="$PROJECT_DIR$/Tpl/front/images/themes.png" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\w2.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/w2.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\w3.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/w3.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\w4.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/w4.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\images\w5.jpg" afterPath="$PROJECT_DIR$/Tpl/front/images/w5.jpg" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\index.html" afterPath="$PROJECT_DIR$/Tpl/front/index.html" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\js\jquery.fancybox.js" afterPath="$PROJECT_DIR$/Tpl/front/js/jquery.fancybox.js" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\js\jquery.min.js" afterPath="$PROJECT_DIR$/Tpl/front/js/jquery.min.js" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\js\responsiveslides.min.js" afterPath="$PROJECT_DIR$/Tpl/front/js/responsiveslides.min.js" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\Tpl\html\single.html" afterPath="$PROJECT_DIR$/Tpl/front/single.html" />
+      <change type="MOVED" beforePath="D:\wamp\www\mvc\data\template_c\6ee3441e72dd6252558bf5631c643a95da2c0f6d.file.setPass.html.php" afterPath="$PROJECT_DIR$/Tpl/admin/userAdd.html" />
     </list>
     <ignored path="mvc.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -123,23 +142,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Image.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Frame/Lib/Tool/Image.class.php">
+      <file leaf-file-name="header.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Tpl/front/header.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3128555">
-              <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
-              <folding>
-                <element signature="e#6#74#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="imgTool.class.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Pakhi/tool/imgTool.class.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.852942">
-              <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.9424626">
+              <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -160,57 +167,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Frame/Lib/core/DB.class.php" />
-        <option value="$PROJECT_DIR$/Tpl/admin/setPass.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/js/My97DatePicker/开发包/readme.txt" />
-        <option value="$PROJECT_DIR$/Tpl/admin/baseSet.html" />
-        <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/data/test/checkbox.html" />
-        <option value="$PROJECT_DIR$/data/log/log.txt" />
-        <option value="$PROJECT_DIR$/Tpl/admin/article.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/categoryAdd.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/category.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/album.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/albumAdd.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/articleEdit.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/categoryEdit.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/articleAdd.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/albumEdit.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/left.html" />
-        <option value="$PROJECT_DIR$/Tpl/admin/picture.html" />
-        <option value="$PROJECT_DIR$/data/test/upload.html" />
-        <option value="$PROJECT_DIR$/data/test/使用方法及说明.txt" />
-        <option value="$PROJECT_DIR$/Frame/Lib/tool/upload.class.php" />
-        <option value="$PROJECT_DIR$/Frame/Function/validate.php" />
-        <option value="$PROJECT_DIR$/Frame/Lib/core/Config.class.php" />
-        <option value="$PROJECT_DIR$/Frame/Lib/core/Db.class.php" />
-        <option value="$PROJECT_DIR$/Frame/Lib/core/Log.class.php" />
-        <option value="$PROJECT_DIR$/Frame/Lib/core/View.class.php" />
-        <option value="$PROJECT_DIR$/Frame/Lib/db/Mysql.class.php" />
-        <option value="$PROJECT_DIR$/Frame/start.php" />
-        <option value="$PROJECT_DIR$/Lib/Controller/AlbumController.class.php" />
-        <option value="$PROJECT_DIR$/Lib/Controller/ArticleController.class.php" />
-        <option value="$PROJECT_DIR$/Lib/Controller/CategoryController.class.php" />
-        <option value="$PROJECT_DIR$/Lib/Controller/IndexController.class.php" />
-        <option value="$PROJECT_DIR$/Lib/Controller/SetController.class.php" />
-        <option value="$PROJECT_DIR$/Lib/Controller/UserController.class.php" />
-        <option value="$PROJECT_DIR$/Lib/Model/AlbumModel.class.php" />
         <option value="$PROJECT_DIR$/Lib/Model/ArticleModel.class.php" />
         <option value="$PROJECT_DIR$/Lib/Model/CategoryModel.class.php" />
         <option value="$PROJECT_DIR$/Lib/Model/SetModel.class.php" />
         <option value="$PROJECT_DIR$/Lib/Model/UserModel.class.php" />
         <option value="$PROJECT_DIR$/Lib/View/testView.class.php" />
         <option value="$PROJECT_DIR$/Frame/Function/function.php" />
-        <option value="$PROJECT_DIR$/Frame/include.list.php" />
         <option value="$PROJECT_DIR$/Frame/Lib/tool/Upload.class.php" />
-        <option value="$PROJECT_DIR$/Tpl/admin/css/style.css" />
         <option value="$PROJECT_DIR$/Tpl/admin/pictureAdd.html" />
-        <option value="$PROJECT_DIR$/Frame/Lib/core/Model.class.php" />
         <option value="$PROJECT_DIR$/Lib/Model/PictureModel.class.php" />
-        <option value="$PROJECT_DIR$/Lib/Controller/PictureController.class.php" />
         <option value="$PROJECT_DIR$/Frame/Lib/tool/Image.class.php" />
         <option value="$PROJECT_DIR$/Frame/Lib/Core/Db.class.php" />
+        <option value="$PROJECT_DIR$/Frame/Lib/Tool/Upload.class.php" />
+        <option value="$PROJECT_DIR$/Tpl/admin/baseSet.html" />
+        <option value="$PROJECT_DIR$/Tpl/admin/pictureEdit.html" />
+        <option value="$PROJECT_DIR$/Tpl/admin/picture.html" />
+        <option value="$PROJECT_DIR$/Tpl/admin/userAdd.html" />
+        <option value="$PROJECT_DIR$/Tpl/admin/user.html" />
+        <option value="$PROJECT_DIR$/Tpl/admin/userEdit.html" />
+        <option value="$PROJECT_DIR$/Tpl/admin/articleEdit.html" />
+        <option value="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/php/Uploader.class.php" />
+        <option value="$PROJECT_DIR$/Tpl/admin/js/ueditor1_4_3-utf8-php/php/config.json" />
+        <option value="$PROJECT_DIR$/Lib/Controller/AlbumController.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Controller/CategoryController.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Controller/IndexController.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Controller/PictureController.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Controller/SetController.class.php" />
+        <option value="$PROJECT_DIR$/Lib/Controller/UserController.class.php" />
+        <option value="$PROJECT_DIR$/Tpl/front/footer.html" />
+        <option value="$PROJECT_DIR$/Tpl/front/index.html" />
+        <option value="$PROJECT_DIR$/Frame/Lib/core/Db.class.php" />
+        <option value="$PROJECT_DIR$/Frame/Lib/core/Config.class.php" />
+        <option value="$PROJECT_DIR$/Frame/Lib/core/Model.class.php" />
         <option value="$PROJECT_DIR$/Frame/Lib/Tool/Image.class.php" />
+        <option value="$PROJECT_DIR$/Frame/include.list.php" />
+        <option value="$PROJECT_DIR$/Tpl/admin/article.html" />
+        <option value="$PROJECT_DIR$/Tpl/admin/css/style.css" />
+        <option value="$PROJECT_DIR$/Frame/Lib/db/Mysql.class.php" />
+        <option value="$PROJECT_DIR$/data/log/log.txt" />
+        <option value="$PROJECT_DIR$/Lib/Controller/ArticleController.class.php" />
+        <option value="$PROJECT_DIR$/Frame/Lib/Tool/Paging.class.php" />
+        <option value="$PROJECT_DIR$/config.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/Tpl/front/contact.html" />
+        <option value="$PROJECT_DIR$/Tpl/admin/left.html" />
+        <option value="$PROJECT_DIR$/Lib/Model/ContactModel.class.php" />
+        <option value="$PROJECT_DIR$/Tpl/admin/contact.html" />
+        <option value="$PROJECT_DIR$/Lib/Controller/HomeController.class.php" />
+        <option value="$PROJECT_DIR$/Tpl/front/blog.html" />
+        <option value="$PROJECT_DIR$/Tpl/front/event.html" />
+        <option value="$PROJECT_DIR$/Tpl/front/about.html" />
+        <option value="$PROJECT_DIR$/Tpl/front/header.html" />
       </list>
     </option>
   </component>
@@ -285,6 +292,78 @@
               <option name="myItemId" value="Tpl" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Tpl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -315,6 +394,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Smarty" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -354,46 +441,58 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="core" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="mvc" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Frame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Function" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mvc" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="font" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -422,13 +521,14 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\wamp\www\mvc\data\font" />
-      <recent name="E:\wamp\www\mvc\Tpl\admin\images" />
-      <recent name="E:\wamp\www\mvc\data\test" />
-      <recent name="E:\wamp\www\mvc\data\test\up" />
       <recent name="D:\wamp\www\mvc\Tpl\admin" />
+      <recent name="D:\wamp\www\mvc\data\test" />
+      <recent name="D:\wamp\www\mvc" />
+      <recent name="D:\wamp\www\mvc\Frame\Lib\Tool" />
+      <recent name="E:\wamp\www\mvc\data\font" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\wamp\www\mvc\data\picture" />
       <recent name="D:\wamp\www\mvc\Tpl\admin" />
       <recent name="E:\wamp\www\mvc" />
       <recent name="E:\wamp\www\mvc\tpl" />
@@ -476,15 +576,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17447917" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21041666" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944915" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3273305" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32870865" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -496,6 +595,7 @@
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32944915" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32550693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -518,276 +618,192 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/test/upload.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4880546">
-          <caret line="267" column="23" selection-start-line="267" selection-start-column="23" selection-end-line="267" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/使用方法及说明.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4540295">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/upload.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2844141">
-          <caret line="10" column="21" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/up/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/up/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="3.5588236">
-          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/up/jquery.uploadify-3.1.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/up/uploadify.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/up/uploadify.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/up/uploadify-cancel.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/ImageMin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/ImagePreview.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="46" selection-start-line="11" selection-start-column="46" selection-end-line="11" selection-end-column="46" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/php/安装及使用说明.txt">
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7026107">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/php/default.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/php/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.96245736">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/php/crossdomain.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/php/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-30.147058">
-          <caret line="41" column="39" selection-start-line="41" selection-start-column="39" selection-end-line="41" selection-end-column="39" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/test/php/upfile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39817974">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/Function/validate.php">
+    <entry file="file://$PROJECT_DIR$/Lib/Model/UserModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/Lib/Core/Config.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/Lib/Core/Log.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Controller/AlbumController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="74" column="43" selection-start-line="74" selection-start-column="43" selection-end-line="74" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Controller/ArticleController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding>
-            <element signature="n#edit#0;n#ArticleController#0;n#!!top" expanded="false" />
-            <marker date="1441078239040" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Controller/CategoryController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.2520138">
+          <caret line="75" column="46" selection-start-line="75" selection-start-column="46" selection-end-line="75" selection-end-column="46" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Controller/IndexController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.0">
-          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.48906788">
+          <caret line="17" column="38" selection-start-line="17" selection-start-column="38" selection-end-line="17" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Controller/PictureController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="157" column="45" selection-start-line="157" selection-start-column="45" selection-end-line="157" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Controller/SetController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
-          <folding>
-            <marker date="1441078238954" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Model/AlbumModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="50" column="37" selection-start-line="50" selection-start-column="37" selection-end-line="50" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Model/ArticleModel.class.php">
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/view/Smarty/SmartyBC.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Model/CategoryModel.class.php">
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/view/Smarty/Smarty.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Model/SetModel.class.php">
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/view/Smarty/debug.tpl">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Model/UserModel.class.php">
+    <entry file="file://$PROJECT_DIR$/Tpl/admin/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/View/testView.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05688282">
-          <caret line="2" column="32" selection-start-line="2" selection-start-column="32" selection-end-line="2" selection-end-column="32" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Lib/Controller/UserController.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05688282">
-          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.5109321">
+          <caret line="115" column="42" selection-start-line="115" selection-start-column="42" selection-end-line="115" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/admin/left.html">
+    <entry file="file://$PROJECT_DIR$/frame.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0853243">
-          <caret line="85" column="51" selection-start-line="85" selection-start-column="51" selection-end-line="85" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/picture/water-mark.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frame/Function/validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.1208286">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1150748">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/core/Log.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.911764">
+          <caret line="28" column="27" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/core/View.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.088235">
+          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/Tool/Image.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-82.911766">
+          <caret line="189" column="0" selection-start-line="189" selection-start-column="0" selection-end-line="189" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/test/PHP简单漂亮的分页类/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.117647">
+          <caret line="114" column="0" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.34637514">
+          <caret line="468" column="9" selection-start-line="468" selection-start-column="9" selection-end-line="468" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/admin/images/pre-on.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/admin/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="136" column="46" selection-start-line="136" selection-start-column="46" selection-end-line="136" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/core/Config.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.67647">
+          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/core/Db.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.970589">
+          <caret line="82" column="32" selection-start-line="82" selection-start-column="32" selection-end-line="82" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/log/2015090516N7iK.backup">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.43202764">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -796,160 +812,212 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7162316">
-          <caret line="8483" column="59" selection-start-line="8483" selection-start-column="59" selection-end-line="8483" selection-end-column="59" />
-          <folding />
+        <state vertical-scroll-proportion="-358.37143">
+          <caret line="3501" column="58" selection-start-line="3501" selection-start-column="58" selection-end-line="3501" selection-end-column="58" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_1.php">
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/db/Mysql.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34584755">
-          <caret line="23" column="9" selection-start-line="23" selection-start-column="9" selection-end-line="23" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Pakhi/tool/upTool.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.089874856">
-          <caret line="126" column="0" selection-start-line="126" selection-start-column="0" selection-end-line="152" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/Function/function.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.411765">
-          <caret line="265" column="11" selection-start-line="265" selection-start-column="11" selection-end-line="265" selection-end-column="11" />
+        <state vertical-scroll-proportion="-20.411764">
+          <caret line="167" column="76" selection-start-line="167" selection-start-column="76" selection-end-line="167" selection-end-column="76" />
           <folding>
-            <element signature="e#6#23#0#PHP" expanded="true" />
-            <marker date="1441085558597" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#6#34#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/admin/css/style.css">
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/Tool/Paging.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="191" column="46" selection-start-line="191" selection-start-column="46" selection-end-line="191" selection-end-column="46" />
-          <folding>
-            <marker date="1441089364116" expanded="true" signature="-1:-1" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/admin/form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.705882">
-          <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tpl/admin/pictureAdd.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.852942">
-          <caret line="36" column="102" selection-start-line="36" selection-start-column="102" selection-end-line="36" selection-end-column="102" />
-          <folding>
-            <element signature="n#style#0;n#textarea#0;n#li#2;n#ul#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#1;n#input#0;n#li#3;n#ul#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/Lib/Core/Model.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.882353">
-          <caret line="14" column="35" selection-start-line="14" selection-start-column="35" selection-end-line="14" selection-end-column="35" />
-          <folding>
-            <element signature="e#6#74#0#PHP" expanded="true" />
-            <element signature="n#_autoFilter#0;n#Model#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Controller/PictureController.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Lib/Model/PictureModel.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        <state vertical-scroll-proportion="-24.088236">
+          <caret line="144" column="26" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frame/Lib/Tool/Upload.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-66.17647">
-          <caret line="90" column="25" selection-start-line="90" selection-start-column="25" selection-end-line="90" selection-end-column="25" />
+        <state vertical-scroll-proportion="43.382355">
+          <caret line="34" column="20" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/Lib/Core/Db.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7352941">
-          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/Lib/Core/View.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4705882">
-          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/Lib/Db/Mysql.class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="41.17647">
-          <caret line="1" column="8" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding>
-            <marker date="1441094530613" expanded="true" signature="-1:-1" placeholder="select ${$fi..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frame/include.list.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4117646">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-          <folding />
+        <state vertical-scroll-proportion="-11.029411">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Frame/start.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19908987">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        <state vertical-scroll-proportion="5.3235292">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Pakhi/tool/imgTool.class.php">
+    <entry file="file://$PROJECT_DIR$/config.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.852942">
-          <caret line="51" column="31" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
-          <folding />
+        <state vertical-scroll-proportion="-19.529411">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Frame/Lib/Tool/Image.class.php">
+    <entry file="file://$PROJECT_DIR$/Tpl/front/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3128555">
-          <caret line="11" column="70" selection-start-line="11" selection-start-column="70" selection-end-line="11" selection-end-column="70" />
+        <state vertical-scroll-proportion="-8.823529">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frame/Function/function.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.911764">
+          <caret line="152" column="13" selection-start-line="152" selection-start-column="13" selection-end-line="152" selection-end-column="13" />
           <folding>
-            <element signature="e#6#74#0#PHP" expanded="true" />
+            <element signature="e#6#23#0#PHP" expanded="true" />
+            <marker date="1441107178481" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4705882">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/admin/left.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.7352941">
+          <caret line="64" column="76" selection-start-line="64" selection-start-column="76" selection-end-line="64" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Model/ArticleModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Model/CategoryModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Model/ContactModel.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.352941">
+          <caret line="10" column="67" selection-start-line="10" selection-start-column="67" selection-end-line="10" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Frame/Lib/core/Model.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.147059">
+          <caret line="137" column="0" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/admin/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.764706">
+          <caret line="58" column="158" selection-start-line="58" selection-start-column="158" selection-end-line="58" selection-end-column="158" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/front/footer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.2058823">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Controller/HomeController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.0">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/front/contact.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.8529415">
+          <caret line="65" column="45" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/admin/category.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lib/Controller/ArticleController.class.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="12.5">
+          <caret line="62" column="63" selection-start-line="62" selection-start-column="63" selection-end-line="62" selection-end-column="63" />
+          <folding>
+            <marker date="1441447712298" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/admin/article.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.17647">
+          <caret line="61" column="39" selection-start-line="61" selection-start-column="30" selection-end-line="61" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/front/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.313433">
+          <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/front/event.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.617647">
+          <caret line="39" column="38" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/front/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="3.0713463">
+          <caret line="107" column="58" selection-start-line="107" selection-start-column="58" selection-end-line="107" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tpl/front/header.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9424626">
+          <caret line="49" column="9" selection-start-line="49" selection-start-column="9" selection-end-line="49" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

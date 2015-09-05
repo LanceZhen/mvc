@@ -1,25 +1,29 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-01 14:14:40
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-05 16:21:43
          compiled from "Tpl\admin\picture.html" */ ?>
-<?php /*%%SmartyHeaderCode:485455e542501040c3-19543967%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:742555eaa6171cda08-80963217%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '28727311c7ea59075c613eba4e6f8eae4d197591' => 
     array (
       0 => 'Tpl\\admin\\picture.html',
-      1 => 1441069462,
+      1 => 1441276810,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '485455e542501040c3-19543967',
+  'nocache_hash' => '742555eaa6171cda08-80963217',
   'Function' => 
   array (
   ),
+  'variables' => 
+  array (
+    'picList' => 0,
+  ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_55e54250132102_97567998',
+  'unifunc' => 'content_55eaa61728dca2_37301495',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55e54250132102_97567998')) {Function content_55e54250132102_97567998($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+<?php if ($_valid && !is_callable('content_55eaa61728dca2_37301495')) {Function content_55eaa61728dca2_37301495($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -55,7 +59,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     <div class="tools">
 
         <ul class="toolbar">
-            <li class="click" onclick="location.href='admin.php?picture&m=add'"><span><img src="Tpl/admin/images/t01.png"/></span>添加</li>
+            <li class="click" onclick="location.href='admin.php?c=Picture&m=add'"><span><img src="Tpl/admin/images/t01.png"/></span>添加</li>
             <li class="click"><span><img src="Tpl/admin/images/t02.png"/></span>修改</li>
             <li><span><img src="Tpl/admin/images/t03.png"/></span>删除</li>
             <li><span><img src="Tpl/admin/images/t04.png"/></span>统计</li>
@@ -70,87 +74,40 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 
     <ul class="imglist">
+        <?php if (isset($_smarty_tpl->tpl_vars['smarty']->value['section']['pic'])) unset($_smarty_tpl->tpl_vars['smarty']->value['section']['pic']);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['loop'] = is_array($_loop=$_smarty_tpl->tpl_vars['picList']->value) ? count($_loop) : max(0, (int) $_loop); unset($_loop);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['name'] = 'pic';
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['show'] = true;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['max'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['loop'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['step'] = 1;
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['start'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['step'] > 0 ? 0 : $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['loop']-1;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['show']) {
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['total'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['loop'];
+    if ($_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['total'] == 0)
+        $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['show'] = false;
+} else
+    $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['total'] = 0;
+if ($_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['show']):
 
+            for ($_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['index'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['start'], $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['iteration'] = 1;
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['iteration'] <= $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['total'];
+                 $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['index'] += $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['step'], $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['iteration']++):
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['rownum'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['iteration'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['index_prev'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['index'] - $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['index_next'] = $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['index'] + $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['step'];
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['first']      = ($_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['iteration'] == 1);
+$_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['last']       = ($_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['iteration'] == $_smarty_tpl->tpl_vars['smarty']->value['section']['pic']['total']);
+?>
         <li class="selected">
-            <span><img src="Tpl/admin/images/img01.png"/></span>
-
-            <h2><a href="#">软件界面设计下载</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
+            <span><img src="<?php echo $_smarty_tpl->tpl_vars['picList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['pic']['index']]['thumbPath'];?>
+"/></span>
+            <h2><a href="#"><?php echo $_smarty_tpl->tpl_vars['picList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['pic']['index']]['title'];?>
+</a></h2>
+            <p><a href="admin.php?c=Picture&m=edit&id=<?php echo $_smarty_tpl->tpl_vars['picList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['pic']['index']]['id'];?>
+">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="admin.php?c=Picture&m=del&id=<?php echo $_smarty_tpl->tpl_vars['picList']->value[$_smarty_tpl->getVariable('smarty')->value['section']['pic']['index']]['id'];?>
+" onclick="if(!window.confirm('确定删除？')) return false;">删除</a></p>
         </li>
-
-        <li>
-            <span><img src="Tpl/admin/images/img02.png"/></span>
-
-            <h2><a href="#">界面样式素材下载</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="Tpl/admin/images/img03.png"/></span>
-
-            <h2><a href="#">弹出小窗口界面设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img04.png"/></span>
-
-            <h2><a href="#">羽毛图标设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img05.png"/></span>
-
-            <h2><a href="#">日历组件样式设计</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img06.png"/></span>
-
-            <h2><a href="#">羽毛图标设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img07.png"/></span>
-
-            <h2><a href="#">弹出小窗口界面设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img08.png"/></span>
-
-            <h2><a href="#">弹出小窗口界面设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img09.png"/></span>
-
-            <h2><a href="#">弹出小窗口界面设计教程</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
-        <li>
-            <span><img src="images/img10.png"/></span>
-
-            <h2><a href="#">软件界面设计下载</a></h2>
-
-            <p><a href="#">编辑</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">删除</a></p>
-        </li>
-
+        <?php endfor; endif; ?>
     </ul>
 
 

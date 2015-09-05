@@ -20,6 +20,7 @@ class Model{
     );
 
     protected $error = array();//错误数组
+
     //过程自动化
     public function _auto($data){
         $data = $this->_autoPad($this->_autoFilter($data));
@@ -129,7 +130,7 @@ class Model{
         //验证通过,返回Ture
         switch($rule){
             case 'require':
-                return !empty($value);
+                return isset($value) && strlen(trim($value)) > 0;
                 break;
             case 'number':
                 return is_numeric($value);

@@ -43,8 +43,21 @@ class ArticleController{
         $categoryList = $category->fetchAll();
         $tree =$category->getCategoryTree($categoryList);
 
-        $articleList = $this->article->fetchAll('','','categoryId','');
+        $articleList = $this->article->fetchAll();
         if($articleList){
+            //分页
+            $total = $this->article->getCount();
+            $config = Config::getInstance()->getConf();
+            $pageSize = $config['PAGING']['ARTICLE'];
+
+            if($total > $pageSize){
+                $paging = new Paging($total,$pageSize);
+                $pagingStr = $paging->showPage();
+                View::assign(array('pagingStr' => $pagingStr));
+
+                $articleList = $this->article->fetchAll('','','categoryId','desc',$paging->getLimit());
+            }
+
             //分类的缩进
             foreach($articleList as $k => $v){
                 $row = $category->fetchOne('categoryName',$v['categoryId']);
@@ -64,6 +77,8 @@ class ArticleController{
                     $articleList[$k]['auditText'] = '锁定';
                 }
             }
+
+
             $display = 'hide';
         }else{
             $display = 'show';

@@ -11,6 +11,8 @@
         'Lib/Core/Model.class.php',
 		'Lib/Core/View.class.php',
 		'Lib/Db/Mysql.class.php',
+		'Lib/Tool/Image.class.php',
+		'Lib/Tool/Paging.class.php',
 		'Lib/Tool/Upload.class.php',
 		'Lib/View/Smarty/Smarty.class.php'
 	);

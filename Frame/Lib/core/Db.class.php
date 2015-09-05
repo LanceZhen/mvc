@@ -12,7 +12,6 @@ class DB{
     public static function init($dbType,$config){
         self::$db = $dbType::getInstance();
         self::$db->pdoConnect($config);
-
     }
 
     /**插入
@@ -43,6 +42,10 @@ class DB{
         return self::$db->delete($tbl,$where);
     }
 
+    /**执行sql
+     * @param $sql
+     * @return mixed
+     */
     public static function sqlExec($sql){
         return self::$db->sqlExec($sql);
     }

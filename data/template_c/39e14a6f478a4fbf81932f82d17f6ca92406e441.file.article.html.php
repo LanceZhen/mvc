@@ -1,30 +1,31 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-01 15:31:38
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-05 16:59:45
          compiled from "Tpl\admin\article.html" */ ?>
-<?php /*%%SmartyHeaderCode:825855e5545a37d823-01959772%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2226455ea78e0b7f162-09938439%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '39e14a6f478a4fbf81932f82d17f6ca92406e441' => 
     array (
       0 => 'Tpl\\admin\\article.html',
-      1 => 1441010887,
+      1 => 1441443583,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '825855e5545a37d823-01959772',
+  'nocache_hash' => '2226455ea78e0b7f162-09938439',
   'Function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_55ea78e0cd9190_40059978',
   'variables' => 
   array (
     'data' => 0,
     'display' => 0,
+    'pagingStr' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_55e5545a435b49_84906101',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55e5545a435b49_84906101')) {Function content_55e5545a435b49_84906101($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if ($_valid && !is_callable('content_55ea78e0cd9190_40059978')) {Function content_55ea78e0cd9190_40059978($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -132,20 +133,8 @@ em;"><?php echo $_smarty_tpl->tpl_vars['data']->value[$_smarty_tpl->getVariable(
     <div class="<?php echo $_smarty_tpl->tpl_vars['display']->value;?>
  not-content">暂时没有文章!</div>
 
-    <div class="pagin">
-        <div class="message">共<i class="blue">1256</i>条记录，当前显示第&nbsp;<i class="blue">2&nbsp;</i>页</div>
-        <ul class="paginList">
-            <li class="paginItem"><a href="javascript:;"><span class="pagepre"></span></a></li>
-            <li class="paginItem"><a href="javascript:;">1</a></li>
-            <li class="paginItem current"><a href="javascript:;">2</a></li>
-            <li class="paginItem"><a href="javascript:;">3</a></li>
-            <li class="paginItem"><a href="javascript:;">4</a></li>
-            <li class="paginItem"><a href="javascript:;">5</a></li>
-            <li class="paginItem more"><a href="javascript:;">...</a></li>
-            <li class="paginItem"><a href="javascript:;">10</a></li>
-            <li class="paginItem"><a href="javascript:;"><span class="pagenxt"></span></a></li>
-        </ul>
-    </div>
+    <?php echo $_smarty_tpl->tpl_vars['pagingStr']->value;?>
+
 
 
     <div class="tip">
@@ -205,7 +194,9 @@ em;"><?php echo $_smarty_tpl->tpl_vars['data']->value[$_smarty_tpl->getVariable(
     })
     //删除
     $('#del').click(function(){
-        $('#form').attr('action','admin.php?c=Article&m=del').submit();
+        if(window.confirm('确定删除选中?')){
+            $('#form').attr('action','admin.php?c=Article&m=del').submit();
+        }
     })
 </script>
 <script type="text/javascript">

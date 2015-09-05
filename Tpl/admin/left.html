@@ -11,7 +11,7 @@
 </head>
 
 <body style="background:#f0f9fd;">
-<div class="lefttop"><span></span>通讯录</div>
+<div class="lefttop"><span></span>模块</div>
 
 <dl class="leftmenu">
 
@@ -37,7 +37,7 @@
             <li><cite></cite><a href="admin.php?c=Article&m=add" target="rightFrame">添加文章</a><i></i></li>
             <li><cite></cite><a href="admin.php?c=Article&m=manage" target="rightFrame">管理文章</a><i></i></li>
             <li><cite></cite><a href="admin.php?c=Category&m=manage" target="rightFrame">管理分类</a><i></i></li>
-            <li><cite></cite><a href="#" target="rightFrame"  target="rightFrame">批量更新</a><i></i></li>
+            <!--<li><cite></cite><a href="#" target="rightFrame"  target="rightFrame">批量更新</a><i></i></li>-->
         </ul>
     </dd>
 
@@ -54,8 +54,15 @@
     <dd>
         <div class="title"><span><img src="Tpl/admin/images/leftico04.png"/></span>帐户管理</div>
         <ul class="menuson">
-            <li><cite></cite><a href="#" target="rightFrame">添加帐号</a><i></i></li>
-            <li><cite></cite><a href="#" target="rightFrame">管理帐号</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=User&m=add" target="rightFrame">添加帐号</a><i></i></li>
+            <li><cite></cite><a href="admin.php?c=User&m=manage" target="rightFrame">管理帐号</a><i></i></li>
+        </ul>
+
+    </dd>
+    <dd>
+        <div class="title"><span><img src="Tpl/admin/images/leftico04.png"/></span>留言管理</div>
+        <ul class="menuson">
+            <li><cite></cite><a href="admin.php?c=Home&m=contactManage" target="rightFrame">管理留言</a><i></i></li>
         </ul>
 
     </dd>
