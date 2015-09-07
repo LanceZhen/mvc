@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-05 13:08:51
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-07 10:16:37
          compiled from "Tpl\front\index.html" */ ?>
 <?php /*%%SmartyHeaderCode:1838555ea78e34e0e67-57375440%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '96380ccc701f33c5a2c630fbdaae0b22446d4c63' => 
     array (
       0 => 'Tpl\\front\\index.html',
-      1 => 1441427205,
+      1 => 1441592195,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'Function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.16',
   'unifunc' => 'content_55ea78e3515172_94705122',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_55ea78e3515172_94705122')) {Function content_55ea78e3515172_94705122($_smarty_tpl) {?><!--
 Author: W3layouts
@@ -119,7 +119,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 </div>
 <!---->
-
+<script src="Tpl/front/js/responsiveslides.min.js"></script>
+<script>
+    // You can also use "$(window).load(function()
+    
+    $(function () {
+        $("#slider").responsiveSlides({
+            auto: true,
+            manualControls: '#slider3-pager',
+        });
+    });
+    
+</script>
 <!---->
 </body>
 </html><?php }} ?>

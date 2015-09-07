@@ -96,7 +96,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     {include file="Tpl/front/footer.html"}
 </div>
 <!---->
-
+<script src="Tpl/front/js/responsiveslides.min.js"></script>
+<script>
+    // You can also use "$(window).load(function()
+    {literal}
+    $(function () {
+        $("#slider").responsiveSlides({
+            auto: true,
+            manualControls: '#slider3-pager',
+        });
+    });
+    {/literal}
+</script>
 <!---->
 </body>
 </html>

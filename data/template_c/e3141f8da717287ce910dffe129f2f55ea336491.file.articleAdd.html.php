@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-05 16:21:33
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-07 14:58:39
          compiled from "Tpl\admin\articleAdd.html" */ ?>
 <?php /*%%SmartyHeaderCode:1102155eaa60da6b3f5-14162131%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'e3141f8da717287ce910dffe129f2f55ea336491' => 
     array (
       0 => 'Tpl\\admin\\articleAdd.html',
-      1 => 1441022120,
+      1 => 1441069462,
       2 => 'file',
     ),
   ),
@@ -15,13 +15,13 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'Function' => 
   array (
   ),
+  'version' => 'Smarty-3.1.16',
+  'unifunc' => 'content_55eaa60db2bc44_31913918',
   'variables' => 
   array (
     'categoryList' => 0,
   ),
   'has_nocache_code' => false,
-  'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_55eaa60db2bc44_31913918',
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_55eaa60db2bc44_31913918')) {Function content_55eaa60db2bc44_31913918($_smarty_tpl) {?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

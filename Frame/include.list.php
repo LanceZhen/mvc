@@ -9,6 +9,7 @@
 		'Lib/Core/DB.class.php',
         'Lib/Core/Log.class.php',
         'Lib/Core/Model.class.php',
+		'Lib/Core/Route.class.php',
 		'Lib/Core/View.class.php',
 		'Lib/Db/Mysql.class.php',
 		'Lib/Tool/Image.class.php',

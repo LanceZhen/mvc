@@ -32,7 +32,7 @@ $config = array(
     ),
     //分页 每页显示的数量
     'PAGING' => array(
-        'ARTICLE' => 5,
+        'ARTICLE' => 2,
         'PICTURE' => 5
     ),
     //缩略图大小

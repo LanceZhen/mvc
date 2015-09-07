@@ -19,8 +19,9 @@
      */
     class start{
         private static $config;
-        public static $controller;
-        public static $method;
+        /*public static $controller;
+        public static $method;*/
+
         //初始化数据库
         private static function initDb(){
             Db::init('Mysql',self::$config['DB']);
@@ -29,13 +30,17 @@
         private static function initView(){
             View::init('Smarty',self::$config['VIEW']);
         }
-        //初始化控制器
+       /* //初始化控制器
         private static function initController(){
             self::$controller = isset($_GET['c']) ? $_GET['c'] : 'Index';
         }
         //初始化方法
         private static function initMethod(){
             self::$method = isset($_GET['m']) ? $_GET['m'] : 'index';
+        }*/
+        //初始化路由
+        private static function initRoute(){
+            Route::init();
         }
 
         //运行
@@ -43,9 +48,10 @@
             self::$config = $config;
             self::initDb();
             self::initView();
-            self::initController();
+            /*self::initController();
             self::initMethod();
-            C(self::$controller,self::$method);
+            C(self::$controller,self::$method);*/
+            self::initRoute();
         }
     }
     //启动

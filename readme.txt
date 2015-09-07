@@ -1,3 +1,12 @@
+，$_SERVER["QUERY_STRING"]
+说明：查询(query)的字符串
+2，$_SERVER["REQUEST_URI"]
+说明：访问此页面所需的URI
+3，$_SERVER["SCRIPT_NAME"]
+说明：包含当前脚本的路径
+4，$_SERVER["PHP_SELF"]
+说明：当前正在执行脚本的文件名
+
 命名规范：
 Θ 类文件都以.class.php为后缀，使用驼峰法命名，并且首字母大写，例如 Pay.class.php;<br>
 Θ 类名和目录_文件名一致。例如:类名Zend_Autoloader的目录是Zend/Autoloader.class.php;<br>

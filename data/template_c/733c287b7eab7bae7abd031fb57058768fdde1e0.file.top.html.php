@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-05 13:08:55
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-07 15:02:46
          compiled from "Tpl\admin\top.html" */ ?>
 <?php /*%%SmartyHeaderCode:410955ea78e7aee1b1-55380238%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '733c287b7eab7bae7abd031fb57058768fdde1e0' => 
     array (
       0 => 'Tpl\\admin\\top.html',
-      1 => 1440587695,
+      1 => 1441609361,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'Function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.16',
   'unifunc' => 'content_55ea78e7b50417_93237898',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_55ea78e7b50417_93237898')) {Function content_55ea78e7b50417_93237898($_smarty_tpl) {?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -58,6 +58,7 @@ $(function(){
     <ul>
     <li><span><img src="Tpl/admin/images/help.png" title="帮助"  class="helpimg"/></span><a href="#">帮助</a></li>
     <li><a href="#">关于</a></li>
+    <li><a href="index.php" target="_parent">前台</a></li>
     <li><a href="admin.php?c=User&m=logout" target="_parent">退出</a></li>
     </ul>
      

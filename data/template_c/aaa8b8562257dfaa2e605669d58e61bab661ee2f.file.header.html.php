@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-06 00:10:36
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-07 10:00:34
          compiled from "Tpl\front\header.html" */ ?>
 <?php /*%%SmartyHeaderCode:2923855ea78e351cfd3-01812155%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'aaa8b8562257dfaa2e605669d58e61bab661ee2f' => 
     array (
       0 => 'Tpl\\front\\header.html',
-      1 => 1441469435,
+      1 => 1441502862,
       2 => 'file',
     ),
   ),
@@ -51,4 +51,22 @@ $_valid = $_smarty_tpl->decodeProperties(array (
         })
     });
     
+    <!---以下是js部分-->
+    <script type="text/javascript">
+    //获取div下面所有的a标签（返回节点对象）
+    var myNav = document.getElementByIdx_x("tabs_nav").getElementsByTagName_r("a");
+    //获取当前窗口的url
+    var myURL = document.location.href;
+    //循环div下面所有的链接，
+    for(var i=1;i<myNav.length;i++){
+        //获取每一个a标签的herf属性
+        var links = myNav[i].getAttribute("href");
+        var myURL = document.location.href;
+        //查看div下的链接是否包含当前窗口，如果存在，则给其添加样式
+        if(myURL.indexOf(links) != -1){
+            myNav[i].className="active";
+            myNav[0].className="";
+        }
+    }
+</script>
 </script><?php }} ?>
