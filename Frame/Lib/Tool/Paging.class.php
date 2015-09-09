@@ -13,10 +13,10 @@ class Paging
     private $page;           //当前页码  
     private $pageNum;      //总页码  
     private $url;           //地址  
-    private $bothNum;      //两边保持数字分页的量  
+    private $bothNum;      //两边保持数字分页的量
 
     //构造方法初始化  
-    public function __construct($_total, $_pageSize = 10)
+    public function __construct($_total, $_pageSize = 10,$bothNum = 2)
     {
         $this->total = $_total ? $_total : 1;
         $this->pageSize = $_pageSize;
@@ -24,7 +24,7 @@ class Paging
         $this->page = $this->setPage();
         $this->limit = ($this->page - 1) * $this->pageSize . ','.$this->pageSize;
         $this->url = $this->setUrl();
-        $this->bothNum = 2;
+        $this->bothNum = $bothNum;
     }
 
     /**获得limit

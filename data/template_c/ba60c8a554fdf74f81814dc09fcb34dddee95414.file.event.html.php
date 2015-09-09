@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-07 15:02:51
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-08 12:33:54
          compiled from "Tpl\front\event.html" */ ?>
-<?php /*%%SmartyHeaderCode:461755eb120eba7441-14756127%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3012355ee64ec82fdf0-86416712%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'ba60c8a554fdf74f81814dc09fcb34dddee95414' => 
     array (
       0 => 'Tpl\\front\\event.html',
-      1 => 1441502862,
+      1 => 1441686834,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '461755eb120eba7441-14756127',
+  'nocache_hash' => '3012355ee64ec82fdf0-86416712',
   'Function' => 
   array (
   ),
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_55eb120ec40cf4_33644759',
+  'unifunc' => 'content_55ee64ec8c7bf1_48281136',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55eb120ec40cf4_33644759')) {Function content_55eb120ec40cf4_33644759($_smarty_tpl) {?><!--
+<?php if ($_valid && !is_callable('content_55ee64ec8c7bf1_48281136')) {Function content_55ee64ec8c7bf1_48281136($_smarty_tpl) {?><!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -29,12 +29,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>DJ ROCKS a Music Category Flat Bootstarp Responsive Web Template| Events :: w3layouts</title>
-<link href="Tpl/front/css/bootstrap.css" rel='stylesheet' type='text/css' />
-<link rel="stylesheet" href="Tpl/front/css/touchTouch.css" type="text/css" media="all" />
+    <base href="<?php echo @constant('FRONT_BASE');?>
+">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="all" />
 <!-- Custom Theme files -->
-<link href="Tpl/front/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
-<script src="Tpl/front/js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="DJ ROCKS Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -43,8 +45,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,100,200' rel='stylesheet' type='text/css'>
-<script type="text/javascript" src="Tpl/front/js/jquery.fancybox.js"></script>
-		<link rel="stylesheet" type="text/css" href="Tpl/front/css/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
 	   <script type="text/javascript">
 			$(document).ready(function() {
 				/*
@@ -165,15 +167,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 </div>		 
 		 <h3>OUR PARTIES</h3>
 			<div class="event-pics">
-				<a class="fancybox" href="Tpl/front/images/10.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/10.jpg" class="img-style row6" alt=""><span> </span></a>
-				<a class="fancybox" href="Tpl/front/images/7.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/7.jpg" class="img-style row6" alt=""><span> </span></a>
-				<a class="fancybox" href="Tpl/front/images/8.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/8.jpg" class="img-style row6" alt=""><span> </span></a>
-				<a class="fancybox" href="Tpl/front/images/15.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/15.jpg" class="img-style row6" alt=""><span> </span></a>
+				<a class="fancybox" href="images/10.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/10.jpg" class="img-style row6" alt=""><span> </span></a>
+				<a class="fancybox" href="images/7.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/7.jpg" class="img-style row6" alt=""><span> </span></a>
+				<a class="fancybox" href="images/8.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/8.jpg" class="img-style row6" alt=""><span> </span></a>
+				<a class="fancybox" href="images/15.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/15.jpg" class="img-style row6" alt=""><span> </span></a>
 				<div class="clearfix"></div>
-				<a class="fancybox" href="Tpl/front/images/5.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/5.jpg" class="img-style row6" alt=""><span> </span></a>
-				<a class="fancybox" href="Tpl/front/images/13.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/13.jpg" class="img-style row6" alt=""><span> </span></a>
-				<a class="fancybox" href="Tpl/front/images/9.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/9.jpg" class="img-style row6" alt=""><span> </span></a>
-				<a class="fancybox" href="Tpl/front/images/4.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/4.jpg" class="img-style row6" alt=""><span> </span></a>
+				<a class="fancybox" href="images/5.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/5.jpg" class="img-style row6" alt=""><span> </span></a>
+				<a class="fancybox" href="images/13.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/13.jpg" class="img-style row6" alt=""><span> </span></a>
+				<a class="fancybox" href="images/9.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/9.jpg" class="img-style row6" alt=""><span> </span></a>
+				<a class="fancybox" href="images/4.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/4.jpg" class="img-style row6" alt=""><span> </span></a>
 				<div class="clearfix"></div>
 			</div>
 		 <?php echo $_smarty_tpl->getSubTemplate ("Tpl/front/footer.html", $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, 0, null, array(), 0);?>

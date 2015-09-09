@@ -56,7 +56,7 @@
 		        <td>{$contactList[contact].email}</td>
 		        <td>{$contactList[contact].webSite}</td>
 		        <td>{$contactList[contact].message}</td>
-		        <td><a class="tablelink" href="index.php?c=Home&m=delContact&id={$contactList[contact].id}" onclick="if(!window.confirm('确定删除')) return false;">删除</a></td>
+		        <td><a class="tablelink" href="admin.php?c=Home&m=delContact&id={$contactList[contact].id}" onclick="if(!window.confirm('确定删除')) return false;">删除</a></td>
 	        </tr>
             {/section}
         </tbody>

@@ -4,12 +4,11 @@
  */
 final class Route{
     public static function init(){;
-        $SE_STR = str_replace($_SERVER['SCRIPT_NAME'],'',$_SERVER['REQUEST_URI']);
-        $SE_STR = trim($SE_STR,'/'); //string 'user/login/name/lance/pass/0000'
+        $SE_STR = str_replace($_SERVER['SCRIPT_NAME'],'',$_SERVER['REQUEST_URI']);///mvc/index.php/user/login -> //string 'user/login/name/lance/pass/0000'
+        $SE_STR = trim($SE_STR,'/');
 
         $arrSe = explode('/',$SE_STR);
         $seCount = count($arrSe);
-        var_dump($arrSe);
 
         $arrUrl = array(
             'controller' => 'Index',
@@ -32,10 +31,31 @@ final class Route{
             }
         }
 
-        $controller = $arrUrl['controller'];
-        $method = $arrUrl['method'];
+        $controllerName = $arrUrl['controller'].'Controller';
+        $methodName = $arrUrl['method'];
 
 
+        $controllerFile = ROOT."Lib/Controller/".$controllerName.'.class.php';
+
+        if(file_exists($controllerFile)){
+            require_once($controllerFile);
+            $controllerObj = new $controllerName();
+            if(method_exists($controllerObj,$methodName)){
+                if(is_callable(array($controllerObj,$methodName))){
+                    $returnV = $controllerObj->$methodName($arrUrl['params']);
+                    if(!is_null($returnV)){
+                        var_dump($returnV);
+                    }
+                }else{
+                    die('方法不能调用');
+                }
+            }else{
+                die('方法不存在');
+            }
+
+        }else{
+            die('控制器文件不存在');
+        }
 
 
     }

@@ -13,21 +13,26 @@ class HomeController{
     }
 
     function index(){
+        $_SESSION['nav'] = 'home';
         View::display('front/index.html');
     }
     function about(){
+        $_SESSION['nav'] = 'about';
         View::display('front/about.html');
     }
     function event(){
+        $_SESSION['nav'] = 'event';
         View::display('front/event.html');
     }
     function blog(){
+        $_SESSION['nav'] = 'blog';
         View::display('front/blog.html');
     }
 
 
 
     function contact(){
+        $_SESSION['nav'] = 'contact';
         if($_POST){
             if($this->contact->insert($_POST)){
                 alert('提交成功!');

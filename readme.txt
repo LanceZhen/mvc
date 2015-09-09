@@ -1,4 +1,21 @@
-，$_SERVER["QUERY_STRING"]
+
+
+1. {$smarty.get.page} {* PHP方式：$_GET["page"] *}
+2. {$smarty.post.page} {* PHP方式：$_POST["page"] *}
+3. {$smarty.cookies.username} {* PHP方式：$_COOKIE["username"] *}
+4. {$smarty.session.id}  {* PHP方式：$_SESSION["id"] *}
+5. {$smarty.server.SERVER_NAME}  {* PHP方式：$_SERVER["SERVER_NAME"] *}
+6. {$smarty.env.PATH}   {* PHP方式：$_ENV["PATH"]*}
+7. {$smarty.request.username}  {* PHP方式：$_REQUEST["username"] *}
+  2．在模板中访问PHP中的变量
+     在PHP脚本中有系统常量和自定义常量两种，同样这两种常量在Smarty模板中也可以被访问，而且不需要从PHP中分配，只要通过{$smarty}保留变量就可以直接输出常量的值。在模板中输出常量的示例如下所示：
+1. {$smarty.const._MY_CONST_VAL} {* 输出PHP脚本中自定义的常量 *}
+2. {$smarty.const.__FILE__}     {* 通过保留变量数组直接输出系统常量 *}
+
+{$smarty.server.SERVER_NAME}//表示：服务器名称
+{$smarty.server.REQUEST_URI}// 表示：请求的url
+
+1，$_SERVER["QUERY_STRING"]
 说明：查询(query)的字符串
 2，$_SERVER["REQUEST_URI"]
 说明：访问此页面所需的URI

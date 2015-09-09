@@ -1,64 +1,7 @@
 <?php
-/**数据库操作类
- * Class Mysql
+/**
+ * 数据库操作类
  */
-
-//$dbh = new PDO('mysql:host=localhost;dbname=access_control', 'root', '');
-//$dbh->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-//$dbh->exec('set names utf8');
-///*添加*/
-////$sql = "INSERT INTO `user` SET `login`=:login AND `password`=:password";
-//$sql = "INSERT INTO `user` (`login` ,`password`)VALUES (:login, :password)";  $stmt = $dbh->prepare($sql);  $stmt->execute(array(':login'=>'kevin2',':password'=>''));
-//echo $dbh->lastinsertid();
-///*修改*/
-//$sql = "UPDATE `user` SET `password`=:password WHERE `user_id`=:userId";
-//$stmt = $dbh->prepare($sql);
-//$stmt->execute(array(':userId'=>'7', ':password'=>'4607e782c4d86fd5364d7e4508bb10d9'));
-//echo $stmt->rowCount();
-///*删除*/
-//$sql = "DELETE FROM `user` WHERE `login` LIKE 'kevin_'"; //kevin%
-//$stmt = $dbh->prepare($sql);
-//$stmt->execute();
-//echo $stmt->rowCount();
-///*查询*/
-//$login = 'kevin%';
-//$sql = "SELECT * FROM `user` WHERE `login` LIKE :login";
-//$stmt = $dbh->prepare($sql);
-//$stmt->execute(array(':login'=>$login));
-//while($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-//    print_r($row);
-//}
-//print_r( $stmt->fetchAll(PDO::FETCH_ASSOC));
-/*//pdo连接信息
-$pdo=array("mysql:host=localhost;dbname=demo;charset=utf8","root","");
-//开始连接数据库
-$Db = Mysql::newClass();
-$Db->pdoConnect($pdo);
-
-
-$updateRow = array(
-  "user_id" => "2",
-  "meta_key" => "username"
-);
-
-//$Db->select("wp_usermeta"); //发送sql
-//$result=$Db->selectOne(); //获取一条数据
-//$Db->selectCount(); //获取全部
-
-//$Db->update("wp_usermeta",$updateRow,"umeta_id=1"); //更新信息
-//$Db->insert("wp_usermeta",$updateRow); //插入数据
-//echo $Db->lastinsertid(); //获取插入后的id
-//$Db->delete("wp_usermeta","umeta_id>18"); //删除数据*/
-//            $test = M('Test');
-//            echo $test->add('tb_user',array('name'=>'lance','pass'=>'0000'));
-//             echo $test->update('tb_user',array('name'=>'lance','pass'=>'000'),'id = 1');
-//            echo $test->del('tb_user','id = 3');
-//select($table='', $fields='', $where='', $orderBy='', $sort='', $limit='')
-//        $test->select('tb_user','id,name,pass',array('name'=>'lance','pass'=>'111'),'id','desc','2,4');
-//             var_dump($test->fetchAll());
-//            View::assign(array('title'=>'加油'));
-//            View::display('admin/test.html');
-
 class Mysql
 {
     private static $object;

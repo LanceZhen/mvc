@@ -4,9 +4,9 @@
  */
 	$paths = array(
         'Lib/Core/Config.class.php',
-        'Function/Function.php',
+        'Function/function.php',
         'Function/validate.php',
-		'Lib/Core/DB.class.php',
+		'Lib/Core/Db.class.php',
         'Lib/Core/Log.class.php',
         'Lib/Core/Model.class.php',
 		'Lib/Core/Route.class.php',

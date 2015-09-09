@@ -28,11 +28,11 @@ $config = array(
         'compile_dir' => 'data/template_c',
         'caching' => false,
         'cache_lifetime' => 60 * 60 * 24,
-        'cache_dir' => 'data/cache'
+       // 'cache_dir' => 'data/cache'
     ),
     //分页 每页显示的数量
     'PAGING' => array(
-        'ARTICLE' => 2,
+        'ARTICLE' => 4,
         'PICTURE' => 5
     ),
     //缩略图大小
@@ -49,5 +49,7 @@ $config = array(
     'WATER_TEXT' => array('Lance','all rights reserved'),
     //图片显示方式
     'PICTURE_SHOW_TYPE' => 'thumb',
+    //URL设置
+    'URL_MODEL' => 0// 0 (普通模式); 1 (PATHINFO 模式);
 
 );

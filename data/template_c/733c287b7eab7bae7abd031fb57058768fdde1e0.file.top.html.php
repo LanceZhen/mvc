@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-07 15:02:46
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-08 14:39:36
          compiled from "Tpl\admin\top.html" */ ?>
-<?php /*%%SmartyHeaderCode:410955ea78e7aee1b1-55380238%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:57755ee4b12866a73-09191821%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '733c287b7eab7bae7abd031fb57058768fdde1e0' => 
     array (
       0 => 'Tpl\\admin\\top.html',
-      1 => 1441609361,
+      1 => 1441694375,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '410955ea78e7aee1b1-55380238',
+  'nocache_hash' => '57755ee4b12866a73-09191821',
   'Function' => 
   array (
   ),
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_55ea78e7b50417_93237898',
+  'unifunc' => 'content_55ee4b12919608_07668428',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55ea78e7b50417_93237898')) {Function content_55ea78e7b50417_93237898($_smarty_tpl) {?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if ($_valid && !is_callable('content_55ee4b12919608_07668428')) {Function content_55ee4b12919608_07668428($_smarty_tpl) {?>﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -58,7 +58,7 @@ $(function(){
     <ul>
     <li><span><img src="Tpl/admin/images/help.png" title="帮助"  class="helpimg"/></span><a href="#">帮助</a></li>
     <li><a href="#">关于</a></li>
-    <li><a href="index.php" target="_parent">前台</a></li>
+    <li><a href="index.php/Home" target="_parent">前台</a></li>
     <li><a href="admin.php?c=User&m=logout" target="_parent">退出</a></li>
     </ul>
      

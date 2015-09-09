@@ -116,6 +116,10 @@ class UserController{
             View::display('admin/userEdit.html');
         }
     }
+
+    /**
+     * 删除
+     */
     function del(){
         $id = $_GET['id'];
         if($this->user->delete($id)){

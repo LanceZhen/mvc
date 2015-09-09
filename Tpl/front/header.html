@@ -5,20 +5,20 @@
         </div>
         <div class="top-menu">
             <ul>
-                <li class="active"><a href="index.php?c=Home&m=index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
-                <li><a href="index.php?c=Home&m=about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>About</a></li>
-                <li><a href="index.php?c=Home&m=event"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Events</a></li>
-                <li><a href="index.php?c=Home&m=blog"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Blog</a></li>
-                <li><a href="index.php?c=Home&m=contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Contact</a></li>
+                <li id="home"><a href="{$smarty.const.FRONT_LINK}Home/index"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>Home</a></li>
+                <li id="about"><a href="{$smarty.const.FRONT_LINK}Home/about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>About</a></li>
+                <li id="event"><a href="{$smarty.const.FRONT_LINK}Home/event"><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>Events</a></li>
+                <li id="blog"><a href="{$smarty.const.FRONT_LINK}Home/blog"><span class="glyphicon glyphicon-tags" aria-hidden="true"></span>Blog</a></li>
+                <li id="contact"><a href="{$smarty.const.FRONT_LINK}Home/contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>Contact</a></li>
             </ul>
         </div>
         <div class="clearfix"></div>
     </div>
 </div>
 <!---->
-<script src="Tpl/front/js/responsiveslides.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+{literal}
 <script>
-    {literal}
     $(function () {
         $("#slider").responsiveSlides({
             auto: true,
@@ -29,7 +29,6 @@
             $(this).addClass('active').siblings().removeClass('active');
         })
     });
-    {/literal}
     <!---以下是js部分-->
     <script type="text/javascript">
     //获取div下面所有的a标签（返回节点对象）
@@ -42,10 +41,11 @@
         var links = myNav[i].getAttribute("href");
         var myURL = document.location.href;
         //查看div下的链接是否包含当前窗口，如果存在，则给其添加样式
-        if(myURL.indexOf(links) != -1){
-            myNav[i].className="active";
-            myNav[0].className="";
-        }
+    }
+    if(myURL.indexOf(links) != -1){
+        myNav[i].className="active";
+        myNav[0].className="";
     }
 </script>
+{/literal}
 </script>

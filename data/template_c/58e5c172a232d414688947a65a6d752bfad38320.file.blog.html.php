@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-07 15:02:51
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-08 12:35:15
          compiled from "Tpl\front\blog.html" */ ?>
-<?php /*%%SmartyHeaderCode:167055eb115be55835-21593177%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:3170055ee4daabf9182-02074333%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '58e5c172a232d414688947a65a6d752bfad38320' => 
     array (
       0 => 'Tpl\\front\\blog.html',
-      1 => 1441502862,
+      1 => 1441686914,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '167055eb115be55835-21593177',
+  'nocache_hash' => '3170055ee4daabf9182-02074333',
   'Function' => 
   array (
   ),
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_55eb115bee1ae3_45389900',
+  'unifunc' => 'content_55ee4daad09115_85941785',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55eb115bee1ae3_45389900')) {Function content_55eb115bee1ae3_45389900($_smarty_tpl) {?><!--
+<?php if ($_valid && !is_callable('content_55ee4daad09115_85941785')) {Function content_55ee4daad09115_85941785($_smarty_tpl) {?><!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -29,11 +29,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>DJ ROCKS a Music Category Flat Bootstarp Responsive Web Template| Blog :: w3layouts</title>
-<link href="Tpl/front/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <base href="<?php echo @constant('FRONT_BASE');?>
+">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="Tpl/front/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
-<script src="Tpl/front/js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="DJ ROCKS Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -43,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,900,800,700,600,500,300,100,200' rel='stylesheet' type='text/css'>
 
-  <script src="Tpl/front/js/responsiveslides.min.js"></script>
+  <script src="js/responsiveslides.min.js"></script>
 	
   <script>
     // You can also use "$(window).load(function() {"
@@ -75,7 +77,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="blog-main">
 			 <div class="blog_slide">
 				 <div class="col-md-6 slid_pic">
-						 <img src="Tpl/front/images/blgg.jpg" alt=""/>
+						 <img src="images/blgg.jpg" alt=""/>
 				 </div>
 				 <!-- Slideshow 1 -->
 				 <div class="col-md-6 slider2">
@@ -115,7 +117,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			 <div class="col-md-8 blog-left">
 				 <div class="blog-grids">
 					 <div class="blog-grid">
-						 <a href="single.html"><img src="Tpl/front/images/blg.jpg" class="img-responsive" alt=""/></a>
+						 <a href="single.html"><img src="images/blg.jpg" class="img-responsive" alt=""/></a>
 						 <h3><a href="single.html">Sed vel risus vitae nulla luctus ultricies.</a></h3>
 						 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida varius felis, ac congue eros sagittis nec. Maecenas blandit justo leo,
 						 aliquet pretium nisi dignissim et. Curabitur maximus auctor sem at iaculis. Aenean mollis mattis odio in blandit.
@@ -134,7 +136,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					 </div>
 					 
 					 <div class="blog-grid">
-						 <a href="single.html"><img src="Tpl/front/images/blg2.jpg" class="img-responsive" alt=""/></a>
+						 <a href="single.html"><img src="images/blg2.jpg" class="img-responsive" alt=""/></a>
 						 <h3><a href="single.html">Sed vel risus vitae nulla luctus ultricies.</a></h3>
 						 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean gravida varius felis, ac congue eros sagittis nec. Maecenas blandit justo leo,
 						 aliquet pretium nisi dignissim et. Curabitur maximus auctor sem at iaculis. Aenean mollis mattis odio in blandit.
@@ -167,11 +169,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				 <div class="recent-albums">
 					 <h3>RECENT ALBUMS</h3>
 					 <div class="tab-left">
-						 <span class="tab-img"><img src="Tpl/front/images/w2.jpg" alt=""/></span>
+						 <span class="tab-img"><img src="images/w2.jpg" alt=""/></span>
 						 <div class="tab-text">
 								<p><a href="#">Lorem ipsum dolor sit amet nibh.</a></p>
 							 <div class="post-meta">
-									<img src="Tpl/front/images/comment.png" alt=""><a href="#" class="comments"> 3 Comments</a>
+									<img src="images/comment.png" alt=""><a href="#" class="comments"> 3 Comments</a>
 									<span class="author">Author: <a href="#">Lorem</a></span>
 							 </div>
 							 <a href="#" class="link1">Read More</a>
@@ -179,11 +181,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <div class="clearfix"></div>
 					 </div>
 					 <div class="tab-left">
-						 <span class="tab-img"><img src="Tpl/front/images/w3.jpg" alt=""/></span>
+						 <span class="tab-img"><img src="images/w3.jpg" alt=""/></span>
 						 <div class="tab-text">
 								<p><a href="#">Lorem ipsum dolor sit amet nibh.</a></p>
 							 <div class="post-meta">
-									<img src="Tpl/front/images/comment.png" alt=""><a href="#" class="comments"> 3 Comments</a>
+									<img src="images/comment.png" alt=""><a href="#" class="comments"> 3 Comments</a>
 									<span class="author">Author: <a href="#">Lorem</a></span>
 							 </div>
 							 <a href="#" class="link1">Read More</a>
@@ -191,11 +193,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <div class="clearfix"></div>
 					 </div>
 					 <div class="tab-left">
-						 <span class="tab-img"><img src="Tpl/front/images/w4.jpg" alt=""/></span>
+						 <span class="tab-img"><img src="images/w4.jpg" alt=""/></span>
 						 <div class="tab-text">
 								<p><a href="#">Lorem ipsum dolor sit amet nibh.</a></p>
 							 <div class="post-meta">
-									<img src="Tpl/front/images/comment.png" alt=""><a href="#" class="comments"> 3 Comments</a>
+									<img src="images/comment.png" alt=""><a href="#" class="comments"> 3 Comments</a>
 									<span class="author">Author: <a href="#">Lorem</a></span>
 							 </div>
 							 <a href="#" class="link1">Read More</a>
@@ -203,11 +205,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						  <div class="clearfix"></div>
 					 </div>
 					 <div class="tab-left">
-						 <span class="tab-img"><img src="Tpl/front/images/w5.jpg" alt=""/></span>
+						 <span class="tab-img"><img src="images/w5.jpg" alt=""/></span>
 						 <div class="tab-text">
 								<p><a href="#">Lorem ipsum dolor sit amet nibh.</a></p>
 							 <div class="post-meta">
-									<img src="Tpl/front/images/comment.png" alt=""><a href="#" class="comments"> 3 Comments</a>
+									<img src="images/comment.png" alt=""><a href="#" class="comments"> 3 Comments</a>
 									<span class="author">Author: <a href="#">Lorem</a></span>
 							 </div>
 							 <a href="#" class="link1">Read More</a>

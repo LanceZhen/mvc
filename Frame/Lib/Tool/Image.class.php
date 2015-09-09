@@ -184,6 +184,7 @@ class Image{
         $createFun = 'image'.$dstInfo['ext'];
         $createFun($dstImg,$save);
         //销毁
+        imagedestroy($srcImg);
         imagedestroy($dstImg);
         return true;
     }

@@ -1,25 +1,25 @@
-<?php /* Smarty version Smarty-3.1.16, created on 2015-09-07 10:11:43
+<?php /* Smarty version Smarty-3.1.16, created on 2015-09-08 12:31:24
          compiled from "Tpl\front\about.html" */ ?>
-<?php /*%%SmartyHeaderCode:3051455eb12d0c0e682-65661902%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:2967055ee4b7fcaab08-71828818%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     '98300b367a931b8430c479eab51df9e5b29645fa' => 
     array (
       0 => 'Tpl\\front\\about.html',
-      1 => 1441502862,
+      1 => 1441686683,
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '3051455eb12d0c0e682-65661902',
+  'nocache_hash' => '2967055ee4b7fcaab08-71828818',
   'Function' => 
   array (
   ),
   'version' => 'Smarty-3.1.16',
-  'unifunc' => 'content_55eb12d0c75b64_08607722',
+  'unifunc' => 'content_55ee4b7fdcea61_08441864',
   'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_55eb12d0c75b64_08607722')) {Function content_55eb12d0c75b64_08607722($_smarty_tpl) {?><!--
+<?php if ($_valid && !is_callable('content_55ee4b7fdcea61_08441864')) {Function content_55ee4b7fdcea61_08441864($_smarty_tpl) {?><!--
 Author: W3layouts
 Author URL: http://w3layouts.com
 License: Creative Commons Attribution 3.0 Unported
@@ -29,12 +29,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>DJ ROCKS a Music Category Flat Bootstarp Responsive Web Template| About :: w3layouts</title>
-<link href="Tpl/front/css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <base href="<?php echo @constant('FRONT_BASE');?>
+">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="Tpl/front/css/style.css" rel="stylesheet" type="text/css" media="all" />
-<link rel="stylesheet" href="Tpl/front/css/touchTouch.css" type="text/css" media="all" />
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/touchTouch.css" type="text/css" media="all" />
 <!-- Custom Theme files -->
-<script src="Tpl/front/js/jquery.min.js"></script>
+<script src="js/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="DJ ROCKS Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -44,8 +46,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href='http://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 <!---//End-css-style-switecher----->
-<script type="text/javascript" src="Tpl/front/js/jquery.fancybox.js"></script>
-		<link rel="stylesheet" type="text/css" href="Tpl/front/css/jquery.fancybox.css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
 	   <script type="text/javascript">
 			$(document).ready(function() {
 				/*
@@ -71,7 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <h2>ABOUT ME</h2>
 		 <div class="about-main">
 			 <div class="col-md-6 abt-pic">
-				 <img src="Tpl/front/images/abt.jpg" class="img-responsive" alt=""/>
+				 <img src="images/abt.jpg" class="img-responsive" alt=""/>
 			 </div>
 			 <div class="col-md-6 abt-pic-info">
 				 <h3>Hi. My name is John Doe. Egestas lorem ipsum dolor sit amet, consectetur adipiscing elit.</h3>
@@ -112,27 +114,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 <div class="latest">
 			 <h3>LATEST PHOTOS</h3>		
 			 <div class="pic start">
-				 <a class="fancybox" href="Tpl/front/images/4.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/4.jpg" class="img-style row6" alt=""><span> </span></a>
+				 <a class="fancybox" href="images/4.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/4.jpg" class="img-style row6" alt=""><span> </span></a>
 				 <h4><a href="event.html">Aenean rutrum</a></h4>
 				 <p>Suspendisse posuere enim eu ante scelerisque, vehicula turpis.</p>
 			 </div>
 			 <div class="pic">
-				 <a class="fancybox" href="Tpl/front/images/5.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/5.jpg" class="img-style row6" alt=""><span> </span></a>
+				 <a class="fancybox" href="images/5.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/5.jpg" class="img-style row6" alt=""><span> </span></a>
 				 <h4><a href="event.html">Aenean rutrum</a></h4>
 				 <p>Suspendisse posuere enim eu ante scelerisque, vehicula turpis.</p>
 			 </div>
 			 <div class="pic">
-				 <a class="fancybox" href="Tpl/front/images/6.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/6.jpg" class="img-style row6" alt=""><span> </span></a>
+				 <a class="fancybox" href="images/6.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/6.jpg" class="img-style row6" alt=""><span> </span></a>
 				 <h4><a href="event.html">Aenean rutrum</a></h4>
 				 <p>Suspendisse posuere enim eu ante scelerisque, vehicula turpis.</p>
 			 </div>
 			 <div class="pic">
-				 <a class="fancybox" href="Tpl/front/images/7.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/7.jpg" class="img-style row6" alt=""><span> </span></a>
+				 <a class="fancybox" href="images/7.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/7.jpg" class="img-style row6" alt=""><span> </span></a>
 				 <h4><a href="event.html">Aenean rutrum</a></h4>
 				 <p>Suspendisse posuere enim eu ante scelerisque, vehicula turpis.</p>
 			 </div>
 			 <div class="pic">
-				 <a class="fancybox" href="Tpl/front/images/8.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="Tpl/front/images/8.jpg" class="img-style row6" alt=""><span> </span></a>
+				 <a class="fancybox" href="images/8.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="images/8.jpg" class="img-style row6" alt=""><span> </span></a>
 				 <h4><a href="event.html">Aenean rutrum</a></h4>
 				 <p>Suspendisse posuere enim eu ante scelerisque, vehicula turpis.</p>
 			 </div>
